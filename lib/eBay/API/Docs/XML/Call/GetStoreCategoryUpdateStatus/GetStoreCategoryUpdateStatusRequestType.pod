@@ -1,0 +1,43 @@
+=head1 eBay::API::XML::Call::GetStoreCategoryUpdateStatus::GetStoreCategoryUpdateStatusRequestType
+
+eBay::API::XML::Call::GetStoreCategoryUpdateStatus::GetStoreCategoryUpdateStatusRequestType
+
+=head1 DESCRIPTION
+
+Returns the status of the processing progress for category structure changes
+specified with a SetStoreCategories request. Use this call to retrieve status
+when the SetStoreCategories call is being processed asynchronously.
+SetStoreCategories will be processed asynchronously when many listings are
+affected by the category structure changes.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setTaskID()
+
+The task ID returned by the SetStoreCategories call. If the
+SetStoreCategories call was processed asynchronously, the TaskID will be
+a positive number, otherwise the TaskID will be 0.
+
+  RequiredInput: Yes
+#    Argument: 'xs:long'
+
+
+=cut
+
+=head2 getTaskID()
+
+#    Returns: 'xs:long'
+
+
+=cut
+

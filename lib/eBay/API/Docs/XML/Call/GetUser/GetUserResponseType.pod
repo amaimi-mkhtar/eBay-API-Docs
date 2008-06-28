@@ -1,0 +1,38 @@
+=head1 eBay::API::XML::Call::GetUser::GetUserResponseType
+
+eBay::API::XML::Call::GetUser::GetUserResponseType
+
+=head1 DESCRIPTION
+
+Contains the data retrieved by the call. User data is returned in a User object.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setUser()
+
+Contains the returned user data for the specified eBay user.
+
+#    Argument: 'ns:UserType'
+
+
+=cut
+
+=head2 getUser()
+
+  Returned: Always
+  Details: DetailLevel: none, ReturnSummary, ReturnAll
+#    Returns: 'ns:UserType'
+
+
+=cut
+

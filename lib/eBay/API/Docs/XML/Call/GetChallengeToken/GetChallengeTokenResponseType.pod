@@ -1,0 +1,73 @@
+=head1 eBay::API::XML::Call::GetChallengeToken::GetChallengeTokenResponseType
+
+eBay::API::XML::Call::GetChallengeToken::GetChallengeTokenResponseType
+
+=head1 DESCRIPTION
+
+Response to GetChallengeToken request.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setAudioChallengeURL()
+
+The URL of the audio clip your application should provide for sight-impaired users.
+The audio clip corresponds to the image.
+
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getAudioChallengeURL()
+
+  Returned: Always
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setChallengeToken()
+
+Botblock token that is used to validate that the user is a human and not a bot.
+
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getChallengeToken()
+
+  Returned: Always
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setImageChallengeURL()
+
+The URL of the image your application should display to
+the user for a botblock challenge.
+
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getImageChallengeURL()
+
+  Returned: Always
+#    Returns: 'xs:string'
+
+
+=cut
+

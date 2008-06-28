@@ -1,0 +1,69 @@
+=head1 eBay::API::XML::Call::GetMemberMessages::GetMemberMessagesResponseType
+
+eBay::API::XML::Call::GetMemberMessages::GetMemberMessagesResponseType
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setHasMoreItems()
+
+Specifies whether the response has more items.
+
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isHasMoreItems()
+
+  Returned: Always
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setMemberMessage()
+
+The returned member messages. Returned if messages that meet the request criteria exist.
+
+#    Argument: 'ns:MemberMessageExchangeArrayType'
+
+
+=cut
+
+=head2 getMemberMessage()
+
+  Returned: Conditionally
+#    Returns: 'ns:MemberMessageExchangeArrayType'
+
+
+=cut
+
+=head2 setPaginationResult()
+
+Shows the pagination of data returned by requests.
+
+#    Argument: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 getPaginationResult()
+
+  Returned: Always
+#    Returns: 'ns:PaginationResultType'
+
+
+=cut
+

@@ -1,0 +1,275 @@
+=head1 eBay::API::XML::Call::GetSellerList::GetSellerListRequestType
+
+eBay::API::XML::Call::GetSellerList::GetSellerListRequestType
+
+=head1 DESCRIPTION
+
+Returns a list of items a seller has listed for auction.
+Returns an array of zero, one, or multiple items.
+You can specify that the returned data include
+only items that start or end within a specified date range.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setAdminEndedItemsOnly()
+
+Specifies whether to return only items that were administratively ended 
+based on a policy violation.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isAdminEndedItemsOnly()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setCategoryID()
+
+The category ID for the items retrieved. 
+If you specify CategoryID in a GetSellerList call, 
+the response contains only items in the category you specify.
+
+  RequiredInput: No
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getCategoryID()
+
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setEndTimeFrom()
+
+Specifies the earliest (oldest) date to use in a date range filter based on item end time.
+Specify either the end-time range or the start-time range filter in every request. Each of the
+time ranges must be a value less than 120 days.
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 getEndTimeFrom()
+
+#    Returns: 'xs:dateTime'
+
+
+=cut
+
+=head2 setEndTimeTo()
+
+Specifies the latest (most recent) date to use in a date range filter based on item end time.
+Must be specified if EndTimeFrom is specified.
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 getEndTimeTo()
+
+#    Returns: 'xs:dateTime'
+
+
+=cut
+
+=head2 setGranularityLevel()
+
+Specifies the subset of item and user fields to return.
+See GetSellerList in the eBay Web Services guide for a list
+of the fields that are returned for each granularity level.
+For GetSellerList, use DetailLevel or GranularityLevel in a request, but not both.
+For GetSellerList, if GranularityLevel is specified, DetailLevel is ignored.
+
+SeeLink: URL: http://developer.ebay.com/DevZone/XML/docs/WebHelp/index.htm?context=eBay_XML_API&topic=GetSellerList_BP
+Title: GetSellerList Best Practices
+PresentDetails: Yes
+
+  RequiredInput: No
+#    Argument: 'ns:GranularityLevelCodeType'
+
+
+=cut
+
+=head2 getGranularityLevel()
+
+#    Returns: 'ns:GranularityLevelCodeType'
+
+
+=cut
+
+=head2 setIncludeWatchCount()
+
+Specifies whether to include WatchCount in Item nodes returned.
+WatchCount is only returned with DetailLevel ReturnAll.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isIncludeWatchCount()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setMotorsDealerUsers()
+
+Specifies the list of Motors Dealer sellers for which a special set of
+metrics can be requested. Applies to eBay Motors Pro applications only.
+
+  RequiredInput: No
+#    Argument: 'ns:UserIDArrayType'
+
+
+=cut
+
+=head2 getMotorsDealerUsers()
+
+#    Returns: 'ns:UserIDArrayType'
+
+
+=cut
+
+=head2 setPagination()
+
+Contains the data controlling the pagination of the returned values: how many items
+are returned per page of data (per call) and the number of the page to return with
+the current call.
+
+  RequiredInput: Yes
+#    Argument: 'ns:PaginationType'
+
+
+=cut
+
+=head2 getPagination()
+
+#    Returns: 'ns:PaginationType'
+
+
+=cut
+
+=head2 setSKUArray()
+
+Specifies a set of seller SKUs to use as a filter. Only items with the specified SKUs are
+returned. Do not specify this tag if you do not want to filter by SKU. Corresponds to the SKU property
+that is part of ItemType and that can be provided when, for example, you use the AddItem call.
+
+  RequiredInput: No
+#    Argument: 'ns:SKUArrayType'
+
+
+=cut
+
+=head2 getSKUArray()
+
+#    Returns: 'ns:SKUArrayType'
+
+
+=cut
+
+=head2 setSort()
+
+Specifies the order in which returned items are sorted (based on the end dates of the
+item listings). Valid values:<br>
+0 = No sorting<br>
+1 = Sort in descending order<br>
+2 = Sort in ascending order<br>
+
+  RequiredInput: No
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getSort()
+
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setStartTimeFrom()
+
+Specifies the earliest (oldest) date to use in a date range filter based on item
+start time. Specify either the end time range or start time range filter in every request.
+Each of the time ranges must be a value less than 120 days.
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 getStartTimeFrom()
+
+#    Returns: 'xs:dateTime'
+
+
+=cut
+
+=head2 setStartTimeTo()
+
+Specifies the latest (most recent) date to use in a date range filter based on item
+start time. Must be specified if StartTimeFrom is specified.
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 getStartTimeTo()
+
+#    Returns: 'xs:dateTime'
+
+
+=cut
+
+=head2 setUserID()
+
+Specifies the seller whose items will be returned. UserID is an optional input.
+If not specified, retrieves events for the user identified by
+the authentication token passed in the request. Note that since user information is anonymous to everyone except the bidder and the seller (during an active auction), only sellers looking for information about
+their own listings and bidders who know the user IDs of their sellers
+will be able to make this API call successfully. See <a href="http://developer.ebay.com/DevZone/XML/docs/WebHelp/index.htm?context=eBay_XML_API&topic=AnonymousUserInfo">Working with Anonymous User Information</a>in the eBay Web Services Guide for more information.
+
+  RequiredInput: No
+#    Argument: 'ns:UserIDType'
+
+
+=cut
+
+=head2 getUserID()
+
+#    Returns: 'ns:UserIDType'
+
+
+=cut
+

@@ -1,0 +1,65 @@
+=head1 eBay::API::XML::Call::GetProductSearchResults
+
+eBay::API::XML::Call::GetProductSearchResults
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setProductSearch()
+
+Specifies the keywords or attributes that make up the product query, with
+pagination instructions. ProductSearch is a required input. To search for
+multiple different products at the same time (i.e., to perform a batch
+search), pass in multiple ProductSearch properties.
+
+SeeLink: URL: http://developer.ebay.com/DevZone/XML/docs/WebHelp/index.htm?context=eBay_XML_API&topic=AttrProductSearch
+Title: Searching for Pre-filled Item Information
+
+  RequiredInput: Yes
+#    Argument: reference to an array  
+                      of 'ns:ProductSearchType'
+
+
+=cut
+
+=head2 getDataElementSets()
+
+Container for one or more DataElement fields containing supplemental
+helpful data. A DataElement field is an HTML snippet that specifies hints
+for the user, help links, help graphics, and other supplemental
+information that varies per characteristic set. Usage of this information
+is optional and may require you to inspect the information to determine
+how it can be applied in an application. Also returned with warnings when
+no matches are found.
+
+  Returned: Always
+#    Returns: reference to an array  
+                      of 'ns:DataElementSetType'
+
+
+=cut
+
+=head2 getProductSearchResult()
+
+Contains the attributes and product details that match the attributes or
+query keywords passed in the request. Always returned when product search
+results are found.
+
+  Returned: Always
+#    Returns: reference to an array  
+                      of 'ns:ProductSearchResultType'
+
+
+=cut
+

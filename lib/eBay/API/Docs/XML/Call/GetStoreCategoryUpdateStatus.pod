@@ -1,0 +1,41 @@
+=head1 eBay::API::XML::Call::GetStoreCategoryUpdateStatus
+
+eBay::API::XML::Call::GetStoreCategoryUpdateStatus
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setTaskID()
+
+The task ID returned by the SetStoreCategories call. If the
+SetStoreCategories call was processed asynchronously, the TaskID will be
+a positive number, otherwise the TaskID will be 0.
+
+  RequiredInput: Yes
+#    Argument: 'xs:long'
+
+
+=cut
+
+=head2 getStatus()
+
+The status (Pending, InProgress, Complete, or Failed) of an update to the 
+store category structure.
+
+  Returned: Always
+#    Returns: 'ns:TaskStatusCodeType'
+
+
+=cut
+

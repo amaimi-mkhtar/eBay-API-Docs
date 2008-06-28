@@ -1,0 +1,73 @@
+=head1 eBay::API::XML::Call::ApproveLiveAuctionBidders
+
+eBay::API::XML::Call::ApproveLiveAuctionBidders
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setAllApprovedBiddingLimit()
+
+This is the amount that bidders are beings approved for.
+This is required if user has set ApproveAllPending to true.
+It only applies to bidder requests that are in pending status.
+
+  RequiredInput: Conditionally
+#    Argument: 'ns:AmountType'
+
+
+=cut
+
+=head2 setApproveAllPending()
+
+This will approve all bidders in the catalog in the pending status only.
+This is an optional field. If provided and set to true, do not send BidApproval.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 setBidApproval()
+
+Approval details for a specific set of bidders.
+
+  RequiredInput: No
+#    Argument: 'ns:BidApprovalArrayType'
+
+
+=cut
+
+=head2 setUserCatalogID()
+
+Number that identifies the seller's eBay Live Auctions catalog for which
+they want to set bidding limits and approve or decline bidders.
+
+  RequiredInput: Yes
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getBidderUpdateStatus()
+
+Contains the results of the request for each item.
+Mulitple bidders can be approved with one call.
+
+  Returned: Always
+#    Returns: 'ns:LiveAuctionApprovalStatusArrayType'
+
+
+=cut
+

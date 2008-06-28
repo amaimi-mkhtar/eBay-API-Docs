@@ -1,0 +1,141 @@
+=head1 eBay::API::XML::Call::GetOrders::GetOrdersResponseType
+
+eBay::API::XML::Call::GetOrders::GetOrdersResponseType
+
+=head1 DESCRIPTION
+
+Returns the set of orders that match the order IDs or filter criteria specified.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setHasMoreOrders()
+
+Applies only to Half.com. If true, there are more orders yet to be
+retrieved. Additional GetOrders calls with higher page numbers or more
+entries per page must be made to retrieve these orders. If false, no more
+orders are available or no orders match the request (based on the input
+filters).
+
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isHasMoreOrders()
+
+  Returned: Always
+  Details: DetailLevel: none
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setOrderArray()
+
+The set of orders that match the order IDs or filter criteria specified.
+Also applicable to Half.com (only returns orders that have not been marked as shipped).
+
+#    Argument: 'ns:OrderArrayType'
+
+
+=cut
+
+=head2 getOrderArray()
+
+  Returned: Always
+  Details: DetailLevel: none
+#    Returns: 'ns:OrderArrayType'
+
+
+=cut
+
+=head2 setOrdersPerPage()
+
+Applies only to Half.com. Indicates the number of orders that can be
+returned per page of data (i.e., per call). This is the same as the value
+specified in the Pagination.EntriesPerPage input (or the default value, if
+EntriesPerPage was not specified). This is not necessarily the actual
+number of orders returned per page (see ReturnedOrderCountActual).
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getOrdersPerPage()
+
+  Returned: Always
+  Details: DetailLevel: none
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setPageNumber()
+
+Applies only to Half.com. Indicates which page of data holds the current
+result set. Will be the same as the value specified in the
+Pagination.PageNumber input. If orders are returned, the first page is 1.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getPageNumber()
+
+  Returned: Always
+  Details: DetailLevel: none
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setPaginationResult()
+
+Applies only to Half.com. Contains information regarding the pagination of
+data (if pagination is used), including total number of pages and total
+number of entries.
+
+#    Argument: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 getPaginationResult()
+
+  Returned: Always
+  Details: DetailLevel: none
+#    Returns: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 setReturnedOrderCountActual()
+
+Applies only to Half.com. Indicates the total number of orders returned.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getReturnedOrderCountActual()
+
+  Returned: Always
+  Details: DetailLevel: none
+#    Returns: 'xs:int'
+
+
+=cut
+

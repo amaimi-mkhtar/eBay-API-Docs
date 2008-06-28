@@ -1,0 +1,63 @@
+=head1 eBay::API::XML::Call::SetStoreCategories::SetStoreCategoriesResponseType
+
+eBay::API::XML::Call::SetStoreCategories::SetStoreCategoriesResponseType
+
+=head1 DESCRIPTION
+
+Returns the status of the processing progress for changes to the category 
+structure for a store.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setStatus()
+
+When a category structure change is processed synchronously, the status 
+is returned as Complete or Failed. For asynchronously processed changes, 
+the status is reported as Pending. Use GetStoreCategoryUpdateStatus to 
+monitor the status of asynchronously processed changes.
+
+#    Argument: 'ns:TaskStatusCodeType'
+
+
+=cut
+
+=head2 getStatus()
+
+  Returned: Always
+#    Returns: 'ns:TaskStatusCodeType'
+
+
+=cut
+
+=head2 setTaskID()
+
+The task ID associated with the category structure change request. If the 
+SetStoreCategories call is process synchronously, the task ID is 0. If the 
+category structure changes affect many listings, the changes will be 
+processed asynchronously and the task ID will be a positive number. Use 
+the task ID with GetStoreCategoryUpdateStatus to monitor the status of 
+asynchronously processed changes.
+
+#    Argument: 'xs:long'
+
+
+=cut
+
+=head2 getTaskID()
+
+  Returned: Always
+#    Returns: 'xs:long'
+
+
+=cut
+

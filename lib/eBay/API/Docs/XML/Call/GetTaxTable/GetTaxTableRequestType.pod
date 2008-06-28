@@ -1,0 +1,21 @@
+=head1 eBay::API::XML::Call::GetTaxTable::GetTaxTableRequestType
+
+eBay::API::XML::Call::GetTaxTable::GetTaxTableRequestType
+
+=head1 DESCRIPTION
+
+Retrieves the tax table for a user on a given site or retrieves the valid
+jurisdictions (if any) for a given site.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

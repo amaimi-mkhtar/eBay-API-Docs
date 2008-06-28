@@ -1,0 +1,46 @@
+=head1 eBay::API::XML::Call::GetRuName::GetRuNameRequestType
+
+eBay::API::XML::Call::GetRuName::GetRuNameRequestType
+
+=head1 DESCRIPTION
+
+Returns a globally unique runame (unique identifier for an authentication data
+entry). 
+<br>
+<br>
+Unlike most other Trading API calls, this call requires the eBay
+Username and Password values that you created for use by your applications.
+(Most Trading API calls, in contrast, require an authentication token.)
+These values are not described in the
+current documentation topic. For more information about these values,
+please use the Setup for Authentication link below.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setClientUseCase()
+
+Optional value that is appended to the generated runame.
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getClientUseCase()
+
+#    Returns: 'xs:string'
+
+
+=cut
+

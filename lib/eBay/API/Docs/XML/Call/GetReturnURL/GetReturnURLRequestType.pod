@@ -1,0 +1,30 @@
+=head1 eBay::API::XML::Call::GetReturnURL::GetReturnURLRequestType
+
+eBay::API::XML::Call::GetReturnURL::GetReturnURLRequestType
+
+=head1 DESCRIPTION
+
+Returns an application's authentication and authorization
+preferences and related data, such as the URLs that eBay should redirect users to
+after they complete the authentication and authorization process.
+<br>
+<br>
+Unlike most other Trading API calls, this call requires the eBay
+Username and Password values that you created for use by your applications.
+(Most Trading API calls, in contrast, require an authentication token.)
+These values are not described in the
+current documentation topic. For more information about these values,
+please use the Setup for Authentication link below.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

@@ -1,0 +1,20 @@
+=head1 eBay::API::XML::Call::SetTaxTable::SetTaxTableResponseType
+
+eBay::API::XML::Call::SetTaxTable::SetTaxTableResponseType
+
+=head1 DESCRIPTION
+
+Response to SetTaxTableRequest.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

@@ -1,0 +1,88 @@
+=head1 eBay::API::XML::Call::GetCart::GetCartRequestType
+
+eBay::API::XML::Call::GetCart::GetCartRequestType
+
+=head1 DESCRIPTION
+
+Retrieves information about an eBay Express shopping cart.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setAffiliateTrackingDetails()
+
+Container for affiliate tags.
+If you use affiliate tags, it is possible to get affiliate commissions
+based on calls made by your application.
+(See the <a href="https://www.ebaypartnernetwork.com/" target="_blank">eBay Partner Network</a>
+for information about commissions.)
+Affiliate tags enable the tracking of user activity.
+You can use child tags of AffiliateTrackingDetails if you want
+call output to include a string, in
+Item.ListingDetails.ViewItemURL, that includes
+affiliate tracking information.
+Affiliate details that you provide appear in the CheckoutURL that is returned by GetCart.
+Child elements of this element that are marked as conditionally required are required
+only if this container is present.
+
+SeeLink: URL: http://developer.ebay.com/DevZone/XML/docs/WebHelp/index.htm?context=eBay_XML_API&topic=AffiliateTrackingConcepts
+Title: Affiliate Tracking Concepts
+
+  RequiredInput: No
+#    Argument: 'ns:AffiliateTrackingDetailsType'
+
+
+=cut
+
+=head2 getAffiliateTrackingDetails()
+
+#    Returns: 'ns:AffiliateTrackingDetailsType'
+
+
+=cut
+
+=head2 setCartID()
+
+The ID of the shopping cart to inspect, obtained from a prior run of SetCart.
+
+  RequiredInput: Yes
+#    Argument: 'xs:long'
+
+
+=cut
+
+=head2 getCartID()
+
+#    Returns: 'xs:long'
+
+
+=cut
+
+=head2 setShippingAddress()
+
+The country and postal code to which the items in the cart are to be shipped. Required only
+if you want shipping costs calculated for those items for which calculated
+shipping applies. Of no value if there are no items in the cart with calculated shipping.
+
+  RequiredInput: No
+#    Argument: 'ns:AddressType'
+
+
+=cut
+
+=head2 getShippingAddress()
+
+#    Returns: 'ns:AddressType'
+
+
+=cut
+

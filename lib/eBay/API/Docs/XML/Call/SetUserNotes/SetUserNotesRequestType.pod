@@ -1,0 +1,103 @@
+=head1 eBay::API::XML::Call::SetUserNotes::SetUserNotesRequestType
+
+eBay::API::XML::Call::SetUserNotes::SetUserNotesRequestType
+
+=head1 DESCRIPTION
+
+Enables users to add, replace, and delete My eBay notes for
+items that are being tracked in the My eBay All Selling and
+All Buying areas.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setAction()
+
+Specifies whether to add/update the note or delete.
+
+  RequiredInput: Yes
+#    Argument: 'ns:SetUserNotesActionCodeType'
+
+
+=cut
+
+=head2 getAction()
+
+#    Returns: 'ns:SetUserNotesActionCodeType'
+
+
+=cut
+
+=head2 setItemID()
+
+ID of the item to which the My eBay note will be
+attached. Notes can only be added to items that are
+currently being tracked in My eBay.
+
+MaxLength: 19 (Note: The eBay database specifies 38. Currently, Item IDs are usually 9 to 12 digits)
+
+  RequiredInput: Yes
+#    Argument: 'ns:ItemIDType'
+
+
+=cut
+
+=head2 getItemID()
+
+#    Returns: 'ns:ItemIDType'
+
+
+=cut
+
+=head2 setNoteText()
+
+Text of the note. Maximum 250 characters. Required only
+if the Action is AddOrUpdate. This note text will
+completely replace any existing My eBay note for the
+specified item.
+
+MaxLength: 250
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getNoteText()
+
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setTransactionID()
+
+ID of the transaction to which the My eBay note will be
+attached. Notes can only be added to transactions that are
+currently being tracked in My eBay.
+You can see it in the Won list of GetMyeBayBuying if you are the buyer.
+You can see it from Sold list of GetMyeBaySelling if you are the seller.
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getTransactionID()
+
+#    Returns: 'xs:string'
+
+
+=cut
+

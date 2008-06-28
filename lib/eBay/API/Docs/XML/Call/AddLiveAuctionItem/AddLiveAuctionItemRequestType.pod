@@ -1,0 +1,41 @@
+=head1 eBay::API::XML::Call::AddLiveAuctionItem::AddLiveAuctionItemRequestType
+
+eBay::API::XML::Call::AddLiveAuctionItem::AddLiveAuctionItemRequestType
+
+=head1 DESCRIPTION
+
+Lists a lot item on the eBay Live Auctions site. The lot item will
+also be visible to users who search and browse the US eBay.com
+site. Only authorized eBay Live Auctions sellers can list lot
+items.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setItem()
+
+Specifies the values that define the new lot item.
+Item is a required input.
+
+  RequiredInput: Yes
+#    Argument: 'ns:ItemType'
+
+
+=cut
+
+=head2 getItem()
+
+#    Returns: 'ns:ItemType'
+
+
+=cut
+

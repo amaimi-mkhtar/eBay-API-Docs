@@ -1,0 +1,127 @@
+=head1 eBay::API::XML::Call::AddSecondChanceItem::AddSecondChanceItemRequestType
+
+eBay::API::XML::Call::AddSecondChanceItem::AddSecondChanceItemRequestType
+
+=head1 DESCRIPTION
+
+Creates a new Second Chance Offer (that is, an offer for an unsold item)
+for one of that item's non-winning bidders.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setBuyItNowPrice()
+
+The amount the offer recipient must pay to purchase the item
+from the second chance offer listing. Use only when the original
+item was listed in an eBay Motors vehicle category (or in some
+categories on U.S. and international sites for
+high-priced items, such as items in many U.S. and Canada
+Business and Industrial categories) and it ended unsold
+because the reserve price was not met. Call fails with an error
+for any other item conditions.
+
+  RequiredInput: No
+#    Argument: 'ns:AmountType'
+
+
+=cut
+
+=head2 getBuyItNowPrice()
+
+#    Returns: 'ns:AmountType'
+
+
+=cut
+
+=head2 setDuration()
+
+Specifies the length of time the second chance offer listing will be
+active. The recipient bidder has that much time to purchase the item or
+the listing expires.
+
+  RequiredInput: Yes
+#    Argument: 'ns:SecondChanceOfferDurationCodeType'
+
+
+=cut
+
+=head2 getDuration()
+
+#    Returns: 'ns:SecondChanceOfferDurationCodeType'
+
+
+=cut
+
+=head2 setItemID()
+
+Specifies the item ID for the original, ended listing from which the
+second chance offer item comes. A new ItemID is returned for the second
+chance offer item.
+
+MaxLength: 19 (Note: The eBay database specifies 38. Currently, Item IDs are usually 9 to 12 digits)
+
+  RequiredInput: Yes
+#    Argument: 'ns:ItemIDType'
+
+
+=cut
+
+=head2 getItemID()
+
+#    Returns: 'ns:ItemIDType'
+
+
+=cut
+
+=head2 setRecipientBidderUserID()
+
+Specifies the bidder from the original, ended listing to whom the seller
+is extending the second chance offer. Specify only one
+RecipientBidderUserID per call. If multiple users are specified (each in a
+RecipientBidderUserID node), only the last one specified receives the
+offer.
+
+  RequiredInput: Yes
+#    Argument: 'ns:UserIDType'
+
+
+=cut
+
+=head2 getRecipientBidderUserID()
+
+#    Returns: 'ns:UserIDType'
+
+
+=cut
+
+=head2 setSellerMessage()
+
+Message content. Cannot contain HTML, asterisks, or quotes. This content
+is included in the second chance offer email sent to the recipient, which
+can be retrieved with GetMyMessages.
+
+MaxLength: 1000
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getSellerMessage()
+
+#    Returns: 'xs:string'
+
+
+=cut
+

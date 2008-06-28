@@ -1,0 +1,125 @@
+=head1 eBay::API::XML::Call::GetUserDisputes::GetUserDisputesRequestType
+
+eBay::API::XML::Call::GetUserDisputes::GetUserDisputesRequestType
+
+=head1 DESCRIPTION
+
+Requests a list of disputes the requester is involved in as buyer or seller.
+The list includes both Unpaid Item and Item Not Received disputes and can
+be filtered according to DisputeFilterType. Use a DetailLevel of ReturnAll to
+return all data about each dispute, including DisputeResolution and DisputeMessage
+elements.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setDisputeFilterType()
+
+A filter that specifies a subset of disputes to return. The return list
+includes both Item Not Received and Unpaid Item disputes.
+
+  RequiredInput: No
+#    Argument: 'ns:DisputeFilterTypeCodeType'
+
+
+=cut
+
+=head2 getDisputeFilterType()
+
+#    Returns: 'ns:DisputeFilterTypeCodeType'
+
+
+=cut
+
+=head2 setDisputeSortType()
+
+The value and sequence to use to sort the returned disputes.
+
+  RequiredInput: No
+#    Argument: 'ns:DisputeSortTypeCodeType'
+
+
+=cut
+
+=head2 getDisputeSortType()
+
+#    Returns: 'ns:DisputeSortTypeCodeType'
+
+
+=cut
+
+=head2 setModTimeFrom()
+
+A filter that retrieves disputes whose DisputeModifiedTime is later
+than or equal to this value. Specify the time value in GMT.
+See the eBay Web Services documentation for information about specifying time values.
+For more precise control of the date range filter, it is a good practice to also
+specify ModTimeTo. Otherwise, the end of the date range is the present time.
+Filtering by date range is optional. You can use date range filters in combination
+with other filters like DisputeFilterType to control the amount of data returned.
+
+  RequiredInput: No
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 getModTimeFrom()
+
+#    Returns: 'xs:dateTime'
+
+
+=cut
+
+=head2 setModTimeTo()
+
+A filter that retrieves disputes whose DisputeModifiedTime is earlier
+than or equal to this value. Specify the time value in GMT.
+See the eBay Web Services documentation for information about specifying time values.
+For more precise control of the date range filter, it is a good practice to also
+specify ModTimeFrom. Otherwise, all available disputes modified prior to the ModTimeTo value are returned.
+Filtering by date range is optional. You can use date range filters in combination
+with other filters like DisputeFilterType to control the amount of data returned.
+
+  RequiredInput: No
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 getModTimeTo()
+
+#    Returns: 'xs:dateTime'
+
+
+=cut
+
+=head2 setPagination()
+
+The virtual page number of the result set to display. A result set has a number of disputes
+divided into virtual pages, with 200 disputes per page. The response can only display one page.
+The first page in the result set is number 1. Required. If not specified, a warning is returned
+and Pagination.PageNumber is set to 1 by default.
+
+  RequiredInput: Yes
+#    Argument: 'ns:PaginationType'
+
+
+=cut
+
+=head2 getPagination()
+
+#    Returns: 'ns:PaginationType'
+
+
+=cut
+

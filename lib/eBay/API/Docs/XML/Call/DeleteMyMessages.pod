@@ -1,0 +1,38 @@
+=head1 eBay::API::XML::Call::DeleteMyMessages
+
+eBay::API::XML::Call::DeleteMyMessages
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setAlertIDs()
+
+Contains a list of up to 10 AlertID values.
+
+  RequiredInput: No
+#    Argument: 'ns:MyMessagesAlertIDArrayType'
+
+
+=cut
+
+=head2 setMessageIDs()
+
+Contains a list of up to 10 MessageID values.
+
+  RequiredInput: No
+#    Argument: 'ns:MyMessagesMessageIDArrayType'
+
+
+=cut
+

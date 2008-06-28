@@ -1,0 +1,20 @@
+=head1 eBay::API::XML::Call::SetUserPreferences::SetUserPreferencesResponseType
+
+eBay::API::XML::Call::SetUserPreferences::SetUserPreferencesResponseType
+
+=head1 DESCRIPTION
+
+Returned after a call to SetUserPreferences to indicate that the call succeeded.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

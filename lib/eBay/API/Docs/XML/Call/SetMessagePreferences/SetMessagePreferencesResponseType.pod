@@ -1,0 +1,21 @@
+=head1 eBay::API::XML::Call::SetMessagePreferences::SetMessagePreferencesResponseType
+
+eBay::API::XML::Call::SetMessagePreferences::SetMessagePreferencesResponseType
+
+=head1 DESCRIPTION
+
+Returns the success or failure of the
+SetMessagePreferencesRequest, and any applicable errors.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

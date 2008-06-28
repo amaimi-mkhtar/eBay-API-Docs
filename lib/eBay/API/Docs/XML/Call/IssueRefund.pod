@@ -1,0 +1,124 @@
+=head1 eBay::API::XML::Call::IssueRefund
+
+eBay::API::XML::Call::IssueRefund
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setItemID()
+
+ID of the Half.com item associated with the refund payment to the buyer.
+To uniquely identify a transaction, you need to specify both ItemID
+and TransactionID. Use GetSellerPayments to determine the item ID
+and transaction ID associated with the original sale payment.
+
+MaxLength: 19 (Note: The eBay database specifies 38. Currently, Item IDs are usually 9 to 12 digits)
+
+  RequiredInput: Yes
+#    Argument: 'ns:ItemIDType'
+
+
+=cut
+
+=head2 setRefundAmount()
+
+The amount the seller wants to refund to the buyer, in US Dollars (USD).
+Must be greater than 0.00. Half.com allows a maximum of the original item
+sale price (transaction price plus original shipping reimbursement) plus
+return shipping costs (the amount the buyer paid to return the item).
+Typically, the return shipping cost is based on the current cost of
+shipping the individual item (not the discounted cost calculated during
+the original checkout for a multi-item order). You can also issue a
+partial refund for the amount you want the buyer to receive. If
+RefundType=Full or RefundType=FullPlusShipping and you do not pass
+RefundAmount in the request, Half.com will calculate the refund amount for
+you. If you pass RefundAmount in the request, the amount you specify will
+override Half.com's calculated value. Required if RefundType=
+CustomOrPartial.
+
+  RequiredInput: Conditionally
+#    Argument: 'ns:AmountType'
+
+
+=cut
+
+=head2 setRefundMessage()
+
+Note to the buyer. Cannot include HTML.
+
+MaxLength: 400
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 setRefundReason()
+
+Explanation of the reason that the refund is being issued.
+
+  RequiredInput: Yes
+#    Argument: 'ns:RefundReasonCodeType'
+
+
+=cut
+
+=head2 setRefundType()
+
+Explanation of the costs that the refund amount covers.
+
+  RequiredInput: Yes
+#    Argument: 'ns:RefundTypeCodeType'
+
+
+=cut
+
+=head2 setTransactionID()
+
+ID of the Half.com transaction associated with the refund payment.
+To uniquely identify a transaction, you need to specify both ItemID
+and TransactionID. Use GetSellerPayments to determine the item ID
+and transaction ID associated with the original sale payment.
+
+MaxLength: 19 (Note: The eBay database specifies 38. Currently, transaction IDs are usually 9 to 12 digits.)
+
+  RequiredInput: Yes
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getRefundFromSeller()
+
+Total amount that the seller asked Half.com to refund to 
+a buyer for a Half.com transaction.
+
+  Returned: Always
+#    Returns: 'ns:AmountType'
+
+
+=cut
+
+=head2 getTotalRefundToBuyer()
+
+Total amount that Half.com refunded to the buyer (which could include the refund amount 
+from the seller plus a refund amount from Half.com).
+
+  Returned: Always
+#    Returns: 'ns:AmountType'
+
+
+=cut
+

@@ -1,0 +1,20 @@
+=head1 eBay::API::XML::Call::ReviseCheckoutStatus::ReviseCheckoutStatusResponseType
+
+eBay::API::XML::Call::ReviseCheckoutStatus::ReviseCheckoutStatusResponseType
+
+=head1 DESCRIPTION
+
+Indicates success or failure of the attempt to revise the listing's checkout status.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

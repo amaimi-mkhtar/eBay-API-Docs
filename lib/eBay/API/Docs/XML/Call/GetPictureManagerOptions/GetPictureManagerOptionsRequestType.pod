@@ -1,0 +1,21 @@
+=head1 eBay::API::XML::Call::GetPictureManagerOptions::GetPictureManagerOptionsRequestType
+
+eBay::API::XML::Call::GetPictureManagerOptions::GetPictureManagerOptionsRequestType
+
+=head1 DESCRIPTION
+
+Requests a list of Picture Manager options and allowed values,
+such as subscription type and picture display.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

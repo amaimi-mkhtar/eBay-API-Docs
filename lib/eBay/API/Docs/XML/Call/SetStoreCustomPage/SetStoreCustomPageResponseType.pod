@@ -1,0 +1,38 @@
+=head1 eBay::API::XML::Call::SetStoreCustomPage::SetStoreCustomPageResponseType
+
+eBay::API::XML::Call::SetStoreCustomPage::SetStoreCustomPageResponseType
+
+=head1 DESCRIPTION
+
+Returned after calling SetStoreCustomPageRequest. This serves as
+confirmation that the custom page was successfully submitted.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setCustomPage()
+
+The custom page that was submitted.
+
+#    Argument: 'ns:StoreCustomPageType'
+
+
+=cut
+
+=head2 getCustomPage()
+
+  Returned: Always
+#    Returns: 'ns:StoreCustomPageType'
+
+
+=cut
+

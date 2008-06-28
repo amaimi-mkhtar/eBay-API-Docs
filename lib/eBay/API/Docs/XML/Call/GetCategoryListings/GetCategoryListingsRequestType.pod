@@ -1,0 +1,401 @@
+=head1 eBay::API::XML::Call::GetCategoryListings::GetCategoryListingsRequestType
+
+eBay::API::XML::Call::GetCategoryListings::GetCategoryListingsRequestType
+
+=head1 DESCRIPTION
+
+Returns items in a specified category. A number of inputs are provided
+for filtering the item listings returned using such criteria as
+location, whether the item is listed in an ebay Store,
+the listing type, and including or excluding specified sellers.
+<p>It is recommended that you consider using FindItemsAdvanced
+(in the Shopping API) instead of GetCategoryListings because
+FindItemsAdvanced is easier to use and faster.
+See <a href="http://developer.ebay.com/products/shopping/" target="_blank">Shopping API</a>
+for more information.
+</p>
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setAdFormat()
+
+Restricts listings to return only items that have the Ad Format feature.
+If true, the values of ItemTypeFilter and
+StoreSearchFilter are ignored (if they are specified). That is, "AND"
+logic is not applied.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isAdFormat()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setCategoryID()
+
+Specifies the category for which to retrieve item listings.
+
+SeeLink: URL: http://developer.ebay.com/DevZone/XML/docs/WebHelp/index.htm?context=eBay_XML_API&topic=SearchingByCategoryID
+Title: Searching by Category ID
+MaxLength: 10
+
+  RequiredInput: Yes
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getCategoryID()
+
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setCurrency()
+
+A currency value. Limits the result set to just those items listed
+using a specified currency. Not applicable to US eBay Motors searches.
+
+  RequiredInput: No
+#    Argument: 'ns:CurrencyCodeType'
+
+
+=cut
+
+=head2 getCurrency()
+
+#    Returns: 'ns:CurrencyCodeType'
+
+
+=cut
+
+=head2 setFreeShipping()
+
+If true, only items with free shipping for the user's location are
+returned. The user's location is determined from the site ID specified
+in the request. If false, no filtering is done via this attribute. A
+listing is not considered a free shipping listing if it requires
+insurance or requires pick up or requires a shipping surcharge.
+
+Default: false
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isFreeShipping()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setGroup()
+
+You can group Best Match search results by category. To group
+by category, put the BestMatchCategoryGroup value
+in the OrderBy field.
+When you use the BestMatchCategoryGroup value,
+you can include group
+parameters in your call. Note
+that there will be significanty fewer results returned with a BestMatchCategoryGroup sort because the results account
+for Best Matches in lower-level
+(leaf) as well as higher-level categories.
+There is not a direct correlation between the number of results returned in a regular sort or
+the number of results returned with a BestMatch sort, and the results that are returned by
+the BestMatchCategoryGroup sort. You should not receive more
+than 2 pages of results with
+this type of sort. See also
+the new GroupCategoryID element
+in ItemType.
+
+  RequiredInput: No
+#    Argument: 'ns:GroupType'
+
+
+=cut
+
+=head2 getGroup()
+
+#    Returns: 'ns:GroupType'
+
+
+=cut
+
+=head2 setIncludeCondition()
+
+If true, each item in the result set can also include the item
+condition (whether the item is new or used).
+The item's condition is returned in Item.AttributeSetArray.
+An item only includes condition attribute if the item's seller
+filled in the Item Condition in the Item Specifics section of the
+listing. (That is, the condition is not returned if the seller
+only put the word "New" in the listing's title.)
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isIncludeCondition()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setIncludeFeedback()
+
+If true, each item in the result set also includes information about the
+seller's feedback.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isIncludeFeedback()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setIncludeGetItFastItems()
+
+When passed with a value of true, limits the results to Get It Fast listings.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isIncludeGetItFastItems()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setItemTypeFilter()
+
+Filters items based on the ListingType set for the items.
+If ItemTypeFilter is not specified (or if the
+AllItemTypes value of ItemTypeFilter is specified), all listing types can
+be returned unless another relevant filter is specified.
+
+SeeLink: URL: http://developer.ebay.com/DevZone/XML/docs/WebHelp/index.htm?context=eBay_XML_API&topic=SearchingByListingType
+Title: Searching By Listing Type
+
+  RequiredInput: No
+#    Argument: 'ns:ItemTypeFilterCodeType'
+
+
+=cut
+
+=head2 getItemTypeFilter()
+
+#    Returns: 'ns:ItemTypeFilterCodeType'
+
+
+=cut
+
+=head2 setLocalSearchPostalCode()
+
+Include local items in returning results near this postal code. This
+postal code is the basis for local search.
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getLocalSearchPostalCode()
+
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setMaxRelatedSearchKeywords()
+
+The maximum number of related keywords to be retrieved.
+Use this field if you want the results to include
+recommended keywords (that is, keywords matching the category ID)
+in a RelatedSearchKeywordArray container.
+A value of 0 (the default) means no related search information is processed.
+
+Max: 100
+Min: 0
+
+  RequiredInput: No
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getMaxRelatedSearchKeywords()
+
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setMotorsGermanySearchable()
+
+Filters the response based on each item's eligibility to appear on the
+mobile.de site. If false, excludes eligible items from search results. If
+true, queries for eligible items only. If not specified, the search
+results are not affected. Only applicable for items listed on the eBay
+Germany site (site ID 77) in subcategories of mobile.de search-enabled
+categories.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isMotorsGermanySearchable()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setOrderBy()
+
+Specifies the order in which the item listings returned will be sorted.
+Store Inventory listings are usually returned after other listing types,
+regardless of the sort order.
+
+Default: BestMatchSort
+
+  RequiredInput: No
+#    Argument: 'ns:CategoryListingsOrderCodeType'
+
+
+=cut
+
+=head2 getOrderBy()
+
+#    Returns: 'ns:CategoryListingsOrderCodeType'
+
+
+=cut
+
+=head2 setPagination()
+
+Controls the pagination of the result set. Child elements specify the
+maximum number of item listings to return per call and which page of data
+to return.
+
+  RequiredInput: No
+#    Argument: 'ns:PaginationType'
+
+
+=cut
+
+=head2 getPagination()
+
+#    Returns: 'ns:PaginationType'
+
+
+=cut
+
+=head2 setPaymentMethod()
+
+Specifies items that accept a specific payment method or methods.
+
+  RequiredInput: No
+#    Argument: 'ns:PaymentMethodSearchCodeType'
+
+
+=cut
+
+=head2 getPaymentMethod()
+
+#    Returns: 'ns:PaymentMethodSearchCodeType'
+
+
+=cut
+
+=head2 setProximitySearch()
+
+Limits the result set to just those items that meet proximity search
+criteria: postal code and max distance.
+
+  RequiredInput: No
+#    Argument: 'ns:ProximitySearchType'
+
+
+=cut
+
+=head2 getProximitySearch()
+
+#    Returns: 'ns:ProximitySearchType'
+
+
+=cut
+
+=head2 setSearchLocation()
+
+Limits the result set to just those items that meet location criteria:
+listed in a specified eBay site, location where the seller has the item,
+location from which the user is searching, and/or items listed with a
+specified currency.
+
+  RequiredInput: No
+#    Argument: 'ns:SearchLocationType'
+
+
+=cut
+
+=head2 getSearchLocation()
+
+#    Returns: 'ns:SearchLocationType'
+
+
+=cut
+
+=head2 setSearchType()
+
+Specifies whether to limit the item listings to just those that are
+category featured or super featured or all items.
+
+  RequiredInput: No
+#    Argument: 'ns:CategoryListingsSearchCodeType'
+
+
+=cut
+
+=head2 getSearchType()
+
+#    Returns: 'ns:CategoryListingsSearchCodeType'
+
+
+=cut
+

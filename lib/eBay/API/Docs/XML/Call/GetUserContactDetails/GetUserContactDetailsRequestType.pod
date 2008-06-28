@@ -1,0 +1,99 @@
+=head1 eBay::API::XML::Call::GetUserContactDetails::GetUserContactDetailsRequestType
+
+eBay::API::XML::Call::GetUserContactDetails::GetUserContactDetailsRequestType
+
+=head1 DESCRIPTION
+
+Returns contact information for a specified user if a
+bidding relationship exists.
+The bidder must be bidding on the seller's active
+item, or an eBay user must have made an offer on
+the item using Best Offer.
+The item must be in the Motors or Business & Industrial categories.
+Bidders can use this call to contact
+sellers of an item they are bidding on or have made an
+offer on (through Best Offer).
+Note that this call does NOT return an email address.
+Sellers who wish to send an
+email to bidders should use AddMemberMessagesAAQToBidder.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setContactID()
+
+An eBay ID that uniquely identifies a given
+user. The same as the contact's eBay username.
+Either the seller's or bidder's username may be
+specified here, as long as a bidding
+relationship exists between them. That is, the
+bidder must be bidding on the seller's active
+item, or an eBay user must have made an offer on
+the item via Best Offer.
+
+  RequiredInput: Yes
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getContactID()
+
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setItemID()
+
+An eBay ID that uniquely identifies a given
+item. Must be a currently active item.
+
+MaxLength: 19 (Note: The eBay database specifies 38. Currently, Item IDs are usually 9 to 12 digits)
+
+  RequiredInput: Yes
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getItemID()
+
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setRequesterID()
+
+An eBay ID that uniquely identifies a given
+user. The same as the seller's eBay username.
+Either the seller's or bidder's username may be
+specified here, as long as a bidding
+relationship exists between them. That is, the
+bidder must be bidding on the seller's active
+item, or an eBay user must have made an offer on
+the item via Best Offer.
+
+  RequiredInput: Yes
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getRequesterID()
+
+#    Returns: 'xs:string'
+
+
+=cut
+

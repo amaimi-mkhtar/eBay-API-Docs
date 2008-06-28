@@ -1,0 +1,75 @@
+=head1 eBay::API::XML::Call::FetchToken::FetchTokenResponseType
+
+eBay::API::XML::Call::FetchToken::FetchTokenResponseType
+
+=head1 DESCRIPTION
+
+Includes the authentication token for the user and the date it expires.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setHardExpirationTime()
+
+Date and time at which the token returned in eBayAuthToken expires
+and can no longer be used to authenticate the user for that application.
+
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 getHardExpirationTime()
+
+  Returned: Always
+#    Returns: 'xs:dateTime'
+
+
+=cut
+
+=head2 setRESTToken()
+
+The REST authentication token for the user.
+
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getRESTToken()
+
+  Returned: Conditionally
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setEBayAuthToken()
+
+The authentication token for the user.
+
+SeeLink: URL: http://developer.ebay.com/DevZone/XML/docs/WebHelp/index.htm?context=eBay_XML_API&topic=AuthNAuth
+Title: Authentication & Authorization
+
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getEBayAuthToken()
+
+  Returned: Always
+#    Returns: 'xs:string'
+
+
+=cut
+

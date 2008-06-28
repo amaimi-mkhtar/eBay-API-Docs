@@ -1,0 +1,57 @@
+=head1 eBay::API::XML::Call::UploadSiteHostedPictures::UploadSiteHostedPicturesResponseType
+
+eBay::API::XML::Call::UploadSiteHostedPictures::UploadSiteHostedPicturesResponseType
+
+=head1 DESCRIPTION
+
+Contains information about a picture upload (i.e., information about a picture
+upload containing a binary attachment of an image).
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setPictureSystemVersion()
+
+Specifies the picture system version that was used to upload pictures.
+Only version 2 is valid.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getPictureSystemVersion()
+
+  Returned: Always
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setSiteHostedPictureDetails()
+
+Contains information about an UploadSiteHostedPictures upload,
+including the URL of the uploaded picture.
+
+#    Argument: 'ns:SiteHostedPictureDetailsType'
+
+
+=cut
+
+=head2 getSiteHostedPictureDetails()
+
+  Returned: Always
+#    Returns: 'ns:SiteHostedPictureDetailsType'
+
+
+=cut
+

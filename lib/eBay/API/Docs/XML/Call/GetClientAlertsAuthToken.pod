@@ -1,0 +1,39 @@
+=head1 eBay::API::XML::Call::GetClientAlertsAuthToken
+
+eBay::API::XML::Call::GetClientAlertsAuthToken
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 getClientAlertsAuthToken()
+
+This token string is required for three calls in the Client Alerts API: Login, Logout, and
+GetUserAlerts.
+
+  Returned: Always
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 getHardExpirationTime()
+
+A Client Alerts token expires after seven days.
+
+  Returned: Always
+#    Returns: 'xs:dateTime'
+
+
+=cut
+

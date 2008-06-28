@@ -1,0 +1,37 @@
+=head1 eBay::API::XML::Call::GetTokenStatus::GetTokenStatusResponseType
+
+eBay::API::XML::Call::GetTokenStatus::GetTokenStatusResponseType
+
+=head1 DESCRIPTION
+
+Returns token status.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setTokenStatus()
+
+Returns token status and details. For example, if revoked, whether by eBay, the user, or the application, and also when revoked.
+
+#    Argument: 'ns:TokenStatusType'
+
+
+=cut
+
+=head2 getTokenStatus()
+
+  Returned: Always
+#    Returns: 'ns:TokenStatusType'
+
+
+=cut
+

@@ -1,0 +1,38 @@
+=head1 eBay::API::XML::Call::GetRuName
+
+eBay::API::XML::Call::GetRuName
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setClientUseCase()
+
+Optional value that is appended to the generated runame.
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getRuName()
+
+The generated globally unique runame.
+
+  Returned: Always
+#    Returns: 'xs:string'
+
+
+=cut
+

@@ -1,0 +1,322 @@
+=head1 eBay::API::XML::Call::GetSearchResults::GetSearchResultsResponseType
+
+eBay::API::XML::Call::GetSearchResults::GetSearchResultsResponseType
+
+=head1 DESCRIPTION
+
+Response contains the item listings that have the specified keyword(s) in the
+title, sub-title, and (optionally) the description. If the request uses any of
+the optional filtering properties, the item listings returned are those
+containing the keyword(s) and meeting the filter criteria. <br><br>
+Not applicable to eBay Express or Half.com.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setAllCategoriesExpansionArray()
+
+Can be returned if the request specifies that ExpandSearch is true.
+Provides additional search results when a small result set would have
+been returned with the original search. For example, on the US site (site
+ID 0), if a search would normally result in fewer than 10 items, and
+ExpandSearch is true, the search results are expanded to include (if
+matching the query) the AllCategoriesExpansionArray container for items,
+as well as other containers. The AllCategoriesExpansionArray container
+contains items available if category filters are removed.
+
+#    Argument: 'ns:ExpansionArrayType'
+
+
+=cut
+
+=head2 getAllCategoriesExpansionArray()
+
+  Returned: Conditionally
+  Details: DetailLevel: ItemReturnCategories, ItemReturnAttributes, ReturnAll, none
+#    Returns: 'ns:ExpansionArrayType'
+
+
+=cut
+
+=head2 setBuyingGuideDetails()
+
+Contains URLs and other information about relevant buying guides (if
+any), as well as the site's buying guide hub. Unavailable in the Sandbox
+environment. Buying guides are useful to buyers who do not have a
+specific product in mind. For example, a digital camera buying guide
+could help a buyer determine what kind of digital camera is right for
+them. Only returned for product finder searches (using
+SearchRequest.SearchAttributes) and for searches that retrieve matching
+categories along with item data (using Categories.CategoriesOnly=false).
+
+#    Argument: 'ns:BuyingGuideDetailsType'
+
+
+=cut
+
+=head2 getBuyingGuideDetails()
+
+  Returned: Conditionally
+  Details: DetailLevel: ItemReturnCategories, ItemReturnAttributes, ReturnAll, none
+#    Returns: 'ns:BuyingGuideDetailsType'
+
+
+=cut
+
+=head2 setCategoryArray()
+
+Shows the distribution of items across each category. 
+Consists of statistical information about
+categories that contain items that match
+the query, if any. Returns empty if no matches are found or when the
+Categories filter was not passed in the request. (For categories
+associated with specific items, see items returned in each search
+result.) 
+You must use fields within the Categories input container
+if you want the CategoryArray response container to be returned.
+
+#    Argument: 'ns:CategoryArrayType'
+
+
+=cut
+
+=head2 getCategoryArray()
+
+  Returned: Conditionally
+  Details: DetailLevel: ItemReturnCategories, ItemReturnAttributes, ReturnAll, none
+           GranularityLevel: Coarse
+
+#    Returns: 'ns:CategoryArrayType'
+
+
+=cut
+
+=head2 setFilterRemovedExpansionArray()
+
+Can be returned if the request specifies that ExpandSearch is true.
+Provides additional search results when a small result set would have
+been returned with the original search. For example, on the US site (site
+ID 0), if a search would normally result in fewer than 10 items, and
+ExpandSearch is true, the search results are expanded to include (if
+matching the query) the FilterRemovedExpansionArray container for items,
+as well as other containers. The FilterRemovedExpansionArray container
+contains items that would be returned if filters such as PriceRangeFilter
+are removed.
+
+#    Argument: 'ns:ExpansionArrayType'
+
+
+=cut
+
+=head2 getFilterRemovedExpansionArray()
+
+  Returned: Conditionally
+  Details: DetailLevel: ItemReturnCategories, ItemReturnAttributes, ReturnAll, none
+#    Returns: 'ns:ExpansionArrayType'
+
+
+=cut
+
+=head2 setHasMoreItems()
+
+Indicates whether there are more items, not yet returned, that match the
+search criteria.
+
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isHasMoreItems()
+
+  Returned: Always
+  Details: DetailLevel: ItemReturnCategories, ItemReturnAttributes, ReturnAll, none
+           GranularityLevel: Coarse
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setInternationalExpansionArray()
+
+Can be returned if the request specifies that ExpandSearch is true.
+Provides additional search results when a small result set would have
+been returned with the original search. For example, on the US site (site
+ID 0), if a search would normally result in fewer than 10 items, and
+ExpandSearch is true, the search results are expanded to include (if
+matching the query) the InternationalExpansionArray container for items,
+as well as other containers. The InternationalExpansionArray container
+contains items available from international sellers.
+
+#    Argument: 'ns:ExpansionArrayType'
+
+
+=cut
+
+=head2 getInternationalExpansionArray()
+
+  Returned: Conditionally
+  Details: DetailLevel: ItemReturnCategories, ItemReturnAttributes, ReturnAll, none
+#    Returns: 'ns:ExpansionArrayType'
+
+
+=cut
+
+=head2 setItemsPerPage()
+
+Indicates the maximum number of items that can be returned in a
+SearchResultItemArray for any given call.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getItemsPerPage()
+
+  Returned: Always
+  Details: DetailLevel: ItemReturnCategories, ItemReturnAttributes, ReturnAll, none
+           GranularityLevel: Coarse
+
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setPageNumber()
+
+Indicates the page of data returned by the current call. For instance,
+for the first set of items can be returned, this field has a value of
+one.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getPageNumber()
+
+  Returned: Always
+  Details: DetailLevel: ItemReturnCategories, ItemReturnAttributes, ReturnAll, none
+           GranularityLevel: Coarse
+
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setPaginationResult()
+
+Indicates the results of the pagination, including the total number of
+pages of data that can be returned and the total number of items that can
+be returned.
+
+#    Argument: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 getPaginationResult()
+
+  Returned: Always
+  Details: DetailLevel: ItemReturnCategories, ItemReturnAttributes, ReturnAll, none
+           GranularityLevel: Coarse
+
+#    Returns: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 setRelatedSearchKeywordArray()
+
+Container for keywords related to the original keywords in the request.
+Can be returned if the request specified more than zero in the MaxRelatedSearchKeywords field.
+
+#    Argument: 'ns:RelatedSearchKeywordArrayType'
+
+
+=cut
+
+=head2 getRelatedSearchKeywordArray()
+
+  Returned: Conditionally
+  Details: DetailLevel: ItemReturnCategories, ItemReturnAttributes, ReturnAll, none
+#    Returns: 'ns:RelatedSearchKeywordArrayType'
+
+
+=cut
+
+=head2 setSearchResultItemArray()
+
+Contains the returned item listings, if any. The data for each listing is
+returned in an ItemType object.
+
+#    Argument: 'ns:SearchResultItemArrayType'
+
+
+=cut
+
+=head2 getSearchResultItemArray()
+
+  Returned: Conditionally
+  Details: DetailLevel: ItemReturnCategories, ItemReturnAttributes, ReturnAll, none
+           GranularityLevel: Coarse
+
+#    Returns: 'ns:SearchResultItemArrayType'
+
+
+=cut
+
+=head2 setSpellingSuggestion()
+
+Suggestion for a different spelling of the search term or terms, along
+with the number of matching items that would have been returned if the
+suggestions had been used. The suggestions are given in Text tags and the
+suggestion for the first word is given before the suggestion for
+subsequent words. Suggestions are based on correctly-spelled terms in
+items, so suggestions vary over time and depend on whether a word or word
+combination is in one or more items.
+
+#    Argument: 'ns:SpellingSuggestionType'
+
+
+=cut
+
+=head2 getSpellingSuggestion()
+
+  Returned: Conditionally
+  Details: DetailLevel: ItemReturnCategories, ItemReturnAttributes, ReturnAll, none
+#    Returns: 'ns:SpellingSuggestionType'
+
+
+=cut
+
+=head2 setStoreExpansionArray()
+
+Contains items listed in the Store Inventory Format,
+if the request specifies that ExpandSearch is true.
+
+#    Argument: 'ns:ExpansionArrayType'
+
+
+=cut
+
+=head2 getStoreExpansionArray()
+
+  Returned: Conditionally
+  Details: DetailLevel: ItemReturnCategories, ItemReturnAttributes, ReturnAll, none
+#    Returns: 'ns:ExpansionArrayType'
+
+
+=cut
+

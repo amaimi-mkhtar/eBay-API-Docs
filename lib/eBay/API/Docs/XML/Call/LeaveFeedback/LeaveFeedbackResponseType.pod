@@ -1,0 +1,38 @@
+=head1 eBay::API::XML::Call::LeaveFeedback::LeaveFeedbackResponseType
+
+eBay::API::XML::Call::LeaveFeedback::LeaveFeedbackResponseType
+
+=head1 DESCRIPTION
+
+LeaveFeedback response message includes an acknowledgement if the
+feedback was successfully left.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setFeedbackID()
+
+The ID of the feedback that has been left.
+
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getFeedbackID()
+
+  Returned: Always
+#    Returns: 'xs:string'
+
+
+=cut
+

@@ -1,0 +1,20 @@
+=head1 eBay::API::XML::Call::RevokeToken::RevokeTokenResponseType
+
+eBay::API::XML::Call::RevokeToken::RevokeTokenResponseType
+
+=head1 DESCRIPTION
+
+Response when an application has voluntarily revoked a user token.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

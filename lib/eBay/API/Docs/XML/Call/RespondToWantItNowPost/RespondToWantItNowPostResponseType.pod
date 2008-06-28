@@ -1,0 +1,20 @@
+=head1 eBay::API::XML::Call::RespondToWantItNowPost::RespondToWantItNowPostResponseType
+
+eBay::API::XML::Call::RespondToWantItNowPost::RespondToWantItNowPostResponseType
+
+=head1 DESCRIPTION
+
+Indicates the success or failure of the attempt to respond to a Want It Now post.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

@@ -1,0 +1,63 @@
+=head1 eBay::API::XML::Call::GetSellerEvents::GetSellerEventsResponseType
+
+eBay::API::XML::Call::GetSellerEvents::GetSellerEventsResponseType
+
+=head1 DESCRIPTION
+
+Contains the items returned by the call. Items for which a seller event has
+occurred (and that meet any filters specified as input) are returned in an
+ItemArrayType object, within which are zero, one, or multiple ItemType objects.
+Each ItemType object contains the detail data for one item listing.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setItemArray()
+
+Collection of Item objects, each of which represents an item listing
+that incurred the type of seller event change specified in the call's
+inputs. Returns empty if the seller has no item events within the
+time window indicated in the request.
+
+#    Argument: 'ns:ItemArrayType'
+
+
+=cut
+
+=head2 getItemArray()
+
+  Returned: Always
+  Details: DetailLevel: none, ReturnAll
+#    Returns: 'ns:ItemArrayType'
+
+
+=cut
+
+=head2 setTimeTo()
+
+Indicates the latest (most recent) date for any date-based filtering specified as
+input. Specifically, this field contains the value you specified in the StartTimeTo, EndTimeTo, or ModTimeTo filter, if you used a time filter in the request. If no time filter was specified, TimeTo returns the current time.
+
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 getTimeTo()
+
+  Returned: Always
+  Details: DetailLevel: none, ReturnAll
+#    Returns: 'xs:dateTime'
+
+
+=cut
+

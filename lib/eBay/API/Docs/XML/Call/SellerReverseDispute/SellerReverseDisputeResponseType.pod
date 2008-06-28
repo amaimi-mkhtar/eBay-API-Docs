@@ -1,0 +1,21 @@
+=head1 eBay::API::XML::Call::SellerReverseDispute::SellerReverseDisputeResponseType
+
+eBay::API::XML::Call::SellerReverseDispute::SellerReverseDisputeResponseType
+
+=head1 DESCRIPTION
+
+Returned after calling SellerReverseDisputeRequest. Contains the status
+of the call and any errors or warnings.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

@@ -1,0 +1,37 @@
+=head1 eBay::API::XML::Call::RespondToBestOffer::RespondToBestOfferResponseType
+
+eBay::API::XML::Call::RespondToBestOffer::RespondToBestOfferResponseType
+
+=head1 DESCRIPTION
+
+Contains a list of BestOffers that were either accepted or declined.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setRespondToBestOffer()
+
+A list of BestOffers that were either accepted or declined.
+
+#    Argument: 'ns:BestOfferArrayType'
+
+
+=cut
+
+=head2 getRespondToBestOffer()
+
+  Returned: Always
+#    Returns: 'ns:BestOfferArrayType'
+
+
+=cut
+

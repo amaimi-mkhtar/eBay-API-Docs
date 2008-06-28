@@ -1,0 +1,21 @@
+=head1 eBay::API::XML::Call::ValidateTestUserRegistration::ValidateTestUserRegistrationResponseType
+
+eBay::API::XML::Call::ValidateTestUserRegistration::ValidateTestUserRegistrationResponseType
+
+=head1 DESCRIPTION
+
+Returned after calling ValidateTestUserRegistrationRequest; confirms a successful
+call.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

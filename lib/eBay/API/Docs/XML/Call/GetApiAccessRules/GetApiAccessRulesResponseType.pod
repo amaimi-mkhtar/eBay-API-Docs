@@ -1,0 +1,41 @@
+=head1 eBay::API::XML::Call::GetApiAccessRules::GetApiAccessRulesResponseType
+
+eBay::API::XML::Call::GetApiAccessRules::GetApiAccessRulesResponseType
+
+=head1 DESCRIPTION
+
+Responds to a call to GetApiAccessRules.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setApiAccessRule()
+
+Contains the description of an API access rule, including the
+call name, the application's current daily and hourly usage,
+and other values.
+
+#    Argument: reference to an array  
+                      of 'ns:ApiAccessRuleType'
+
+
+=cut
+
+=head2 getApiAccessRule()
+
+  Returned: Always
+#    Returns: reference to an array  
+                      of 'ns:ApiAccessRuleType'
+
+
+=cut
+

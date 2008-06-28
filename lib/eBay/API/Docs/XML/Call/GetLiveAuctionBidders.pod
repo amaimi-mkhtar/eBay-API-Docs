@@ -1,0 +1,117 @@
+=head1 eBay::API::XML::Call::GetLiveAuctionBidders
+
+eBay::API::XML::Call::GetLiveAuctionBidders
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setBidderStatus()
+
+The seller can ask to retrieve a subset of users in the bidder approval list
+who are either "approved","denied", or "pending" or a combination of these.
+If this field is not specified in the request, all records are returned.
+
+  RequiredInput: No
+#    Argument: reference to an array  
+                      of 'ns:BidderStatusCodeType'
+
+
+=cut
+
+=head2 setPagination()
+
+Child elements control pagination of the output.
+Use its EntriesPerPage property to control the number of bidders to return per call
+and its PageNumber property to specify the page of data to return.
+
+  RequiredInput: No
+#    Argument: 'ns:PaginationType'
+
+
+=cut
+
+=head2 setUserCatalogID()
+
+Number that identifies the seller's eBay Live Auctions catalog for which they
+want to retrieve bidder requests.
+
+  RequiredInput: Yes
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getBidderDetails()
+
+Contains the bidder details that match the bidder query
+passed in the request.
+Returned when bidder search results are found.
+
+  Returned: Conditionally
+#    Returns: 'ns:BidderDetailArrayType'
+
+
+=cut
+
+=head2 getPageNumber()
+
+The page number for the page of data returned.
+
+  Returned: Conditionally
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 getPaginationResult()
+
+Shows the pagination of data returned by requests. Only returned
+if Pagination was specified in the request.
+
+  Returned: Conditionally
+#    Returns: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 getTotalApproved()
+
+Total number of bidders in Approved state.
+
+  Returned: Always
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 getTotalDenied()
+
+Total number of bidders in Denied state.
+
+  Returned: Always
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 getTotalPending()
+
+Total number of bidders in Pending state.
+
+  Returned: Always
+#    Returns: 'xs:int'
+
+
+=cut
+

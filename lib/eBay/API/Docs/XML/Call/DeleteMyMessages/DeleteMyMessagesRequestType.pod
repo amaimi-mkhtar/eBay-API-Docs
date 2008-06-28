@@ -1,0 +1,56 @@
+=head1 eBay::API::XML::Call::DeleteMyMessages::DeleteMyMessagesRequestType
+
+eBay::API::XML::Call::DeleteMyMessages::DeleteMyMessagesRequestType
+
+=head1 DESCRIPTION
+
+Removes selected alerts and messages for a given user. Alerts that
+require action and have not been resolved by the user cannot be
+deleted.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setAlertIDs()
+
+Contains a list of up to 10 AlertID values.
+
+  RequiredInput: No
+#    Argument: 'ns:MyMessagesAlertIDArrayType'
+
+
+=cut
+
+=head2 getAlertIDs()
+
+#    Returns: 'ns:MyMessagesAlertIDArrayType'
+
+
+=cut
+
+=head2 setMessageIDs()
+
+Contains a list of up to 10 MessageID values.
+
+  RequiredInput: No
+#    Argument: 'ns:MyMessagesMessageIDArrayType'
+
+
+=cut
+
+=head2 getMessageIDs()
+
+#    Returns: 'ns:MyMessagesMessageIDArrayType'
+
+
+=cut
+

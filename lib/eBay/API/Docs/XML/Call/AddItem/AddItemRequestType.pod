@@ -1,0 +1,41 @@
+=head1 eBay::API::XML::Call::AddItem::AddItemRequestType
+
+eBay::API::XML::Call::AddItem::AddItemRequestType
+
+=head1 DESCRIPTION
+
+Defines a single new item and lists it on a specified eBay site.
+To list multiple new items, execute AddItem once for each item,
+with a new item definition each time.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setItem()
+
+Child elements hold the values that define the new item. Item is a
+required input.
+Also applicable to Half.com.
+
+  RequiredInput: Yes
+#    Argument: 'ns:ItemType'
+
+
+=cut
+
+=head2 getItem()
+
+#    Returns: 'ns:ItemType'
+
+
+=cut
+

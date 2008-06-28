@@ -1,0 +1,20 @@
+=head1 eBay::API::XML::Call::SetNotificationPreferences::SetNotificationPreferencesResponseType
+
+eBay::API::XML::Call::SetNotificationPreferences::SetNotificationPreferencesResponseType
+
+=head1 DESCRIPTION
+
+(out) Returned after a call to SetNotificationPreferences to indicate that the call succeeded.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

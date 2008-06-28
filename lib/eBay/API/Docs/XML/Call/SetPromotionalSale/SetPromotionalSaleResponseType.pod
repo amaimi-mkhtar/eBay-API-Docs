@@ -1,0 +1,56 @@
+=head1 eBay::API::XML::Call::SetPromotionalSale::SetPromotionalSaleResponseType
+
+eBay::API::XML::Call::SetPromotionalSale::SetPromotionalSaleResponseType
+
+=head1 DESCRIPTION
+
+Contains the ID and status of a promotional sale.
+The Promotional Price Display feature enables sellers
+to apply discounts and/or free shipping across many listings.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setPromotionalSaleID()
+
+Contains the ID of a promotional sale.
+
+#    Argument: 'xs:long'
+
+
+=cut
+
+=head2 getPromotionalSaleID()
+
+  Returned: Always
+#    Returns: 'xs:long'
+
+
+=cut
+
+=head2 setStatus()
+
+Contains the status of a promotional sale.
+
+#    Argument: 'ns:PromotionalSaleStatusCodeType'
+
+
+=cut
+
+=head2 getStatus()
+
+  Returned: Always
+#    Returns: 'ns:PromotionalSaleStatusCodeType'
+
+
+=cut
+

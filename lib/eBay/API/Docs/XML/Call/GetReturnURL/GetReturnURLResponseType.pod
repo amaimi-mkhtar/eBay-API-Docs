@@ -1,0 +1,63 @@
+=head1 eBay::API::XML::Call::GetReturnURL::GetReturnURLResponseType
+
+eBay::API::XML::Call::GetReturnURL::GetReturnURLResponseType
+
+=head1 DESCRIPTION
+
+Returns all the authentication and authorization preferences and related data for
+the application.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setApplicationDisplayName()
+
+Display name for the application. When your application
+redirects users to eBay to complete the authentication and
+authorization process, eBay displays this value to identify
+your application to the user.
+
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getApplicationDisplayName()
+
+  Returned: Always
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setAuthenticationEntryArray()
+
+One or more sets of authentication preferences and other data that you
+have configured for your application (if any). Call SetReturnURL to
+configure this data.
+
+SeeLink: URL: http://developer.ebay.com/DevZone/XML/docs/WebHelp/index.htm?context=eBay_XML_API&topic=AuthNAuth
+Title: Authentication & Authorization
+
+#    Argument: 'ns:AuthenticationEntryArrayType'
+
+
+=cut
+
+=head2 getAuthenticationEntryArray()
+
+  Returned: Conditionally
+#    Returns: 'ns:AuthenticationEntryArrayType'
+
+
+=cut
+

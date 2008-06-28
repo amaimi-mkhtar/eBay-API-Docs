@@ -1,0 +1,153 @@
+=head1 eBay::API::XML::Call::GetVeROReportStatus::GetVeROReportStatusResponseType
+
+eBay::API::XML::Call::GetVeROReportStatus::GetVeROReportStatusResponseType
+
+=head1 DESCRIPTION
+
+Contains status information for items reported by the VeRO Program member.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setHasMoreItems()
+
+If true, there are more items yet to be retrieved. Additional
+calls with higher page numbers or more items per page must
+be made to retrieve these items. Not returned if no items match the
+request.
+
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isHasMoreItems()
+
+  Returned: Conditionally
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setItemsPerPage()
+
+Indicates the maximum number of ItemType objects that can be returned in
+ReportedItemDetails for any given call.
+
+Max: 200
+Min: 1
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getItemsPerPage()
+
+  Returned: Conditionally
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setPageNumber()
+
+Indicates the page of data returned by the current call. For instance,
+for the first set of items can be returned, this field has a value of
+one.
+
+Max: Min: 1
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getPageNumber()
+
+  Returned: Conditionally
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setPaginationResult()
+
+Contains information regarding the pagination of data (if pagination is
+used), including total number of pages and total number of entries.
+
+#    Argument: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 getPaginationResult()
+
+  Returned: Conditionally
+#    Returns: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 setReportedItemDetails()
+
+Contains the list of the reported item details.
+Returns empty if no items are available that match the request.
+
+#    Argument: 'ns:VeROReportedItemDetailsType'
+
+
+=cut
+
+=head2 getReportedItemDetails()
+
+  Returned: Conditionally
+#    Returns: 'ns:VeROReportedItemDetailsType'
+
+
+=cut
+
+=head2 setVeROReportPacketID()
+
+The packet ID for status being returned.
+
+Max: Default: Min: 
+#    Argument: 'xs:long'
+
+
+=cut
+
+=head2 getVeROReportPacketID()
+
+  Returned: Conditionally
+#    Returns: 'xs:long'
+
+
+=cut
+
+=head2 setVeROReportPacketStatus()
+
+Status of the packet.
+
+#    Argument: 'ns:VeROReportPacketStatusCodeType'
+
+
+=cut
+
+=head2 getVeROReportPacketStatus()
+
+  Returned: Conditionally
+#    Returns: 'ns:VeROReportPacketStatusCodeType'
+
+
+=cut
+

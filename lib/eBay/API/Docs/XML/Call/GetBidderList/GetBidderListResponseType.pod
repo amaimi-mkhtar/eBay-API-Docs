@@ -1,0 +1,55 @@
+=head1 eBay::API::XML::Call::GetBidderList::GetBidderListResponseType
+
+eBay::API::XML::Call::GetBidderList::GetBidderListResponseType
+
+=head1 DESCRIPTION
+
+Response to a GetBidderList call, which retrieves all items the user is currently bidding on, or
+has won or purchased.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setBidItemArray()
+
+Array of items the bidder has bid on, has won or has lost.
+
+#    Argument: 'ns:ItemArrayType'
+
+
+=cut
+
+=head2 getBidItemArray()
+
+  Returned: Always
+#    Returns: 'ns:ItemArrayType'
+
+
+=cut
+
+=head2 setBidder()
+
+Data for one eBay bidder.
+
+#    Argument: 'ns:UserType'
+
+
+=cut
+
+=head2 getBidder()
+
+  Returned: Always
+#    Returns: 'ns:UserType'
+
+
+=cut
+

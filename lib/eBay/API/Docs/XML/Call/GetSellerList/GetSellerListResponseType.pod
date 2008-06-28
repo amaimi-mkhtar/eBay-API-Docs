@@ -1,0 +1,165 @@
+=head1 eBay::API::XML::Call::GetSellerList::GetSellerListResponseType
+
+eBay::API::XML::Call::GetSellerList::GetSellerListResponseType
+
+=head1 DESCRIPTION
+
+Contains a list of the items listed by the seller specified as input. The list of
+items is returned in an ItemArrayType object, in which are returned zero, one, or
+multiple ItemType objects. Each ItemType object contains the detail data for one
+item listing.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setHasMoreItems()
+
+If true, there are more items yet to be retrieved. Additional
+GetSellerList calls with higher page numbers or more items per page must
+be made to retrieve these items. Not returned if no items match the
+request.
+
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isHasMoreItems()
+
+  Returned: Conditionally
+  Details: DetailLevel: none, ItemReturnDescription, ReturnAll
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setItemArray()
+
+Contains the list of the seller's items, one ItemType object per item.
+Returns empty if no items are available that match the request.
+
+#    Argument: 'ns:ItemArrayType'
+
+
+=cut
+
+=head2 getItemArray()
+
+  Returned: Always
+  Details: DetailLevel: none, ItemReturnDescription, ReturnAll
+#    Returns: 'ns:ItemArrayType'
+
+
+=cut
+
+=head2 setItemsPerPage()
+
+Indicates the number of items that are being returned per page of data
+(i.e., per call). Will be the same as the value specified in the
+Pagination.EntriesPerPage input. Only returned if items are returned.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getItemsPerPage()
+
+  Returned: Conditionally
+  Details: DetailLevel: none, ItemReturnDescription, ReturnAll
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setPageNumber()
+
+Indicates which page of data was just returned. Will be the same as the
+value specified in the Pagination.PageNumber input. (If the input is
+higher than the total number of pages, the call fails with an error.)
+Only returned if items are returned.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getPageNumber()
+
+  Returned: Conditionally
+  Details: DetailLevel: none, ItemReturnDescription, ReturnAll
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setPaginationResult()
+
+Contains information regarding the pagination of data (if pagination is
+used), including total number of pages and total number of entries.
+
+#    Argument: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 getPaginationResult()
+
+  Returned: Always
+  Details: DetailLevel: none, ItemReturnDescription, ReturnAll
+#    Returns: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 setReturnedItemCountActual()
+
+Indicates the total number of items returned (i.e., the number of
+ItemType objects in ItemArray).
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getReturnedItemCountActual()
+
+  Returned: Always
+  Details: DetailLevel: none, ItemReturnDescription, ReturnAll
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setSeller()
+
+Indicates the seller whose items are returned. The seller is the eBay
+member whose UserID was passed in the request. If UserID was not
+specified, the seller is the user who made the request (identified by
+eBayAuthToken).
+
+#    Argument: 'ns:UserType'
+
+
+=cut
+
+=head2 getSeller()
+
+  Returned: Always
+  Details: DetailLevel: none, ItemReturnDescription, ReturnAll
+           GranularityLevel: Fine
+
+#    Returns: 'ns:UserType'
+
+
+=cut
+

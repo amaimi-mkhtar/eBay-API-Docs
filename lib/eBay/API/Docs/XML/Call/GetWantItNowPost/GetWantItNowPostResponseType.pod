@@ -1,0 +1,38 @@
+=head1 eBay::API::XML::Call::GetWantItNowPost::GetWantItNowPostResponseType
+
+eBay::API::XML::Call::GetWantItNowPost::GetWantItNowPostResponseType
+
+=head1 DESCRIPTION
+
+Contains the Want It Now post data returned by the call. The data for the
+specified post listing is returned in a WantItNowPostType object.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setWantItNowPost()
+
+Contains the data defining a single Want It Now post.
+
+#    Argument: 'ns:WantItNowPostType'
+
+
+=cut
+
+=head2 getWantItNowPost()
+
+  Returned: Always
+#    Returns: 'ns:WantItNowPostType'
+
+
+=cut
+

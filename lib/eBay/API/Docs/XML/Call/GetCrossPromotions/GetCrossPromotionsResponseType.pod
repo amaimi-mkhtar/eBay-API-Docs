@@ -1,0 +1,41 @@
+=head1 eBay::API::XML::Call::GetCrossPromotions::GetCrossPromotionsResponseType
+
+eBay::API::XML::Call::GetCrossPromotions::GetCrossPromotionsResponseType
+
+=head1 DESCRIPTION
+
+Returns a list of either upsell or cross-sell items for a given item ID.
+The list can be filtered by the viewer's role, either buyer or seller.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setCrossPromotion()
+
+A list of cross-promoted items defined for a specific
+referring item. The list is either upsell or cross-sell
+items, according to the value of PromotionMethod in
+GetCrossPromotionsRequest.
+
+#    Argument: 'ns:CrossPromotionsType'
+
+
+=cut
+
+=head2 getCrossPromotion()
+
+  Returned: Always
+#    Returns: 'ns:CrossPromotionsType'
+
+
+=cut
+

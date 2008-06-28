@@ -1,0 +1,173 @@
+=head1 eBay::API::XML::Call::GetCategories::GetCategoriesResponseType
+
+eBay::API::XML::Call::GetCategories::GetCategoriesResponseType
+
+=head1 DESCRIPTION
+
+Contains the category data for the eBay site specified as input. The category
+data is contained in a CategoryArrayType object, within which are zero, one, or
+multiple CategoryType objects. Each CategoryType object contains the detail data
+for one category. Other fields tell how many categories are returned in a call,
+when the category hierarchy was last updated, and the version of the category
+hierarchy (all three of which can differ from one eBay site to the next).
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setCategoryArray()
+
+List of the returned categories. The category array contains one CategoryType
+object for each returned category. Returns empty if no detail level is specified.
+
+#    Argument: 'ns:CategoryArrayType'
+
+
+=cut
+
+=head2 getCategoryArray()
+
+  Returned: Always
+  Details: DetailLevel: ReturnAll
+#    Returns: 'ns:CategoryArrayType'
+
+
+=cut
+
+=head2 setCategoryCount()
+
+Indicates the number of categories returned (i.e., the number of CategoryType
+objects in CategoryArray).
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getCategoryCount()
+
+  Returned: Always
+  Details: DetailLevel: ReturnAll
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setCategoryVersion()
+
+Indicates the version of the category hierarchy on the
+specified eBay site.
+
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getCategoryVersion()
+
+  Returned: Always
+  Details: DetailLevel: ReturnAll, none
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setMinimumReservePrice()
+
+Indicates the lowest possible reserve price allowed for any item
+listed in any category on the site. You can use the fields returned by GetCategoryFeatures to determine if a different Minimum Reserve Price is defined for the category you want to use.
+
+#    Argument: 'xs:double'
+
+
+=cut
+
+=head2 getMinimumReservePrice()
+
+  Returned: Always
+  Details: DetailLevel: ReturnAll, none
+#    Returns: 'xs:double'
+
+
+=cut
+
+=head2 setReduceReserveAllowed()
+
+If true, ReduceReserveAllowed indicates that all categories on the
+site allow the seller to reduce an item's reserve price.
+If false, this field is not returned in the response and all categories on the site do not normally allow sellers to reduce an
+item's reserve price.
+The Category.ORRA (override reduce reserve price) field can override (or toggle)
+the reserve price reduction setting for a given category.
+For example, if ReduceReserveAllowed is false and Category.ORRA is true,
+the category overrides the site setting and supports reducing reserve prices.
+If ReduceReserveAllowed is true and Category.ORRA is true, the category
+overrides the site setting and does does not support reducing reserve prices.
+
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isReduceReserveAllowed()
+
+  Returned: Always
+  Details: DetailLevel: ReturnAll, none
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setReservePriceAllowed()
+
+If true, ReservePriceAllowed indicates that all categories on the
+site allow the seller to specify a reserve price for an item.
+If false, this field is not returned in the response and all categories on the site do not normally allow sellers to specify reserve prices.
+The Category.ORPA (override reserve price allowed) field can override (or toggle)
+the reserve price allowed setting for a given category.
+For example, if ReservePriceAllowed is false and Category.ORPA is true,
+the category overrides the site setting and supports reserve prices.
+If ReservePriceAllowed is true and Category.ORPA is true, the category
+overrides the site setting and does does not support reserve prices.
+
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isReservePriceAllowed()
+
+  Returned: Always
+  Details: DetailLevel: ReturnAll, none
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setUpdateTime()
+
+Indicates the last date and time that eBay modified the category hierarchy for the
+specified eBay site.
+
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 getUpdateTime()
+
+  Returned: Always
+  Details: DetailLevel: ReturnAll, none
+#    Returns: 'xs:dateTime'
+
+
+=cut
+

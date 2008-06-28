@@ -1,0 +1,21 @@
+=head1 eBay::API::XML::Call::GetApiAccessRules::GetApiAccessRulesRequestType
+
+eBay::API::XML::Call::GetApiAccessRules::GetApiAccessRulesRequestType
+
+=head1 DESCRIPTION
+
+Reports how many calls your application has made and is allowed to make per
+hour or day.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

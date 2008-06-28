@@ -1,0 +1,20 @@
+=head1 eBay::API::XML::Call::GeteBayOfficialTime::GeteBayOfficialTimeRequestType
+
+eBay::API::XML::Call::GeteBayOfficialTime::GeteBayOfficialTimeRequestType
+
+=head1 DESCRIPTION
+
+Gets the official eBay system time in GMT.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

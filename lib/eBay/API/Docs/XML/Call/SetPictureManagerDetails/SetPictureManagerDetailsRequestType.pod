@@ -1,0 +1,57 @@
+=head1 eBay::API::XML::Call::SetPictureManagerDetails::SetPictureManagerDetailsRequestType
+
+eBay::API::XML::Call::SetPictureManagerDetails::SetPictureManagerDetailsRequestType
+
+=head1 DESCRIPTION
+
+Creates, updates, or deletes Picture Manager account settings, folders, or pictures.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setAction()
+
+Specifies the action to take on the setting, folder, or picture.
+The values Add and Delete apply only to folders.
+
+  RequiredInput: Yes
+#    Argument: 'ns:PictureManagerActionCodeType'
+
+
+=cut
+
+=head2 getAction()
+
+#    Returns: 'ns:PictureManagerActionCodeType'
+
+
+=cut
+
+=head2 setPictureManagerDetails()
+
+Specifies the setting or folder to create, update, or delete, or the
+picture to update. You cannot upload or delete pictures using
+SetPictureManagerDetails; you must use the eBay site.
+
+  RequiredInput: Yes
+#    Argument: 'ns:PictureManagerDetailsType'
+
+
+=cut
+
+=head2 getPictureManagerDetails()
+
+#    Returns: 'ns:PictureManagerDetailsType'
+
+
+=cut
+

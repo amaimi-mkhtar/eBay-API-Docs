@@ -1,0 +1,67 @@
+=head1 eBay::API::XML::Call::GetPictureManagerDetails
+
+eBay::API::XML::Call::GetPictureManagerDetails
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setFolderID()
+
+The ID of a folder in the user's Picture Manager album for which you want information.
+If you specify both FolderID and PictureURL, the picture must exist
+in the folder.
+
+  RequiredInput: No
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 setPictureManagerDetailLevel()
+
+The type of information you want returned, about pictures and folders,
+the account subscription, or both. Use this element rather than the generic DetailLevel element defined in AbstractRequestType. You can use the following values: ReturnAll, ReturnSubscription, or ReturnPicture.
+
+PresentDetails: Yes
+
+  RequiredInput: No
+#    Argument: 'ns:PictureManagerDetailLevelCodeType'
+
+
+=cut
+
+=head2 setPictureURL()
+
+The URL of a picture in the user's Picture Manager album.
+If you specify both FolderID and PictureURL, the picture must
+exist in the folder.
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getPictureManagerDetails()
+
+Contains details of the account settings, folders or
+pictures in the user's album, or both.
+
+  Returned: Always
+  Details: PictureManagerDetailLevel: none, ReturnSubscription, ReturnPicture, ReturnAll
+#    Returns: 'ns:PictureManagerDetailsType'
+
+
+=cut
+

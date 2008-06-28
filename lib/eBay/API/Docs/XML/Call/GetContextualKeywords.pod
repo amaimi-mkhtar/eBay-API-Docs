@@ -1,0 +1,61 @@
+=head1 eBay::API::XML::Call::GetContextualKeywords
+
+eBay::API::XML::Call::GetContextualKeywords
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setCategoryID()
+
+The ID of the category to which keywords are to be limited.
+Zero or more category IDs can be specified.
+
+  RequiredInput: No
+#    Argument: reference to an array  
+                      of 'xs:string'
+
+
+=cut
+
+=head2 setEncoding()
+
+Web page encoding by which the URL is to be handled, such as ISO-8859-1.
+
+  RequiredInput: Yes
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 setURL()
+
+The URL of the web page from which eBay is to extract keywords.
+
+  RequiredInput: Yes
+#    Argument: 'xs:anyURI'
+
+
+=cut
+
+=head2 getContextSearchAsset()
+
+An array of either keyword/category pairs or categories, with ranking and score.
+
+  Returned: Always
+#    Returns: reference to an array  
+                      of 'ns:ContextSearchAssetType'
+
+
+=cut
+

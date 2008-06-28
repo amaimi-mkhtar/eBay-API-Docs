@@ -1,0 +1,215 @@
+=head1 eBay::API::XML::Call::GetMyeBayBuying::GetMyeBayBuyingResponseType
+
+eBay::API::XML::Call::GetMyeBayBuying::GetMyeBayBuyingResponseType
+
+=head1 DESCRIPTION
+
+Returns items from All Buying or All Favorites in the user's My eBay account.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setBestOfferList()
+
+Contains the items the user has placed best offers on. Only returned if
+items exist that meet the request criteria.
+
+#    Argument: 'ns:PaginatedItemArrayType'
+
+
+=cut
+
+=head2 getBestOfferList()
+
+  Returned: Conditionally
+  Details: DetailLevel: none, ReturnSummary, ReturnAll
+#    Returns: 'ns:PaginatedItemArrayType'
+
+
+=cut
+
+=head2 setBidAssistantList()
+
+Contains the items that were bid on using the Bid Assistant feature.
+
+#    Argument: 'ns:BidGroupArrayType'
+
+
+=cut
+
+=head2 getBidAssistantList()
+
+  Returned: Conditionally
+  Details: DetailLevel: none, ReturnSummary, ReturnAll
+#    Returns: 'ns:BidGroupArrayType'
+
+
+=cut
+
+=head2 setBidList()
+
+Contains all the items the user has bid on. Only returned if items exist
+that meet the request criteria.
+
+#    Argument: 'ns:PaginatedItemArrayType'
+
+
+=cut
+
+=head2 getBidList()
+
+  Returned: Conditionally
+  Details: DetailLevel: none, ReturnSummary, ReturnAll
+#    Returns: 'ns:PaginatedItemArrayType'
+
+
+=cut
+
+=head2 setBuyingSummary()
+
+Contains a summary of the items the user has bid on. Returned at all detail levels.
+
+#    Argument: 'ns:BuyingSummaryType'
+
+
+=cut
+
+=head2 getBuyingSummary()
+
+  Returned: Always
+  Details: DetailLevel: none, ReturnSummary, ReturnAll
+#    Returns: 'ns:BuyingSummaryType'
+
+
+=cut
+
+=head2 setFavoriteSearches()
+
+Contains a list of the user's favorite searches. Only returned if the 
+user has Favorite Searches. The search name, search query, and search
+elements, such as QueryKeywords, SortOrder, and Condition are returned.
+<br /><br />
+You can paste the Search Query response, that comes back as a URL, into a browser to re-play the Favorite Search.<br /><br />
+The search elements that are returned by this call can be used as input
+for the Shopping Web Service FindItemsAdvanced request.
+
+#    Argument: 'ns:MyeBayFavoriteSearchListType'
+
+
+=cut
+
+=head2 getFavoriteSearches()
+
+  Returned: Conditionally
+  Details: DetailLevel: none, ReturnSummary, ReturnAll
+#    Returns: 'ns:MyeBayFavoriteSearchListType'
+
+
+=cut
+
+=head2 setFavoriteSellers()
+
+Contains a list of the user's favorite sellers. Only returned if items
+exist that meet the request criteria.
+
+#    Argument: 'ns:MyeBayFavoriteSellerListType'
+
+
+=cut
+
+=head2 getFavoriteSellers()
+
+  Returned: Conditionally
+  Details: DetailLevel: none, ReturnSummary, ReturnAll
+#    Returns: 'ns:MyeBayFavoriteSellerListType'
+
+
+=cut
+
+=head2 setLostList()
+
+Contains the items the user has bid on and lost. Only returned if items
+exist that meet the request criteria.
+
+#    Argument: 'ns:PaginatedItemArrayType'
+
+
+=cut
+
+=head2 getLostList()
+
+  Returned: Conditionally
+  Details: DetailLevel: none, ReturnSummary, ReturnAll
+#    Returns: 'ns:PaginatedItemArrayType'
+
+
+=cut
+
+=head2 setSecondChanceOffer()
+
+Contains the list of second chance offers the user has received. Only
+returned if items exist that meet the request criteria.
+
+#    Argument: reference to an array  
+                      of 'ns:ItemType'
+
+
+=cut
+
+=head2 getSecondChanceOffer()
+
+  Returned: Conditionally
+  Details: DetailLevel: none, ReturnSummary, ReturnAll
+#    Returns: reference to an array  
+                      of 'ns:ItemType'
+
+
+=cut
+
+=head2 setWatchList()
+
+Contains the items the user is watching. Only returned if items exist that
+meet the request criteria.
+
+#    Argument: 'ns:PaginatedItemArrayType'
+
+
+=cut
+
+=head2 getWatchList()
+
+  Returned: Conditionally
+  Details: DetailLevel: none, ReturnSummary, ReturnAll
+#    Returns: 'ns:PaginatedItemArrayType'
+
+
+=cut
+
+=head2 setWonList()
+
+Contains the items the user has bid on and won. Only returned if items
+exist that meet the request criteria.
+
+#    Argument: 'ns:PaginatedOrderTransactionArrayType'
+
+
+=cut
+
+=head2 getWonList()
+
+  Returned: Conditionally
+  Details: DetailLevel: none, ReturnSummary, ReturnAll
+#    Returns: 'ns:PaginatedOrderTransactionArrayType'
+
+
+=cut
+

@@ -1,0 +1,39 @@
+=head1 eBay::API::XML::Call::SetStoreCustomPage::SetStoreCustomPageRequestType
+
+eBay::API::XML::Call::SetStoreCustomPage::SetStoreCustomPageRequestType
+
+=head1 DESCRIPTION
+
+Sets a custom page for a user's eBay Store. The page can include static HTML
+content as well as dynamic content that is added using the special eBay Stores
+tags.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setCustomPage()
+
+The custom page being submitted.
+
+  RequiredInput: Yes
+#    Argument: 'ns:StoreCustomPageType'
+
+
+=cut
+
+=head2 getCustomPage()
+
+#    Returns: 'ns:StoreCustomPageType'
+
+
+=cut
+

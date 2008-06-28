@@ -1,0 +1,40 @@
+=head1 eBay::API::XML::Call::EndItem::EndItemResponseType
+
+eBay::API::XML::Call::EndItem::EndItemResponseType
+
+=head1 DESCRIPTION
+
+Includes the acknowledgement of date and time the auction was
+ended due to the call to EndItem.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setEndTime()
+
+Indicates the date and time (returned in GMT) the specified item listing
+was ended.
+Also applicable to Half.com.
+
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 getEndTime()
+
+  Returned: Always
+#    Returns: 'xs:dateTime'
+
+
+=cut
+

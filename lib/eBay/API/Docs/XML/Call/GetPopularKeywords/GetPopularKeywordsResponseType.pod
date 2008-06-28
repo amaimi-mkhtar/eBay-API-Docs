@@ -1,0 +1,77 @@
+=head1 eBay::API::XML::Call::GetPopularKeywords::GetPopularKeywordsResponseType
+
+eBay::API::XML::Call::GetPopularKeywords::GetPopularKeywordsResponseType
+
+=head1 DESCRIPTION
+
+Contains the keyword data for the requested categories. A category's data are contained in a CategoryArrayType object if there is no error (one or more CategoryType objects). Each CategoryType contains its ID, parent ID and keyword list.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setCategoryArray()
+
+Organization of keywords by category. For each
+category, its ID and its parent's ID and keywords
+are listed.
+
+#    Argument: 'ns:CategoryArrayType'
+
+
+=cut
+
+=head2 getCategoryArray()
+
+  Returned: Always
+#    Returns: 'ns:CategoryArrayType'
+
+
+=cut
+
+=head2 setHasMore()
+
+Indicates whether there are more categories beyond the
+subset returned in the last
+call to GetPopularKeywords. Returned only when
+IncludeChildCategories is true.
+
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isHasMore()
+
+  Returned: Conditionally
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setPaginationResult()
+
+Contains information regarding the pagination of data (if pagination is used),
+including total number of pages and total number of entries.
+
+#    Argument: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 getPaginationResult()
+
+  Returned: Conditionally
+#    Returns: 'ns:PaginationResultType'
+
+
+=cut
+

@@ -1,0 +1,37 @@
+=head1 eBay::API::XML::Call::ValidateChallengeInput::ValidateChallengeInputResponseType
+
+eBay::API::XML::Call::ValidateChallengeInput::ValidateChallengeInputResponseType
+
+=head1 DESCRIPTION
+
+Validate the user response to botblock challenge.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setValidToken()
+
+Indicates whether the token is valid.
+
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isValidToken()
+
+  Returned: Always
+#    Returns: 'xs:boolean'
+
+
+=cut
+

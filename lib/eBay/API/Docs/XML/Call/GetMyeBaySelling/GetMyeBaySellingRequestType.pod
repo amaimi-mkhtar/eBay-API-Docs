@@ -1,0 +1,115 @@
+=head1 eBay::API::XML::Call::GetMyeBaySelling::GetMyeBaySellingRequestType
+
+eBay::API::XML::Call::GetMyeBaySelling::GetMyeBaySellingRequestType
+
+=head1 DESCRIPTION
+
+Returns a summary and details of items a user is selling from
+the user's My eBay account.
+<br />
+If you do not specify a detail level or a specific container,
+the response contains just the SellingSummary container.
+<br />
+If you specify a container but not a detail level, the response
+contains SellingSummary and any container you specified in the
+request.
+<br />
+If you specify a DetailLevel of ReturnAll, the response contains
+the SellingSummary and all other containers. Any containers that
+were not specified in the request are returned with default
+settings.
+<br />
+While specifying pagination can help manage the amount of data
+that is returned (especially at ReturnAll), high-volume sellers
+may receive a warning message that the amount of data returned
+is over the system limit and therefore truncated.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setActiveList()
+
+Contains the list of items the user is actively selling whose listings are active.
+Valid subelements are Sort, IncludeNotes, Pagination, and ListingType (with valid
+values Auction, FixedPriceItem, StoresFixedPrice, or AdType).
+Note that if a DetailLevel of ReturnAll is specified in the request, this element is ignored as a way to filter the response, and ALL containers are returned.
+
+  RequiredInput: No
+#    Argument: 'ns:ItemListCustomizationType'
+
+
+=cut
+
+=head2 getActiveList()
+
+#    Returns: 'ns:ItemListCustomizationType'
+
+
+=cut
+
+=head2 setScheduledList()
+
+Contains the list of items the user has scheduled to sell but whose listings have not yet opened.
+Valid subelements are Sort, IncludeNotes, and Pagination.
+
+  RequiredInput: No
+#    Argument: 'ns:ItemListCustomizationType'
+
+
+=cut
+
+=head2 getScheduledList()
+
+#    Returns: 'ns:ItemListCustomizationType'
+
+
+=cut
+
+=head2 setSoldList()
+
+Contains the list of items the user has sold. Valid subelements are DurationInDays
+(with valid values 0-60), IncludeNotes, and Pagination.
+Note that if a DetailLevel of ReturnAll is specified in the request, this element is ignored as a way to filter the response, and ALL containers are returned.
+
+  RequiredInput: No
+#    Argument: 'ns:ItemListCustomizationType'
+
+
+=cut
+
+=head2 getSoldList()
+
+#    Returns: 'ns:ItemListCustomizationType'
+
+
+=cut
+
+=head2 setUnsoldList()
+
+Contains the list of items the user has listed but whose listings have ended
+without being sold. Valid subelements are DurationInDays (with valid values 0-60),
+Sort, IncludeNotes, and Pagination.
+Note that if a DetailLevel of ReturnAll is specified in the request, this element is ignored as a way to filter the response, and ALL containers are returned.
+
+  RequiredInput: No
+#    Argument: 'ns:ItemListCustomizationType'
+
+
+=cut
+
+=head2 getUnsoldList()
+
+#    Returns: 'ns:ItemListCustomizationType'
+
+
+=cut
+

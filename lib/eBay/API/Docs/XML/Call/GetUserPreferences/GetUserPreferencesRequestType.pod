@@ -1,0 +1,167 @@
+=head1 eBay::API::XML::Call::GetUserPreferences::GetUserPreferencesRequestType
+
+eBay::API::XML::Call::GetUserPreferences::GetUserPreferencesRequestType
+
+=head1 DESCRIPTION
+
+Retrieves some or all of a user's preferences. The set of preferences retrieved depends
+on the set of flags specified in the request.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setShowBidderNoticePreferences()
+
+If true, requests a seller's preferences for receiving bidder notices.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isShowBidderNoticePreferences()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setShowCombinedPaymentPreferences()
+
+DO NOT USE THIS FIELD. Use 'GetShippingDiscountProfiles' to access
+similar information.
+If true, requests a seller's preferences for accepting payments
+that combine item purchases into one order.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isShowCombinedPaymentPreferences()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setShowCrossPromotionPreferences()
+
+If true, requests a seller's cross-promotion preferences, such as
+whether cross-promotions are enabled and the sort filters used.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isShowCrossPromotionPreferences()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setShowEmailShipmentTrackingNumberPreference()
+
+If true, returns the preference related to emailing the email shipment tracking number.
+
+Default: false
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isShowEmailShipmentTrackingNumberPreference()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setShowEndOfAuctionEmailPreferences()
+
+If true, displays the seller's end of auction email preferences.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isShowEndOfAuctionEmailPreferences()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setShowProStoresPreferences()
+
+If true, returns ProStores checkout preferences.
+
+Default: false
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isShowProStoresPreferences()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setShowSellerFavoriteItemPreferences()
+
+If true, retrieves preferences the seller has set for displaying items
+on a buyer's favorite sellers page and in the favorite sellers email digest.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isShowSellerFavoriteItemPreferences()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setShowSellerPaymentPreferences()
+
+If true, displays a seller's payment preferences, for displaying
+a Pay Now button, accepting PayPal, and so on.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isShowSellerPaymentPreferences()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+

@@ -1,0 +1,20 @@
+=head1 eBay::API::XML::Call::SendInvoice::SendInvoiceResponseType
+
+eBay::API::XML::Call::SendInvoice::SendInvoiceResponseType
+
+=head1 DESCRIPTION
+
+Returns the status of calling SendInvoice.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

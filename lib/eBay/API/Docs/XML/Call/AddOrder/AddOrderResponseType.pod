@@ -1,0 +1,56 @@
+=head1 eBay::API::XML::Call::AddOrder::AddOrderResponseType
+
+eBay::API::XML::Call::AddOrder::AddOrderResponseType
+
+=head1 DESCRIPTION
+
+Returns a unique identifier for the order. A buyer may make a single
+payment to purchase all of the item transactions that are included
+in the order.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setCreatedTime()
+
+The date and time the order was created.
+
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 getCreatedTime()
+
+  Returned: Always
+#    Returns: 'xs:dateTime'
+
+
+=cut
+
+=head2 setOrderID()
+
+The unique identifier for the order.
+
+#    Argument: 'ns:OrderIDType'
+
+
+=cut
+
+=head2 getOrderID()
+
+  Returned: Always
+#    Returns: 'ns:OrderIDType'
+
+
+=cut
+

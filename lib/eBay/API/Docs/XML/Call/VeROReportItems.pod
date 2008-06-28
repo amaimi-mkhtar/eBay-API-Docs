@@ -1,0 +1,59 @@
+=head1 eBay::API::XML::Call::VeROReportItems
+
+eBay::API::XML::Call::VeROReportItems
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setReportItems()
+
+Container (packet) for items being reported. You can report the same item 
+more than once in a packet if a different reason code is used each time.
+
+  RequiredInput: No
+#    Argument: 'ns:VeROReportItemsType'
+
+
+=cut
+
+=head2 setRightsOwnerID()
+
+User ID of the VeRO member reporting the items.
+
+  RequiredInput: Yes
+#    Argument: 'ns:UserIDType'
+
+
+=cut
+
+=head2 getVeROReportPacketID()
+
+A unique packet identifier for the items reported.
+
+  Returned: Conditionally
+#    Returns: 'xs:long'
+
+
+=cut
+
+=head2 getVeROReportPacketStatus()
+
+The processing status of the packet.
+
+  Returned: Conditionally
+#    Returns: 'ns:VeROReportPacketStatusCodeType'
+
+
+=cut
+

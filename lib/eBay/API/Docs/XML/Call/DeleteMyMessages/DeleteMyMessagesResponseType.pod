@@ -1,0 +1,21 @@
+=head1 eBay::API::XML::Call::DeleteMyMessages::DeleteMyMessagesResponseType
+
+eBay::API::XML::Call::DeleteMyMessages::DeleteMyMessagesResponseType
+
+=head1 DESCRIPTION
+
+The response to DeleteMyMessagesRequestType. If the request was successful, 
+DeleteMyMessages returns nothing.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

@@ -1,0 +1,186 @@
+=head1 eBay::API::XML::Call::GetCategoryListings::GetCategoryListingsResponseType
+
+eBay::API::XML::Call::GetCategoryListings::GetCategoryListingsResponseType
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setBuyingGuideDetails()
+
+Contains information about relevant buying guides (if any) and the
+site's buying guide hub. Buying guides are useful to buyers who do not
+have a specific product in mind. For example, a digital camera buying
+guide could help a buyer determine what kind of digital camera is right
+for them.
+
+#    Argument: 'ns:BuyingGuideDetailsType'
+
+
+=cut
+
+=head2 getBuyingGuideDetails()
+
+  Returned: Conditionally
+#    Returns: 'ns:BuyingGuideDetailsType'
+
+
+=cut
+
+=head2 setCategory()
+
+Indicates the category from which the listings were drawn.
+
+#    Argument: 'ns:CategoryType'
+
+
+=cut
+
+=head2 getCategory()
+
+  Returned: Always
+#    Returns: 'ns:CategoryType'
+
+
+=cut
+
+=head2 setHasMoreItems()
+
+Indicates whether there are more item listings that can be returned
+(items listed in the specified category and that meet any input filtering
+criteria).
+
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isHasMoreItems()
+
+  Returned: Always
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setItemArray()
+
+Contains the item listings for the specified category and which meet the
+input filtering criteria (if any is specified). Consists of one ItemType
+object for each returned item listing.
+
+#    Argument: 'ns:ItemArrayType'
+
+
+=cut
+
+=head2 getItemArray()
+
+  Returned: Conditionally
+#    Returns: 'ns:ItemArrayType'
+
+
+=cut
+
+=head2 setItemsPerPage()
+
+Indicates the maximum number of item listings that will be returned per
+call.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getItemsPerPage()
+
+  Returned: Always
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setPageNumber()
+
+Indicates the page of data returned in the current call.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getPageNumber()
+
+  Returned: Always
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setPaginationResult()
+
+Indicates the results of the pagination, including the total number of
+pages of data there are to be returned and the total number of items
+there are to be returned.
+
+#    Argument: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 getPaginationResult()
+
+  Returned: Always
+#    Returns: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 setRelatedSearchKeywordArray()
+
+Container for keywords related to the category ID in the request.
+Can be returned if the request specified more than zero in
+the MaxRelatedSearchKeywords field.
+
+#    Argument: 'ns:RelatedSearchKeywordArrayType'
+
+
+=cut
+
+=head2 getRelatedSearchKeywordArray()
+
+  Returned: Conditionally
+#    Returns: 'ns:RelatedSearchKeywordArrayType'
+
+
+=cut
+
+=head2 setSubCategories()
+
+Collection of the sub-categories that are child to the category indicated
+in Category. Data for each sub-category is conveyed in a CategoryType
+object.
+
+#    Argument: 'ns:CategoryArrayType'
+
+
+=cut
+
+=head2 getSubCategories()
+
+  Returned: Conditionally
+#    Returns: 'ns:CategoryArrayType'
+
+
+=cut
+

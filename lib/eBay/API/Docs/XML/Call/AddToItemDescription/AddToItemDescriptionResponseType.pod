@@ -1,0 +1,21 @@
+=head1 eBay::API::XML::Call::AddToItemDescription::AddToItemDescriptionResponseType
+
+eBay::API::XML::Call::AddToItemDescription::AddToItemDescriptionResponseType
+
+=head1 DESCRIPTION
+
+Indicates the success or failure of the attempt to add text to the end of the
+description section of an item listing.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

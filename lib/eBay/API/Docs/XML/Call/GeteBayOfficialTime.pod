@@ -1,0 +1,18 @@
+=head1 eBay::API::XML::Call::GeteBayOfficialTime
+
+eBay::API::XML::Call::GeteBayOfficialTime
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

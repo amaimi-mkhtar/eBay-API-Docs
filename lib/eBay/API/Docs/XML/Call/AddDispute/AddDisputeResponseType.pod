@@ -1,0 +1,38 @@
+=head1 eBay::API::XML::Call::AddDispute::AddDisputeResponseType
+
+eBay::API::XML::Call::AddDispute::AddDisputeResponseType
+
+=head1 DESCRIPTION
+
+Returned after calling AddDisputeRequest. The response confirms that
+the Unpaid Item dispute was successfully created.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setDisputeID()
+
+The unique identifier of the Unpaid Item dispute.
+
+#    Argument: 'ns:DisputeIDType'
+
+
+=cut
+
+=head2 getDisputeID()
+
+  Returned: Always
+#    Returns: 'ns:DisputeIDType'
+
+
+=cut
+

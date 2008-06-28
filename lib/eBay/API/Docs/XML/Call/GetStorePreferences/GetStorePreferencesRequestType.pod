@@ -1,0 +1,20 @@
+=head1 eBay::API::XML::Call::GetStorePreferences::GetStorePreferencesRequestType
+
+eBay::API::XML::Call::GetStorePreferences::GetStorePreferencesRequestType
+
+=head1 DESCRIPTION
+
+Retrieves a user's Store preferences.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

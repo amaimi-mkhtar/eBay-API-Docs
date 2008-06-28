@@ -1,0 +1,21 @@
+=head1 eBay::API::XML::Call::AddDisputeResponse::AddDisputeResponseResponseType
+
+eBay::API::XML::Call::AddDisputeResponse::AddDisputeResponseResponseType
+
+=head1 DESCRIPTION
+
+Returned after taking an action on a dispute with AddDisputeResponseRequest.
+Includes the status of the request.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

@@ -1,0 +1,82 @@
+=head1 eBay::API::XML::Call::AddDispute
+
+eBay::API::XML::Call::AddDispute
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setDisputeExplanation()
+
+An explanation of the dispute that supplements the
+DisputeReason. The allowed value depends on the value of
+DisputeReason.
+
+  RequiredInput: Yes
+#    Argument: 'ns:DisputeExplanationCodeType'
+
+
+=cut
+
+=head2 setDisputeReason()
+
+The top-level reason for the Unpaid Item Dispute.
+DisputeReasonCodeType has several possible values. However, only
+BuyerHasNotPaid and TransactionMutuallyCanceled apply to
+AddDispute--you can only use AddDisputeCall to create Unpaid
+Item disputes.
+
+  RequiredInput: Yes
+#    Argument: 'ns:DisputeReasonCodeType'
+
+
+=cut
+
+=head2 setItemID()
+
+The eBay ID of the item in dispute, an item which has been
+sold but not yet paid for.
+
+MaxLength: 19 (Note: The eBay database specifies 38. Currently, Item IDs are usually 9 to 12 digits)
+
+  RequiredInput: Yes
+#    Argument: 'ns:ItemIDType'
+
+
+=cut
+
+=head2 setTransactionID()
+
+The eBay ID of a transaction, created when the buyer committed
+to purchasing the item. A transaction ID is unique to the item
+but not across the entire eBay site. The transaction ID must be
+combined with an item ID to uniquely identify an item.
+
+MaxLength: 19 (Note: The eBay database specifies 38. Currently, transaction IDs are usually 9 to 12 digits.)
+
+  RequiredInput: Yes
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getDisputeID()
+
+The unique identifier of the Unpaid Item dispute.
+
+  Returned: Always
+#    Returns: 'ns:DisputeIDType'
+
+
+=cut
+

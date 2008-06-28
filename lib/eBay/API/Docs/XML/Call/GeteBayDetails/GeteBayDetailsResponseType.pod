@@ -1,0 +1,350 @@
+=head1 eBay::API::XML::Call::GeteBayDetails::GeteBayDetailsResponseType
+
+eBay::API::XML::Call::GeteBayDetails::GeteBayDetailsResponseType
+
+=head1 DESCRIPTION
+
+Details about a specified site in response to GeteBayDetailsRequest.
+If no DetailName is identified in the request, all elements of
+GeteBayDetailsResponse are returned. Otherwise, only the element
+corresponding to the specified DetailName is returned.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setCountryDetails()
+
+Details about a specific country. GeteBayDetails returns all countries in
+the system, regardless of the site to which you sent the request.
+
+#    Argument: reference to an array  
+                      of 'ns:CountryDetailsType'
+
+
+=cut
+
+=head2 getCountryDetails()
+
+  Returned: Conditionally
+#    Returns: reference to an array  
+                      of 'ns:CountryDetailsType'
+
+
+=cut
+
+=head2 setCurrencyDetails()
+
+Details about a specific currency that can be used for listing on an eBay
+site. GeteBayDetails returns all site currencies in the system, regardless
+of the site to which you sent the request.
+
+#    Argument: reference to an array  
+                      of 'ns:CurrencyDetailsType'
+
+
+=cut
+
+=head2 getCurrencyDetails()
+
+  Returned: Conditionally
+#    Returns: reference to an array  
+                      of 'ns:CurrencyDetailsType'
+
+
+=cut
+
+=head2 setDispatchTimeMaxDetails()
+
+Details about a specific max dispatch time. A dispatch time specifies the
+maximum number of business days a seller commits to for shipping an item
+to domestic buyers after receiving a cleared payment. GeteBayDetails
+returns all dispatch times in the system, regardless of the site to which
+you sent the request.
+
+#    Argument: reference to an array  
+                      of 'ns:DispatchTimeMaxDetailsType'
+
+
+=cut
+
+=head2 getDispatchTimeMaxDetails()
+
+  Returned: Conditionally
+#    Returns: reference to an array  
+                      of 'ns:DispatchTimeMaxDetailsType'
+
+
+=cut
+
+=head2 setItemSpecificDetails()
+
+The site's validation rules (e.g., string lengths) for custom Item Specifics.
+
+#    Argument: reference to an array  
+                      of 'ns:ItemSpecificDetailsType'
+
+
+=cut
+
+=head2 getItemSpecificDetails()
+
+  Returned: Conditionally
+#    Returns: reference to an array  
+                      of 'ns:ItemSpecificDetailsType'
+
+
+=cut
+
+=head2 setPaymentOptionDetails()
+
+Details about a specific buyer payment method. GeteBayDetails only returns
+payment methods that are applicable to the site to which you sent the
+request.
+
+#    Argument: reference to an array  
+                      of 'ns:PaymentOptionDetailsType'
+
+
+=cut
+
+=head2 getPaymentOptionDetails()
+
+  Returned: Conditionally
+#    Returns: reference to an array  
+                      of 'ns:PaymentOptionDetailsType'
+
+
+=cut
+
+=head2 setRegionDetails()
+
+[Ignorable region values for all sites.]
+
+#    Argument: reference to an array  
+                      of 'ns:RegionDetailsType'
+
+
+=cut
+
+=head2 getRegionDetails()
+
+  Returned: Conditionally
+  Ignore: 
+#    Returns: reference to an array  
+                      of 'ns:RegionDetailsType'
+
+
+=cut
+
+=head2 setRegionOfOriginDetails()
+
+Details about the region of origin, specific to a site.
+
+#    Argument: reference to an array  
+                      of 'ns:RegionOfOriginDetailsType'
+
+
+=cut
+
+=head2 getRegionOfOriginDetails()
+
+  Returned: Conditionally
+  Ignore: 
+#    Returns: reference to an array  
+                      of 'ns:RegionOfOriginDetailsType'
+
+
+=cut
+
+=head2 setShippingCarrierDetails()
+
+The kinds of carrier supported by this shipping service.
+
+#    Argument: reference to an array  
+                      of 'ns:ShippingCarrierDetailsType'
+
+
+=cut
+
+=head2 getShippingCarrierDetails()
+
+  Returned: Conditionally
+#    Returns: reference to an array  
+                      of 'ns:ShippingCarrierDetailsType'
+
+
+=cut
+
+=head2 setShippingLocationDetails()
+
+Details about a location or region to which the seller is willing to ship.
+GeteBayDetails returns all shipping locations in the system, regardless of
+the site to which you sent the request.
+
+#    Argument: reference to an array  
+                      of 'ns:ShippingLocationDetailsType'
+
+
+=cut
+
+=head2 getShippingLocationDetails()
+
+  Returned: Conditionally
+#    Returns: reference to an array  
+                      of 'ns:ShippingLocationDetailsType'
+
+
+=cut
+
+=head2 setShippingPackageDetails()
+
+Details about various shipping packages.
+
+#    Argument: reference to an array  
+                      of 'ns:ShippingPackageDetailsType'
+
+
+=cut
+
+=head2 getShippingPackageDetails()
+
+  Returned: Conditionally
+#    Returns: reference to an array  
+                      of 'ns:ShippingPackageDetailsType'
+
+
+=cut
+
+=head2 setShippingServiceDetails()
+
+Details about a specific shipping service. GeteBayDetails only returns
+shipping services that are applicable to the site to which you sent the
+request.
+
+#    Argument: reference to an array  
+                      of 'ns:ShippingServiceDetailsType'
+
+
+=cut
+
+=head2 getShippingServiceDetails()
+
+  Returned: Conditionally
+#    Returns: reference to an array  
+                      of 'ns:ShippingServiceDetailsType'
+
+
+=cut
+
+=head2 setSiteDetails()
+
+Details about a specific eBay site. GeteBayDetails returns all sites in
+the system, regardless of the site to which you sent the request.
+
+#    Argument: reference to an array  
+                      of 'ns:SiteDetailsType'
+
+
+=cut
+
+=head2 getSiteDetails()
+
+  Returned: Conditionally
+#    Returns: reference to an array  
+                      of 'ns:SiteDetailsType'
+
+
+=cut
+
+=head2 setTaxJurisdiction()
+
+Details about a specific tax jurisdiction or tax region. GeteBayDetails
+only returns jurisdictions that are applicable to the site to which you
+sent the request.<br><br>
+Related fields:<br>
+TaxTable.TaxJurisdiction in SetTaxTable<br>
+Item.UseTaxTable in Additem
+
+#    Argument: reference to an array  
+                      of 'ns:TaxJurisdictionType'
+
+
+=cut
+
+=head2 getTaxJurisdiction()
+
+  Returned: Conditionally
+#    Returns: reference to an array  
+                      of 'ns:TaxJurisdictionType'
+
+
+=cut
+
+=head2 setTimeZoneDetails()
+
+Details about a specific eBay time zone. GeteBayDetails returns all time
+zones eBay supports.
+
+#    Argument: reference to an array  
+                      of 'ns:TimeZoneDetailsType'
+
+
+=cut
+
+=head2 getTimeZoneDetails()
+
+  Returned: Conditionally
+#    Returns: reference to an array  
+                      of 'ns:TimeZoneDetailsType'
+
+
+=cut
+
+=head2 setURLDetails()
+
+Details about a specific eBay URL. GeteBayDetails only returns URLs that
+are applicable to the site to which you sent the request.
+
+#    Argument: reference to an array  
+                      of 'ns:URLDetailsType'
+
+
+=cut
+
+=head2 getURLDetails()
+
+  Returned: Conditionally
+#    Returns: reference to an array  
+                      of 'ns:URLDetailsType'
+
+
+=cut
+
+=head2 setUnitOfMeasurementDetails()
+
+Suggested text to use when specifying units of measure in custom Item Specifics.
+
+#    Argument: reference to an array  
+                      of 'ns:UnitOfMeasurementDetailsType'
+
+
+=cut
+
+=head2 getUnitOfMeasurementDetails()
+
+  Returned: Conditionally
+#    Returns: reference to an array  
+                      of 'ns:UnitOfMeasurementDetailsType'
+
+
+=cut
+

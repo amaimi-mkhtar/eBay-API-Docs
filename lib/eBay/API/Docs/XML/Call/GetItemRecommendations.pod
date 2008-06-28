@@ -1,0 +1,47 @@
+=head1 eBay::API::XML::Call::GetItemRecommendations
+
+eBay::API::XML::Call::GetItemRecommendations
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setGetRecommendationsRequestContainer()
+
+Specifies the data for a single item and configures the recommendation engines to use
+when processing the item.
+To retrieve recommendations for multiple items, pass a separate
+GetRecommendationsRequestContainer for each item. In this case,
+pass a user-defined correlation ID for each item to identify the matching response.
+
+  RequiredInput: Yes
+#    Argument: reference to an array  
+                      of 'ns:GetRecommendationsRequestContainerType'
+
+
+=cut
+
+=head2 getGetRecommendationsResponseContainer()
+
+Specifies recommended changes or opportunities for improving the data of a single item.
+If multiple items were processed, a separate GetRecommendationsResponseContainer
+is returned for each item. Each container includes a user-defined correlation ID
+to help you match items in the request to recommendations in the response.
+
+  Returned: Always
+#    Returns: reference to an array  
+                      of 'ns:GetRecommendationsResponseContainerType'
+
+
+=cut
+

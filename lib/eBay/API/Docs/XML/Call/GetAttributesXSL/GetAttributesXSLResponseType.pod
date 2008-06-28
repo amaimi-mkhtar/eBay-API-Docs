@@ -1,0 +1,46 @@
+=head1 eBay::API::XML::Call::GetAttributesXSL::GetAttributesXSLResponseType
+
+eBay::API::XML::Call::GetAttributesXSL::GetAttributesXSLResponseType
+
+=head1 DESCRIPTION
+
+Retrieves the Item Specifics SYI XSL stylesheet.Apply the stylesheet to the
+XML returned from a call to GetAttributesCS or GetProductSellingPages to
+render a form like the Item Specifics portion of eBay's Title and Description page.
+See the Developer's Guide for an overview of Item Specifics and information
+on working with the XSL.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setXSLFile()
+
+Child elements contain data related to one XSL file.
+Multiple XSLFile objects can be returned. However, currently only
+one is returned.
+
+#    Argument: reference to an array  
+                      of 'ns:XSLFileType'
+
+
+=cut
+
+=head2 getXSLFile()
+
+  Returned: Always
+  Details: DetailLevel: none, ReturnAll
+#    Returns: reference to an array  
+                      of 'ns:XSLFileType'
+
+
+=cut
+

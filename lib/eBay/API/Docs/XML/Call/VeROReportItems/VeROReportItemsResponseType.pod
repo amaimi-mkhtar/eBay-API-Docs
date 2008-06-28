@@ -1,0 +1,55 @@
+=head1 eBay::API::XML::Call::VeROReportItems::VeROReportItemsResponseType
+
+eBay::API::XML::Call::VeROReportItems::VeROReportItemsResponseType
+
+=head1 DESCRIPTION
+
+Contains a packet ID and status for the items reported by the VeRO Program member.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setVeROReportPacketID()
+
+A unique packet identifier for the items reported.
+
+Max: Min: 
+#    Argument: 'xs:long'
+
+
+=cut
+
+=head2 getVeROReportPacketID()
+
+  Returned: Conditionally
+#    Returns: 'xs:long'
+
+
+=cut
+
+=head2 setVeROReportPacketStatus()
+
+The processing status of the packet.
+
+#    Argument: 'ns:VeROReportPacketStatusCodeType'
+
+
+=cut
+
+=head2 getVeROReportPacketStatus()
+
+  Returned: Conditionally
+#    Returns: 'ns:VeROReportPacketStatusCodeType'
+
+
+=cut
+

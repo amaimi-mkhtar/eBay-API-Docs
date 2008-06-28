@@ -1,0 +1,21 @@
+=head1 eBay::API::XML::Call::ReviseMyMessages::ReviseMyMessagesResponseType
+
+eBay::API::XML::Call::ReviseMyMessages::ReviseMyMessagesResponseType
+
+=head1 DESCRIPTION
+
+The response to ReviseMyMessagesRequestType. If the request was successful, 
+ReviseMyMessages returns nothing.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

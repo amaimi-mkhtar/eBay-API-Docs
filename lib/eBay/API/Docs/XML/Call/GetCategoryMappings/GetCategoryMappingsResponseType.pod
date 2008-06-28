@@ -1,0 +1,65 @@
+=head1 eBay::API::XML::Call::GetCategoryMappings::GetCategoryMappingsResponseType
+
+eBay::API::XML::Call::GetCategoryMappings::GetCategoryMappingsResponseType
+
+=head1 DESCRIPTION
+
+Returns a map of old category IDs and corresponding active category IDs defined
+for the site to which the request was sent. Typically used to update an older item
+definition with a new category ID prior to listing the item.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setCategoryMapping()
+
+Mapping between an old category ID and an active category ID. Returned when
+category mappings exist and the value of CategoryVersion is different from
+the current version on the site.
+
+#    Argument: reference to an array  
+                      of 'ns:CategoryMappingType'
+
+
+=cut
+
+=head2 getCategoryMapping()
+
+  Returned: Conditionally
+  Details: DetailLevel: ReturnAll
+#    Returns: reference to an array  
+                      of 'ns:CategoryMappingType'
+
+
+=cut
+
+=head2 setCategoryVersion()
+
+Version value assigned to the current category mapping data for the site.
+Compare this value to the version value the application stored with the mappings
+the last time the application executed the call. If the versions are the same,
+the data has not changed since the last time the data was retrieved and stored.
+
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getCategoryVersion()
+
+  Returned: Always
+  Details: DetailLevel: none, ReturnAll
+#    Returns: 'xs:string'
+
+
+=cut
+

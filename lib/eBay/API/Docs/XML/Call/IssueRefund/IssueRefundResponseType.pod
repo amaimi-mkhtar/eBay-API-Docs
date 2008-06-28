@@ -1,0 +1,58 @@
+=head1 eBay::API::XML::Call::IssueRefund::IssueRefundResponseType
+
+eBay::API::XML::Call::IssueRefund::IssueRefundResponseType
+
+=head1 DESCRIPTION
+
+Indicates the refund amount that a seller issued to a buyer for a single Half.com transaction.
+Refunds may only be issued for a specific transaction. Sellers do not have the ability to issue a 
+general refund (not tied to a transaction) to a buyer.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setRefundFromSeller()
+
+Total amount that the seller asked Half.com to refund to 
+a buyer for a Half.com transaction.
+
+#    Argument: 'ns:AmountType'
+
+
+=cut
+
+=head2 getRefundFromSeller()
+
+  Returned: Always
+#    Returns: 'ns:AmountType'
+
+
+=cut
+
+=head2 setTotalRefundToBuyer()
+
+Total amount that Half.com refunded to the buyer (which could include the refund amount 
+from the seller plus a refund amount from Half.com).
+
+#    Argument: 'ns:AmountType'
+
+
+=cut
+
+=head2 getTotalRefundToBuyer()
+
+  Returned: Always
+#    Returns: 'ns:AmountType'
+
+
+=cut
+

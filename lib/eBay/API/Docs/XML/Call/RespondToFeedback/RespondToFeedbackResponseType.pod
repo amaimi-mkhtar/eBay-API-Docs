@@ -1,0 +1,23 @@
+=head1 eBay::API::XML::Call::RespondToFeedback::RespondToFeedbackResponseType
+
+eBay::API::XML::Call::RespondToFeedback::RespondToFeedbackResponseType
+
+=head1 DESCRIPTION
+
+Indicates the success or failure of the attempt to reply
+to feedback that has been left for a user, or to post a
+follow-up comment to a feedback comment a user has left
+for someone else.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

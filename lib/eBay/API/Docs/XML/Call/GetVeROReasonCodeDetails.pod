@@ -1,0 +1,56 @@
+=head1 eBay::API::XML::Call::GetVeROReasonCodeDetails
+
+eBay::API::XML::Call::GetVeROReasonCodeDetails
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setReasonCodeID()
+
+Unique identifier for a reason code. If this ReasonCodeID is passed then 
+only details of this ReasonCodeID will be returned. If no reason code is 
+specified, all reason codes are returned.
+
+Max: Default: Min: 
+  RequiredInput: Conditionally
+#    Argument: 'xs:long'
+
+
+=cut
+
+=head2 setReturnAllSites()
+
+Set to true to retrieve reason codes for all sites. If not specified, 
+reason codes are returned for the site specified in the request header 
+only. 
+If ReasonCodeID is specified, this parameter is ignored.
+
+Default: false
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 getVeROReasonCodeDetails()
+
+Contains the list of the status codes for a site.
+
+  Returned: Always
+#    Returns: 'ns:VeROReasonCodeDetailsType'
+
+
+=cut
+

@@ -1,0 +1,43 @@
+=head1 eBay::API::XML::Call::GetSessionID
+
+eBay::API::XML::Call::GetSessionID
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setRuName()
+
+The runame provided must match the one that will be used for validation
+during the creation of a user token.
+
+  RequiredInput: Yes
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getSessionID()
+
+A 32-character identifier supplied by eBay to an application. Used to confirm the
+identities of the user and the application in a URL redirect during the
+process in which the user agrees to let the application wield a user token that
+grants the application the right to access eBay data on behalf of the user.
+Subsequently also used as input for the FetchToken API call.
+
+  Returned: Always
+#    Returns: 'xs:string'
+
+
+=cut
+

@@ -1,0 +1,39 @@
+=head1 eBay::API::XML::Call::GetDispute::GetDisputeRequestType
+
+eBay::API::XML::Call::GetDispute::GetDisputeRequestType
+
+=head1 DESCRIPTION
+
+Requests the details of a dispute corresponding to the given dispute ID, any time
+after the dispute was opened and up to five years after it was closed. Can be used
+with Unpaid Item or Item Not Received disputes.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setDisputeID()
+
+The unique identifier of the dispute, returned when the dispute is created.
+
+  RequiredInput: Yes
+#    Argument: 'ns:DisputeIDType'
+
+
+=cut
+
+=head2 getDisputeID()
+
+#    Returns: 'ns:DisputeIDType'
+
+
+=cut
+

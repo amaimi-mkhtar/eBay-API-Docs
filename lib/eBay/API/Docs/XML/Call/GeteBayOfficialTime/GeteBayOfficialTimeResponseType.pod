@@ -1,0 +1,22 @@
+=head1 eBay::API::XML::Call::GeteBayOfficialTime::GeteBayOfficialTimeResponseType
+
+eBay::API::XML::Call::GeteBayOfficialTime::GeteBayOfficialTimeResponseType
+
+=head1 DESCRIPTION
+
+The Timestamp field indicates the official eBay system time in GMT.
+For information about converting between GMT and other time zones,
+see "Time Values" in the Data Types appendix in the eBay Web Services guide.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

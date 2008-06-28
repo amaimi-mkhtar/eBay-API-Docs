@@ -1,0 +1,79 @@
+=head1 eBay::API::XML::Call::GetNotificationPreferences
+
+eBay::API::XML::Call::GetNotificationPreferences
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setPreferenceLevel()
+
+Specifies what type of Preference to retrieve.
+
+  RequiredInput: Yes
+#    Argument: 'ns:NotificationRoleCodeType'
+
+
+=cut
+
+=head2 getApplicationDeliveryPreferences()
+
+Specifies application-based event preferences that have been enabled.
+
+  Returned: Conditionally
+#    Returns: 'ns:ApplicationDeliveryPreferencesType'
+
+
+=cut
+
+=head2 getDeliveryURLName()
+
+Specifies application delivery URL Name associated with this user.
+
+  Returned: Conditionally
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 getEventProperty()
+
+Characteristics or details of an event such as type, name and value.
+
+  Returned: Conditionally
+#    Returns: reference to an array  
+                      of 'ns:NotificationEventPropertyType'
+
+
+=cut
+
+=head2 getUserData()
+
+return user data for notification settings such as set mobile phone number etc.
+
+  Returned: Conditionally
+#    Returns: 'ns:NotificationUserDataType'
+
+
+=cut
+
+=head2 getUserDeliveryPreferenceArray()
+
+Specifies user-based event preferences that have been enabled or disabled.
+
+  Returned: Conditionally
+#    Returns: 'ns:NotificationEnableArrayType'
+
+
+=cut
+

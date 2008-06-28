@@ -1,0 +1,209 @@
+=head1 eBay::API::XML::Call::SendInvoice
+
+eBay::API::XML::Call::SendInvoice
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setCODCost()
+
+Italy site (site ID 101) only.
+Enables you to specify the cash-on-delivery (COD) cost, for COD shipping.
+
+SeeLink: URL: http://developer.ebay.com/DevZone/XML/docs/WebHelp/index.htm?context=eBay_XML_API&topic=CODInShippingDetails
+Title: Specifying the Cash on Delivery Option in Shipping Details
+
+  RequiredInput: No
+#    Argument: 'ns:AmountType'
+
+
+=cut
+
+=head2 setCheckoutInstructions()
+
+Seller's Payment instructions/message to the buyer and return policy.
+Default is null.
+
+MaxLength: 500
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 setEmailCopyToSeller()
+
+Specifies whether the seller wishes to be copied on the invoice email that
+will be sent to the buyer. Default will be true.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 setInsuranceFee()
+
+Insurance cost, as set by seller, if ShippingType = 1.
+Specify if InsuranceOption is optional or required. Must
+be greater than zero value if a value of Optional or Required is passed in
+InsuranceOption. Value specified should be the total cost of insuring the
+item.<br>
+<br>
+Not applicable to invoices for digital listings.
+
+SeeLink: URL: http://developer.ebay.com/DevZone/XML/docs/WebHelp/index.htm?context=eBay_XML_API&topic=ShippingGettingCosts
+Title: Determining Shipping Costs for a Listing
+Default: 0.0
+
+  RequiredInput: No
+#    Argument: 'ns:AmountType'
+
+
+=cut
+
+=head2 setInsuranceOption()
+
+Specifies whether insurance fee is required. An InsuranceOption value of
+IncludedInShippingHandling cannot be used if the item will use calculated
+shipping. Some shipping carriers automatically include shipping insurance
+for qualifying items.<br>
+<br>
+Not applicable to invoices for digital listings.
+
+SeeLink: URL: http://developer.ebay.com/DevZone/XML/docs/WebHelp/index.htm?context=eBay_XML_API&topic=ShippingGettingCosts
+Title: Determining Shipping Costs for a Listing
+
+  RequiredInput: No
+  AllValuesExcept: NotOfferedOnSite
+#    Argument: 'ns:InsuranceOptionCodeType'
+
+
+=cut
+
+=head2 setInternationalShippingServiceOptions()
+
+If the buyer's shipping address is international, use this to offer up to
+three shipping services, and omit all domestic ShippingServiceOptions. Any
+shipping insurance cost specified should be the same for all services
+offered.
+<br><br>
+Not applicable to invoices for digital listings.
+
+  RequiredInput: No
+#    Argument: reference to an array  
+                      of 'ns:InternationalShippingServiceOptionsType'
+
+
+=cut
+
+=head2 setItemID()
+
+Item ID. If OrderID is not provided, both ItemID and
+TransactionID must be provided.
+
+MaxLength: 19 (Note: The eBay database specifies 38. Currently, Item IDs are usually 9 to 12 digits)
+
+  RequiredInput: Conditionally
+#    Argument: 'ns:ItemIDType'
+
+
+=cut
+
+=head2 setOrderID()
+
+Unique ID for a multi-item order. Either this OrderID must
+be specified or ItemID plus TransactionID must be specified.
+If OrderID is specified, ItemID and
+TransactionID are ignored if present in the same request. Changes to the
+checkout status are applied to the specified order as a whole
+(and thus to the child transactions associated with the order).
+
+  RequiredInput: Conditionally
+#    Argument: 'ns:OrderIDType'
+
+
+=cut
+
+=head2 setPayPalEmailAddress()
+
+Provide PayPal email address if the payment method added is PayPal.
+For digital listings, this must be an email address associated with
+a verified PayPal Premier or Business account.
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 setPaymentMethods()
+
+Optional ability for the seller to add certain payment methods on
+transaction if they were not originally specified on the item.  Valid
+values are PayPal in the US, and MoneyXferAcceptedInCheckout (CIP+) in
+Germany.
+
+  RequiredInput: No
+#    Argument: reference to an array  
+                      of 'ns:BuyerPaymentMethodCodeType'
+
+
+=cut
+
+=head2 setSalesTax()
+
+The details of the sales tax added to the invoice.
+
+  RequiredInput: No
+#    Argument: 'ns:SalesTaxType'
+
+
+=cut
+
+=head2 setShippingServiceOptions()
+
+If the buyer's shipping address is domestic, use this to offer up to
+three shipping services, and omit all InternationalShippingServiceOptions. Any
+shipping insurance cost specified should be the same for all services
+offered.
+<br><br>
+Not applicable to invoices for digital listings.
+
+  RequiredInput: No
+#    Argument: reference to an array  
+                      of 'ns:ShippingServiceOptionsType'
+
+
+=cut
+
+=head2 setTransactionID()
+
+ID for the transaction with which the item was sold.
+If OrderID is not provided, both ItemID and
+TransactionID must be provided.
+For Chinese auctions, the value passed in the TransactionId
+argument must be 0 or the call will fail with an error.
+Call GetItemTransactions or GetSellerTransactions to
+determine the correct transaction ID.
+
+MaxLength: 19 (Note: The eBay database specifies 38. Currently, transaction IDs are usually 9 to 12 digits.)
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:string'
+
+
+=cut
+

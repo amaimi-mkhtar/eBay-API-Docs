@@ -1,0 +1,41 @@
+=head1 eBay::API::XML::Call::GetStoreCustomPage
+
+eBay::API::XML::Call::GetStoreCustomPage
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setPageID()
+
+If a PageID is specified, then that page is returned, and
+the returned page contains the page Content.
+If no PageID is specified, then all pages are returned, without
+the page Content.
+
+  RequiredInput: No
+#    Argument: 'xs:long'
+
+
+=cut
+
+=head2 getCustomPageArray()
+
+The custom page or custom pages.
+
+  Returned: Always
+#    Returns: 'ns:StoreCustomPageArrayType'
+
+
+=cut
+

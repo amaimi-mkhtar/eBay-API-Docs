@@ -1,0 +1,130 @@
+=head1 eBay::API::XML::Call::GetMyeBaySelling::GetMyeBaySellingResponseType
+
+eBay::API::XML::Call::GetMyeBaySelling::GetMyeBaySellingResponseType
+
+=head1 DESCRIPTION
+
+Returns summary and detail information about items the user is selling,
+items scheduled to sell, currently listed, sold, and closed but not sold.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setActiveList()
+
+Contains the items the user is selling that have active listings.
+
+#    Argument: 'ns:PaginatedItemArrayType'
+
+
+=cut
+
+=head2 getActiveList()
+
+  Returned: Conditionally
+  Details: DetailLevel: none, ReturnSummary, ReturnAll
+#    Returns: 'ns:PaginatedItemArrayType'
+
+
+=cut
+
+=head2 setScheduledList()
+
+Contains the items the user has scheduled for sale, but whose listings have
+not yet started.
+
+#    Argument: 'ns:PaginatedItemArrayType'
+
+
+=cut
+
+=head2 getScheduledList()
+
+  Returned: Conditionally
+  Details: DetailLevel: none, ReturnSummary, ReturnAll
+#    Returns: 'ns:PaginatedItemArrayType'
+
+
+=cut
+
+=head2 setSellingSummary()
+
+Contains summary information about the items the user is selling.
+
+#    Argument: 'ns:SellingSummaryType'
+
+
+=cut
+
+=head2 getSellingSummary()
+
+  Returned: Always
+  Details: DetailLevel: none, ReturnSummary, ReturnAll
+#    Returns: 'ns:SellingSummaryType'
+
+
+=cut
+
+=head2 setSoldList()
+
+Contains the items the user has sold.
+
+#    Argument: 'ns:PaginatedOrderTransactionArrayType'
+
+
+=cut
+
+=head2 getSoldList()
+
+  Returned: Conditionally
+  Details: DetailLevel: none, ReturnSummary, ReturnAll
+#    Returns: 'ns:PaginatedOrderTransactionArrayType'
+
+
+=cut
+
+=head2 setSummary()
+
+Contains summary information about the items the user is selling.
+
+#    Argument: 'ns:MyeBaySellingSummaryType'
+
+
+=cut
+
+=head2 getSummary()
+
+  Returned: Always
+  Details: DetailLevel: none, ReturnSummary, ReturnAll
+#    Returns: 'ns:MyeBaySellingSummaryType'
+
+
+=cut
+
+=head2 setUnsoldList()
+
+Contains the items whose listings have ended but that have not sold.
+
+#    Argument: 'ns:PaginatedItemArrayType'
+
+
+=cut
+
+=head2 getUnsoldList()
+
+  Returned: Conditionally
+  Details: DetailLevel: none, ReturnSummary, ReturnAll
+#    Returns: 'ns:PaginatedItemArrayType'
+
+
+=cut
+

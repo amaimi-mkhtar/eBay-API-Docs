@@ -1,0 +1,120 @@
+=head1 eBay::API::XML::Call::GetMyMessages::GetMyMessagesRequestType
+
+eBay::API::XML::Call::GetMyMessages::GetMyMessagesRequestType
+
+=head1 DESCRIPTION
+
+Used to retrieve information about the messages and alerts sent
+to a given user. Depending on the detail level, this information
+can include message and alert counts, resolution and flagged
+status, message and/or alert headers, and message and/or alert
+body text.
+<br /><br />
+Note that this call requires a DetailLevel in the
+request. Omitting the Detail Level returns an error.
+<br /><br />
+ItemID is not returned with this call. Use GetMemberMessages instead.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setAlertIDs()
+
+Contains a list of up to 10 AlertID values.
+When AlertID values are used as input, you must
+generally specify either AlertID values, or
+MessageID values, or both.
+
+  RequiredInput: Conditionally
+#    Argument: 'ns:MyMessagesAlertIDArrayType'
+
+
+=cut
+
+=head2 getAlertIDs()
+
+#    Returns: 'ns:MyMessagesAlertIDArrayType'
+
+
+=cut
+
+=head2 setEndTime()
+
+Used as end of date range filter.
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 getEndTime()
+
+#    Returns: 'xs:dateTime'
+
+
+=cut
+
+=head2 setFolderID()
+
+An ID that uniquely identifies the My Messages folder from which to retrieve alerts or messages.
+
+  RequiredInput: No
+#    Argument: 'xs:long'
+
+
+=cut
+
+=head2 getFolderID()
+
+#    Returns: 'xs:long'
+
+
+=cut
+
+=head2 setMessageIDs()
+
+Contains a list of up to 10 MessageID values.
+When MessageID values are used as input, you must
+generally specify either AlertID values, or
+MessageID values, or both.
+
+  RequiredInput: Conditionally
+#    Argument: 'ns:MyMessagesMessageIDArrayType'
+
+
+=cut
+
+=head2 getMessageIDs()
+
+#    Returns: 'ns:MyMessagesMessageIDArrayType'
+
+
+=cut
+
+=head2 setStartTime()
+
+Used as beginning of date range filter.
+
+  RequiredInput: No
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 getStartTime()
+
+#    Returns: 'xs:dateTime'
+
+
+=cut
+

@@ -1,0 +1,66 @@
+=head1 eBay::API::XML::Call::GetCrossPromotions
+
+eBay::API::XML::Call::GetCrossPromotions
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setItemID()
+
+The unique ID of the referring item. The cross-promoted
+items will supplement this item.
+
+MaxLength: 19 (Note: The eBay database specifies 38. Currently, Item IDs are usually 9 to 12 digits)
+
+  RequiredInput: Yes
+#    Argument: 'ns:ItemIDType'
+
+
+=cut
+
+=head2 setPromotionMethod()
+
+The cross-promotion method you want to use for the
+returned list, either UpSell or CrossSell.
+
+  RequiredInput: Yes
+#    Argument: 'ns:PromotionMethodCodeType'
+
+
+=cut
+
+=head2 setPromotionViewMode()
+
+The role of the person requesting to view the cross-promoted
+items, either seller or buyer. Default is buyer.
+
+  RequiredInput: No
+#    Argument: 'ns:TradingRoleCodeType'
+
+
+=cut
+
+=head2 getCrossPromotion()
+
+A list of cross-promoted items defined for a specific
+referring item. The list is either upsell or cross-sell
+items, according to the value of PromotionMethod in
+GetCrossPromotionsRequest.
+
+  Returned: Always
+#    Returns: 'ns:CrossPromotionsType'
+
+
+=cut
+

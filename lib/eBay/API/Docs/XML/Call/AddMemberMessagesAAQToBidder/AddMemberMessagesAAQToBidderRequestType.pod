@@ -1,0 +1,44 @@
+=head1 eBay::API::XML::Call::AddMemberMessagesAAQToBidder::AddMemberMessagesAAQToBidderRequestType
+
+eBay::API::XML::Call::AddMemberMessagesAAQToBidder::AddMemberMessagesAAQToBidderRequestType
+
+=head1 DESCRIPTION
+
+Enables a seller to send up to 10 messages to bidders and
+users who have made offers (via Best Offer) during an
+active listing. The call can be used with Motors or Business & Industrial 
+categories only.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setAddMemberMessagesAAQToBidderRequestContainer()
+
+Allows a seller to send up to 10 messages to
+bidders and users who have made offers (via Best
+Offer) during an active listing.
+
+  RequiredInput: Yes
+#    Argument: reference to an array  
+                      of 'ns:AddMemberMessagesAAQToBidderRequestContainerType'
+
+
+=cut
+
+=head2 getAddMemberMessagesAAQToBidderRequestContainer()
+
+#    Returns: reference to an array  
+                      of 'ns:AddMemberMessagesAAQToBidderRequestContainerType'
+
+
+=cut
+

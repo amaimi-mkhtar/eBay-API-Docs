@@ -1,0 +1,64 @@
+=head1 eBay::API::XML::Call::GetAttributesXSL::GetAttributesXSLRequestType
+
+eBay::API::XML::Call::GetAttributesXSL::GetAttributesXSLRequestType
+
+=head1 DESCRIPTION
+
+Retrieves the Item Specifics SYI XSL stylesheet. Apply the stylesheet to the
+XML returned from a call to GetAttributesCS or GetProductSellingPages to
+render a form like the Item Specifics portion of eBay's Title and Description page.
+See the eBay Web Services Guide for an overview of Item Specifics and information
+on working with the XSL.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setFileName()
+
+The name of the XSL file to retrieve. If not specified, the call
+returns the latest versions of all available XSL files.
+FileName is an optional input. Valid values<br>
+<br>
+syi_attributes.xsl
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getFileName()
+
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setFileVersion()
+
+The desired version of the XSL file. Required if FileName is specified.
+If not specified, the call returns the latest version of the file.
+(This is not a filter for retrieving changes to the XSL file.)
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getFileVersion()
+
+#    Returns: 'xs:string'
+
+
+=cut
+

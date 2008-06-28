@@ -1,0 +1,42 @@
+=head1 eBay::API::XML::Call::GetMessagePreferences::GetMessagePreferencesResponseType
+
+eBay::API::XML::Call::GetMessagePreferences::GetMessagePreferencesResponseType
+
+=head1 DESCRIPTION
+
+Contains the ASQ subjects for the user specified in the request.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setASQPreferences()
+
+Returns a seller's ASQ subjects, each in its own Subject
+node. If the seller has not customized the ASQ subjects
+using SetMessagePreferences, the call will return the
+current default values. Returned if
+IncludeASQPreferences = true was specified in the
+request.
+
+#    Argument: 'ns:ASQPreferencesType'
+
+
+=cut
+
+=head2 getASQPreferences()
+
+  Returned: Conditionally
+#    Returns: 'ns:ASQPreferencesType'
+
+
+=cut
+

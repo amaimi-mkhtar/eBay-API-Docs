@@ -1,0 +1,162 @@
+=head1 eBay::API::XML::Call::GetSellerPayments::GetSellerPaymentsResponseType
+
+eBay::API::XML::Call::GetSellerPayments::GetSellerPaymentsResponseType
+
+=head1 DESCRIPTION
+
+Returns a summary of pending or paid payments that Half.com created for the seller
+identified by the authentication token in the request. Only returns payments that
+occurred within a particular pay period. Each payment is for one transaction for
+one item in one order. An order can contain transactions for multiple items from
+multiple sellers, but this call only retrieves payments that are relevant to one
+seller. Payments are only issued for items and transactions that the seller has
+confirmed (see the Half.com online help for details). The financial value of a
+payment is typically based on an amount that a buyer paid to Half.com for a
+transaction, plus the shipping cost the buyer paid to Half.com for the item, minus
+Half.com's commission. For most sellers, each month contains two pay periods: One
+from the 1st to the 15th of the month, and one from the 16th to the last day of
+the month. Payments are submitted to the seller's financial institution a certain
+number of days after the current pay period ends (see the Half.com online help for
+details).
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setHasMorePayments()
+
+If true, there are more payments yet to be retrieved. Additional
+GetSellerPayments calls with higher page numbers or more entries per page
+must be made to retrieve these payments. If false, no more payments are
+available or no payments match the request (based on the payment status
+and time filter).
+
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isHasMorePayments()
+
+  Returned: Always
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setPageNumber()
+
+Indicates which page of data holds the current result set. Will be the
+same as the value specified in the Pagination.PageNumber input. (If the
+input is higher than the total number of pages, the call fails with an
+error.) If no payments are returned, the value is 0. If payments are
+returned, the first page number is 1.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getPageNumber()
+
+  Returned: Always
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setPaginationResult()
+
+Contains information regarding the pagination of data (if pagination is used),
+including total number of pages and total number of entries.
+
+#    Argument: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 getPaginationResult()
+
+  Returned: Always
+#    Returns: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 setPaymentsPerPage()
+
+Indicates the number of payments that can be returned per page of data
+(i.e., per call). This is the same as the value specified in the
+Pagination.EntriesPerPage input (or the default value, if EntriesPerPage
+was not specified). This is not necessarily the actual number of payments
+returned per page (see ReturnedPaymentCountActual).
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getPaymentsPerPage()
+
+  Returned: Always
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setReturnedPaymentCountActual()
+
+Indicates the total number of payments returned (i.e., the number of
+SellerPayment entries returned.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getReturnedPaymentCountActual()
+
+  Returned: Always
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setSellerPayment()
+
+Information about a single payment that matches the criteria in the
+request. A payment is between Half.com and a seller. Each payment is for
+one transaction for one item in one order. An order can contain
+transactions for multiple items from multiple sellers, but this call only
+retrieves payments that are relevant to one seller. The financial value of
+a payment is typically based on an amount that a buyer paid to Half.com
+for a transaction, plus the shipping cost the buyer paid for the item,
+minus Half.com's commission. Payments can also describe refunds that the
+seller has issued. Multiple SellerPayment entries can be returned per page
+of results. Typically, they are returned in reverse chronological order
+(most recent PaidTime first). Only returned if payments exist that match
+the request.
+
+#    Argument: reference to an array  
+                      of 'ns:SellerPaymentType'
+
+
+=cut
+
+=head2 getSellerPayment()
+
+  Returned: Conditionally
+#    Returns: reference to an array  
+                      of 'ns:SellerPaymentType'
+
+
+=cut
+

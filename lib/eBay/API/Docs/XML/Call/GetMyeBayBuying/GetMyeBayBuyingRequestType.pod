@@ -1,0 +1,204 @@
+=head1 eBay::API::XML::Call::GetMyeBayBuying::GetMyeBayBuyingRequestType
+
+eBay::API::XML::Call::GetMyeBayBuying::GetMyeBayBuyingRequestType
+
+=head1 DESCRIPTION
+
+Returns items from the All Buying section of the user's My eBay
+account, including items the user is watching, bidding on, has
+won, has not won, or has made best offers on.
+<br /><br />
+A DetailLevel of ReturnSummary returns only the BuyingSummary
+and the specific container(s) requested (by adding an Include value
+of true for each container you want to include in the response).
+<br /><br />
+A DetailLevel of ReturnAll returns the BuyingSummary and all
+other containers that do not contain the Include tag. Any containers
+that have an Include value specified will not be returned with the
+response.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setBestOfferList()
+
+Specifies how to return the list of items on which the user has placed
+best offers. Allowed values are Include, ListingType, Sort, DurationInDays
+(0-60 valid), IncludeNotes, and Pagination. Include in the request to
+return this container at a DetailLevel of ReturnSummary.
+
+  RequiredInput: No
+#    Argument: 'ns:ItemListCustomizationType'
+
+
+=cut
+
+=head2 getBestOfferList()
+
+#    Returns: 'ns:ItemListCustomizationType'
+
+
+=cut
+
+=head2 setBidAssistantList()
+
+This is an optional element, used to indicate whether the Bid Assistant feature is being used.
+
+  RequiredInput: No
+#    Argument: 'ns:BidAssistantListType'
+
+
+=cut
+
+=head2 getBidAssistantList()
+
+#    Returns: 'ns:BidAssistantListType'
+
+
+=cut
+
+=head2 setBidList()
+
+Specifies how to return the list of items bid on in the user's My eBay
+list. Allowed values are Sort and IncludeNotes.Include in the request to
+return this container at a DetailLevel of ReturnSummary.
+
+  RequiredInput: No
+#    Argument: 'ns:ItemListCustomizationType'
+
+
+=cut
+
+=head2 getBidList()
+
+#    Returns: 'ns:ItemListCustomizationType'
+
+
+=cut
+
+=head2 setFavoriteSearches()
+
+Specifies how to return the list of favorite searches in the user's My
+eBay list. Only returned if the user has Favorite Searches. All detail levels return the search name, search query, and search elements, such
+as QueryKeywords, SortOrder, and Condition. Do not use an Include tag
+if you are using a detail level of ReturnAll.
+
+  RequiredInput: No
+#    Argument: 'ns:MyeBaySelectionType'
+
+
+=cut
+
+=head2 getFavoriteSearches()
+
+#    Returns: 'ns:MyeBaySelectionType'
+
+
+=cut
+
+=head2 setFavoriteSellers()
+
+Specifies how to return the list of favorite sellers in the user's My eBay
+list. All values are allowed. Include in the request to return this
+container at a DetailLevel of ReturnSummary.
+
+  RequiredInput: No
+#    Argument: 'ns:MyeBaySelectionType'
+
+
+=cut
+
+=head2 getFavoriteSellers()
+
+#    Returns: 'ns:MyeBaySelectionType'
+
+
+=cut
+
+=head2 setLostList()
+
+Specifies how to return the list of items bid on and lost in the user's My
+eBay list. Allowed values are DurationInDays (valid values 0-60), Sort,
+IncludeNotes, and Pagination. Include in the request to return this
+container at a DetailLevel of ReturnSummary.
+
+  RequiredInput: No
+#    Argument: 'ns:ItemListCustomizationType'
+
+
+=cut
+
+=head2 getLostList()
+
+#    Returns: 'ns:ItemListCustomizationType'
+
+
+=cut
+
+=head2 setSecondChanceOffer()
+
+Specifies how to return the list of second chance offers in the user's My
+eBay list. All values are allowed. Include in the request to return this
+container at a DetailLevel of ReturnSummary.
+
+  RequiredInput: No
+#    Argument: 'ns:MyeBaySelectionType'
+
+
+=cut
+
+=head2 getSecondChanceOffer()
+
+#    Returns: 'ns:MyeBaySelectionType'
+
+
+=cut
+
+=head2 setWatchList()
+
+Specifies how to return the list of watched items in the user's My eBay
+list. Include in the request to return this container at a DetailLevel of
+ReturnSummary.
+
+  RequiredInput: No
+#    Argument: 'ns:ItemListCustomizationType'
+
+
+=cut
+
+=head2 getWatchList()
+
+#    Returns: 'ns:ItemListCustomizationType'
+
+
+=cut
+
+=head2 setWonList()
+
+Specifies how to return the list of items bid on and won in the user's My
+eBay list. Allowed values are DurationInDays (valid values 0-60), Sort,
+IncludeNotes, and Pagination. Include in the request to return this
+container at a DetailLevel of ReturnSummary.
+
+  RequiredInput: No
+#    Argument: 'ns:ItemListCustomizationType'
+
+
+=cut
+
+=head2 getWonList()
+
+#    Returns: 'ns:ItemListCustomizationType'
+
+
+=cut
+

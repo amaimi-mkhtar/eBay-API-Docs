@@ -1,0 +1,45 @@
+=head1 eBay::API::XML::Call::GetCharities::GetCharitiesResponseType
+
+eBay::API::XML::Call::GetCharities::GetCharitiesResponseType
+
+=head1 DESCRIPTION
+
+Contains information about charity nonprofit organizations that meet the
+criteria specified in the request.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setCharity()
+
+Contains information about charity nonprofit organizations that
+meet the criteria specified in the request. One Charity node is
+returned for each applicable nonprofit charity organization. The
+CharityID value is returned as an id attribute of this node. If no
+nonprofit charity organization is applicable, this node is not
+returned.
+
+#    Argument: reference to an array  
+                      of 'ns:CharityInfoType'
+
+
+=cut
+
+=head2 getCharity()
+
+  Returned: Conditionally
+#    Returns: reference to an array  
+                      of 'ns:CharityInfoType'
+
+
+=cut
+

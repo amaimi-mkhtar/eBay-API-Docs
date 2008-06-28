@@ -1,0 +1,20 @@
+=head1 eBay::API::XML::Call::AddMemberMessageAAQToPartner::AddMemberMessageAAQToPartnerResponseType
+
+eBay::API::XML::Call::AddMemberMessageAAQToPartner::AddMemberMessageAAQToPartnerResponseType
+
+=head1 DESCRIPTION
+
+Response to AddMemberMessageAAQToPartner request.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

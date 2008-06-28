@@ -1,0 +1,125 @@
+=head1 eBay::API::XML::Call::GetLiveAuctionBidders::GetLiveAuctionBiddersResponseType
+
+eBay::API::XML::Call::GetLiveAuctionBidders::GetLiveAuctionBiddersResponseType
+
+=head1 DESCRIPTION
+
+Includes the list of bidders for the requested catalog.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setBidderDetails()
+
+Contains the bidder details that match the bidder query
+passed in the request.
+Returned when bidder search results are found.
+
+#    Argument: 'ns:BidderDetailArrayType'
+
+
+=cut
+
+=head2 getBidderDetails()
+
+  Returned: Conditionally
+#    Returns: 'ns:BidderDetailArrayType'
+
+
+=cut
+
+=head2 setPageNumber()
+
+The page number for the page of data returned.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getPageNumber()
+
+  Returned: Conditionally
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setPaginationResult()
+
+Shows the pagination of data returned by requests. Only returned
+if Pagination was specified in the request.
+
+#    Argument: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 getPaginationResult()
+
+  Returned: Conditionally
+#    Returns: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 setTotalApproved()
+
+Total number of bidders in Approved state.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getTotalApproved()
+
+  Returned: Always
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setTotalDenied()
+
+Total number of bidders in Denied state.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getTotalDenied()
+
+  Returned: Always
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setTotalPending()
+
+Total number of bidders in Pending state.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getTotalPending()
+
+  Returned: Always
+#    Returns: 'xs:int'
+
+
+=cut
+

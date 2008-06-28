@@ -1,0 +1,21 @@
+=head1 eBay::API::XML::Call::SetReturnURL::SetReturnURLResponseType
+
+eBay::API::XML::Call::SetReturnURL::SetReturnURLResponseType
+
+=head1 DESCRIPTION
+
+Confirms whether your application's authentication preferences and other details
+were configured successfully.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

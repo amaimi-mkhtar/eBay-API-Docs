@@ -1,0 +1,38 @@
+=head1 eBay::API::XML::Call::AddMemberMessageAAQToPartner
+
+eBay::API::XML::Call::AddMemberMessageAAQToPartner
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setItemID()
+
+The unique ID of the item about which the question was asked.
+
+  RequiredInput: Yes
+#    Argument: 'ns:ItemIDType'
+
+
+=cut
+
+=head2 setMemberMessage()
+
+The message itself.
+
+  RequiredInput: Yes
+#    Argument: 'ns:MemberMessageType'
+
+
+=cut
+

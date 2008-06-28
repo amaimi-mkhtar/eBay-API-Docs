@@ -1,0 +1,202 @@
+=head1 eBay::API::XML::Call::GetSellerTransactions::GetSellerTransactionsRequestType
+
+eBay::API::XML::Call::GetSellerTransactions::GetSellerTransactionsRequestType
+
+=head1 DESCRIPTION
+
+Retrieves transaction information for the user for which the call is made (and
+not for any other user), where a transaction is the information about the sale
+of one or more items by one buyer from a single listing. (To retrieve
+transactions for another seller's listing, use GetItemTransactions.)
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setIncludeContainingOrder()
+
+Whether to retrieve the order information.
+Default is false.
+Will not return the ContainingOrder information for an Express transaction that was part of an Express order.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isIncludeContainingOrder()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setIncludeFinalValueFee()
+
+Indicates whether to include final value fees in the response.
+For most listing types, the fee is returned in Transaction.FinalValueFee.
+For Dutch auctions that end with bids (not Buy It Now purchases), the fee
+is returned in Item.SellingStatus.FinalValueFee.
+The Final Value Fee for FixedPriceItem, StoresFixedPrice, and Buy It Now
+Dutch listing types is returned on a transaction by transaction basis.
+For all other listing types, including Chinese and Dutch (no Buy It Now
+purchases), the Final Value Fee is returned when the listing status is
+Completed.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isIncludeFinalValueFee()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setModTimeFrom()
+
+Also see NumberOfDays which, if used, takes precedence over ModTimeFrom and
+ModTimeTo. If you prefer to use ModTimeFrom and
+ModTimeTo, you specify the time range within which
+retrieved transactions' statuses were modified.
+ModTimeFrom is the earlier (older) date and ModTimeTo is the later (more recent) date.
+If you specify this value, and do not specify the other end of the range,
+then the time range is 30 days.
+The time range between ModTimeFrom to ModTimeTo
+cannot be greater than 30 days.
+
+  RequiredInput: No
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 getModTimeFrom()
+
+#    Returns: 'xs:dateTime'
+
+
+=cut
+
+=head2 setModTimeTo()
+
+Also see NumberOfDays which, if used, takes precedence over ModTimeFrom and
+ModTimeTo. If you prefer to use ModTimeFrom and
+ModTimeTo, you specify the time range within which
+retrieved transactions' statuses were modified.
+ModTimeFrom is the earlier (older) date and ModTimeTo is the later (more recent) date.
+If you specify this value, and do not specify the other end of the range,
+then the time range is 30 days.
+The time range between ModTimeFrom to ModTimeTo
+cannot be greater than 30 days.
+
+  RequiredInput: No
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 getModTimeTo()
+
+#    Returns: 'xs:dateTime'
+
+
+=cut
+
+=head2 setNumberOfDays()
+
+NumberOfDays enables you to specify the number of days' worth
+of new and modified transactions that you want to retrieve.
+The call response contains the transactions
+whose status was modified within the
+specified number of days since the API call was made.
+NumberOfDays is often preferable to using
+the ModTimeFrom and ModTimeTo filters because you only need to specify
+one value.
+If you use NumberOfDays, then ModTimeFrom and ModTimeTo are ignored.
+For this field, one day is defined as 24 hours.
+
+Max: 30
+
+  RequiredInput: No
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getNumberOfDays()
+
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setPagination()
+
+Child elements control pagination of the output. Use its EntriesPerPage
+property to control the number of transactions to return per call and its
+PageNumber property to specify the page of data to return.
+
+  RequiredInput: No
+#    Argument: 'ns:PaginationType'
+
+
+=cut
+
+=head2 getPagination()
+
+#    Returns: 'ns:PaginationType'
+
+
+=cut
+
+=head2 setPlatform()
+
+Name of the eBay co-branded site upon which the transaction was made.
+This will serve as a filter for the transactions to get emitted in the response.
+
+  RequiredInput: No
+#    Argument: 'ns:TransactionPlatformCodeType'
+
+
+=cut
+
+=head2 getPlatform()
+
+#    Returns: 'ns:TransactionPlatformCodeType'
+
+
+=cut
+
+=head2 setSKUArray()
+
+Specifies a set of seller SKUs to use as a filter. Only items with the
+specified SKUs are returned. Do not specify this tag if you do not want to
+filter by SKU. Corresponds to the SKU property that is part of ItemType
+and that can be provided when, for example, you use the AddItem call.
+
+  RequiredInput: No
+#    Argument: 'ns:SKUArrayType'
+
+
+=cut
+
+=head2 getSKUArray()
+
+#    Returns: 'ns:SKUArrayType'
+
+
+=cut
+

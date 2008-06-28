@@ -1,0 +1,21 @@
+=head1 eBay::API::XML::Call::GetTokenStatus::GetTokenStatusRequestType
+
+eBay::API::XML::Call::GetTokenStatus::GetTokenStatusRequestType
+
+=head1 DESCRIPTION
+
+Requests current status of user token. The full set of developer keys is required for
+the GetTokenStatus call.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

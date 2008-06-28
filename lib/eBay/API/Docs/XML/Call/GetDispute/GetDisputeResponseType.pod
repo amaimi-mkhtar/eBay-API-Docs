@@ -1,0 +1,40 @@
+=head1 eBay::API::XML::Call::GetDispute::GetDisputeResponseType
+
+eBay::API::XML::Call::GetDispute::GetDisputeResponseType
+
+=head1 DESCRIPTION
+
+Returned after calling GetDisputeRequest. Returns the record of
+a dispute, including the dispute state and other information.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setDispute()
+
+The dispute record, containing information about
+the buyer, seller, dispute state, dispute status,
+comments added to the dispute, or resolutions.
+
+#    Argument: 'ns:DisputeType'
+
+
+=cut
+
+=head2 getDispute()
+
+  Returned: Always
+#    Returns: 'ns:DisputeType'
+
+
+=cut
+

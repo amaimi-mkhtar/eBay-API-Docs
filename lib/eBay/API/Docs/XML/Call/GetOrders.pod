@@ -1,0 +1,195 @@
+=head1 eBay::API::XML::Call::GetOrders
+
+eBay::API::XML::Call::GetOrders
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setCreateTimeFrom()
+
+The starting date of the date range for the orders to retrieve.
+Also applicable to Half.com.
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 setCreateTimeTo()
+
+The ending date of the date range for the orders to retrieve.
+Also applicable to Half.com.
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 setListingType()
+
+To retrieve Half.com orders, specify Half. To retrieve eBay
+orders, don't specify this field at all.
+(This field can't be used as a listing type filter on eBay.com.
+If not provided or if any value other than Half is specified,
+this field has no useful effect and the call retrieves
+eBay orders of all types.
+Also, you can't retrieve both eBay and Half.com orders
+in the same response.)
+
+  RequiredInput: Conditionally
+  OnlyTheseValues: Half
+#    Argument: 'ns:ListingTypeCodeType'
+
+
+=cut
+
+=head2 setOrderIDArray()
+
+A set of orders to retrieve.
+Does not retrieve Express orders, even when the explicit Express OrderID found on the eBay Express site is included in the request.
+Not applicable to Half.com.
+
+  RequiredInput: Conditionally
+#    Argument: 'ns:OrderIDArrayType'
+
+
+=cut
+
+=head2 setOrderRole()
+
+Filters orders based on the role of the user making the
+GetOrders request.
+Not applicable to Half.com.
+
+  RequiredInput: Conditionally
+#    Argument: 'ns:TradingRoleCodeType'
+
+
+=cut
+
+=head2 setOrderStatus()
+
+Filters the returned orders by order status (Active or Completed).
+To retrieve orders with a status of Inactive or Cancelled, you must
+specify the order IDs (OrderIDArray.OrderID). When you specify
+OrderIDArray.OrderID, no other filters are used.
+<br><br>
+For Half.com, you can get some, but not all orders.
+Orders on Half.com have different order status values from
+eBay orders. When you set ListingType to Half, set OrderStatus
+to Shipped. Otherwise, GetOrders may return incomplete information
+or have indeterminate results.
+
+  RequiredInput: Conditionally
+  OnlyTheseValues: Active, Completed, Shipped
+#    Argument: 'ns:OrderStatusCodeType'
+
+
+=cut
+
+=head2 setPagination()
+
+Not applicable to eBay.com. Applicable to Half.com. If many orders are available,
+you may need to call GetOrders multiple times to retrieve all the data.
+Each result set is returned as a page of entries.
+Use this Pagination information to indicate the maximum number of entries to
+retrieve per page (i.e., per call), the page number to retrieve, and other data.
+
+  RequiredInput: No
+#    Argument: 'ns:PaginationType'
+
+
+=cut
+
+=head2 isHasMoreOrders()
+
+Applies only to Half.com. If true, there are more orders yet to be
+retrieved. Additional GetOrders calls with higher page numbers or more
+entries per page must be made to retrieve these orders. If false, no more
+orders are available or no orders match the request (based on the input
+filters).
+
+  Returned: Always
+  Details: DetailLevel: none
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 getOrderArray()
+
+The set of orders that match the order IDs or filter criteria specified.
+Also applicable to Half.com (only returns orders that have not been marked as shipped).
+
+  Returned: Always
+  Details: DetailLevel: none
+#    Returns: 'ns:OrderArrayType'
+
+
+=cut
+
+=head2 getOrdersPerPage()
+
+Applies only to Half.com. Indicates the number of orders that can be
+returned per page of data (i.e., per call). This is the same as the value
+specified in the Pagination.EntriesPerPage input (or the default value, if
+EntriesPerPage was not specified). This is not necessarily the actual
+number of orders returned per page (see ReturnedOrderCountActual).
+
+  Returned: Always
+  Details: DetailLevel: none
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 getPageNumber()
+
+Applies only to Half.com. Indicates which page of data holds the current
+result set. Will be the same as the value specified in the
+Pagination.PageNumber input. If orders are returned, the first page is 1.
+
+  Returned: Always
+  Details: DetailLevel: none
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 getPaginationResult()
+
+Applies only to Half.com. Contains information regarding the pagination of
+data (if pagination is used), including total number of pages and total
+number of entries.
+
+  Returned: Always
+  Details: DetailLevel: none
+#    Returns: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 getReturnedOrderCountActual()
+
+Applies only to Half.com. Indicates the total number of orders returned.
+
+  Returned: Always
+  Details: DetailLevel: none
+#    Returns: 'xs:int'
+
+
+=cut
+

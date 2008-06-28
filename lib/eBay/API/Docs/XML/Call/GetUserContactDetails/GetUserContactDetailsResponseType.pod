@@ -1,0 +1,77 @@
+=head1 eBay::API::XML::Call::GetUserContactDetails::GetUserContactDetailsResponseType
+
+eBay::API::XML::Call::GetUserContactDetails::GetUserContactDetailsResponseType
+
+=head1 DESCRIPTION
+
+Returns contact information to a seller for both bidders
+and users who have made offers (via Best Offer) during
+an active listing.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setContactAddress()
+
+Contact information for the requested contact.
+Note that the email address is NOT returned.
+
+#    Argument: 'ns:AddressType'
+
+
+=cut
+
+=head2 getContactAddress()
+
+  Returned: Always
+#    Returns: 'ns:AddressType'
+
+
+=cut
+
+=head2 setRegistrationDate()
+
+The date and time that the requested contact
+registered with eBay.
+
+#    Argument: 'xs:dateTime'
+
+
+=cut
+
+=head2 getRegistrationDate()
+
+  Returned: Always
+#    Returns: 'xs:dateTime'
+
+
+=cut
+
+=head2 setUserID()
+
+An eBay ID that uniquely identifies a given
+user. The eBay username of the requested
+contact.
+
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getUserID()
+
+  Returned: Always
+#    Returns: 'xs:string'
+
+
+=cut
+

@@ -1,0 +1,133 @@
+=head1 eBay::API::XML::Call::GetExpressWishList::GetExpressWishListRequestType
+
+eBay::API::XML::Call::GetExpressWishList::GetExpressWishListRequestType
+
+=head1 DESCRIPTION
+
+Enables users to retrieve and view eBay Express wish lists. Wish list is a feature
+currently available on the eBay Express web site. This call does not enable creation,
+modification, or removal of wish lists. Wish lists may be public or private. Private wish
+lists are available for viewing only by their owners. User ID is not returned in the
+response. Only one of the search input fields, (FirstName, LastName, UserID, and WishListID)
+is recognized in a request. When all search input fields are included in a request, WishListID
+takes precedence, followed by UserID, which is followed by FirstName and/or LastName. If none
+of the search input fields are used, the call returns the wish list of the requesting user.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setFirstName()
+
+User first name. Can be used in combination with LastName. Will be ignored if either UserID or
+WishListID is included in the request.
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getFirstName()
+
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setLastName()
+
+User last name. Can be used in combination with FirstName. Will be ignored if either UserID or
+WishListID is included in the request.
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getLastName()
+
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setPagination()
+
+Contains the data that control the pagination of items or products in any returned wish list.
+
+  RequiredInput: No
+#    Argument: 'ns:PaginationType'
+
+
+=cut
+
+=head2 getPagination()
+
+#    Returns: 'ns:PaginationType'
+
+
+=cut
+
+=head2 setSortOrder()
+
+Sort order for returned results. Default is CreationDateDescending, which returns the most
+recently added wish list items first.
+
+  RequiredInput: No
+#    Argument: 'ns:WishListSortCodeType'
+
+
+=cut
+
+=head2 getSortOrder()
+
+#    Returns: 'ns:WishListSortCodeType'
+
+
+=cut
+
+=head2 setUserID()
+
+eBay user ID. Can be used as an alternative to WishListID or to the combination FirstName and LastName.
+If WishListID is used, UserID will be ignored. This value is not returned in the response.
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getUserID()
+
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setWishListID()
+
+Identifies an eBay Express wish list. When used in a request, UserID and FirstName and LastName are ignored.
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getWishListID()
+
+#    Returns: 'xs:string'
+
+
+=cut
+

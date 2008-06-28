@@ -1,0 +1,37 @@
+=head1 eBay::API::XML::Call::GetRuName::GetRuNameResponseType
+
+eBay::API::XML::Call::GetRuName::GetRuNameResponseType
+
+=head1 DESCRIPTION
+
+Contains the generated runame (unique identifier for an authentication data entry).
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setRuName()
+
+The generated globally unique runame.
+
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getRuName()
+
+  Returned: Always
+#    Returns: 'xs:string'
+
+
+=cut
+

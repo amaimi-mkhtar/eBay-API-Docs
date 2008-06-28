@@ -1,0 +1,77 @@
+=head1 eBay::API::XML::Call::GetPromotionRules::GetPromotionRulesRequestType
+
+eBay::API::XML::Call::GetPromotionRules::GetPromotionRulesRequestType
+
+=head1 DESCRIPTION
+
+Retrieves all promotion rules associated with the specified item or store category.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setItemID()
+
+The unique ID of the item for which to retrieve promotion rules.
+Mutually exclusive with StoreCategoryID.
+
+MaxLength: 19 (Note: The eBay database specifies 38. Currently, Item IDs are usually 9 to 12 digits)
+
+  RequiredInput: Conditionally
+#    Argument: 'ns:ItemIDType'
+
+
+=cut
+
+=head2 getItemID()
+
+#    Returns: 'ns:ItemIDType'
+
+
+=cut
+
+=head2 setPromotionMethod()
+
+The type of promotion. (CrossSell: items that are related to or
+useful in combination with this item. UpSell: items that are more
+expensive than or of higher quality than this item.)
+
+  RequiredInput: Yes
+#    Argument: 'ns:PromotionMethodCodeType'
+
+
+=cut
+
+=head2 getPromotionMethod()
+
+#    Returns: 'ns:PromotionMethodCodeType'
+
+
+=cut
+
+=head2 setStoreCategoryID()
+
+The unique ID of the store category for which to retrieve promotion rules.
+Mutually exclusive with ItemID.
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:long'
+
+
+=cut
+
+=head2 getStoreCategoryID()
+
+#    Returns: 'xs:long'
+
+
+=cut
+

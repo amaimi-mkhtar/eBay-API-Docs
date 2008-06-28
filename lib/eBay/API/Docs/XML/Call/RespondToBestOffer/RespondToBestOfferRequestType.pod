@@ -1,0 +1,142 @@
+=head1 eBay::API::XML::Call::RespondToBestOffer::RespondToBestOfferRequestType
+
+eBay::API::XML::Call::RespondToBestOffer::RespondToBestOfferRequestType
+
+=head1 DESCRIPTION
+
+Enables the seller of a Best Offer item to accept, decline, or counter offers
+made by bidders. Best offers can be declined in bulk, using the same message
+from the seller to the bidders of all rejected offers.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setAction()
+
+The action taken on the best offer by the seller (e.g.,
+Accept, Decline, or Counter). Bulk Accept and Bulk
+Counter are not supported. That is, you cannot accept or
+counter multiple offers in a single call. You can,
+however, decline multiple offers in a single call.
+
+  RequiredInput: Yes
+#    Argument: 'ns:BestOfferActionCodeType'
+
+
+=cut
+
+=head2 getAction()
+
+#    Returns: 'ns:BestOfferActionCodeType'
+
+
+=cut
+
+=head2 setBestOfferID()
+
+The ID of a Best Offer for the item.
+
+  RequiredInput: Yes
+#    Argument: reference to an array  
+                      of 'ns:BestOfferIDType'
+
+
+=cut
+
+=head2 getBestOfferID()
+
+#    Returns: reference to an array  
+                      of 'ns:BestOfferIDType'
+
+
+=cut
+
+=head2 setCounterOfferPrice()
+
+The counter offer price. When Action is set to Counter,
+you must specify the amount for the counteroffer with
+CounterOfferPrice. The value of CounterOfferPrice cannot
+exceed the Buy It Now price for a single quantity item.
+The value of CounterOfferPrice may exceed the Buy It Now
+price if the value for CounterOfferQuantity is greater
+than 1.
+
+  RequiredInput: Conditionally
+#    Argument: 'ns:AmountType'
+
+
+=cut
+
+=head2 getCounterOfferPrice()
+
+#    Returns: 'ns:AmountType'
+
+
+=cut
+
+=head2 setCounterOfferQuantity()
+
+The counter offer quantity. When Action is set to
+Counter you must specify the quantity of items for the
+counteroffer with CounterOfferQuantity.
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getCounterOfferQuantity()
+
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setItemID()
+
+Specifies the item for which the BestOffer data is to be returned.
+
+MaxLength: 19 (Note: The eBay database specifies 38. Currently, Item IDs are usually 9 to 12 digits)
+
+  RequiredInput: Yes
+#    Argument: 'ns:ItemIDType'
+
+
+=cut
+
+=head2 getItemID()
+
+#    Returns: 'ns:ItemIDType'
+
+
+=cut
+
+=head2 setSellerResponse()
+
+A comment from the seller to the buyer.
+
+MaxLength: 250
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getSellerResponse()
+
+#    Returns: 'xs:string'
+
+
+=cut
+

@@ -1,0 +1,61 @@
+=head1 eBay::API::XML::Call::AddToItemDescription::AddToItemDescriptionRequestType
+
+eBay::API::XML::Call::AddToItemDescription::AddToItemDescriptionRequestType
+
+=head1 DESCRIPTION
+
+Appends a horizontal rule, then a message about what time the
+addition was made by the seller, and then the seller-specified text.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setDescription()
+
+Specifies the text to append to the end of the listings description.
+Text appended to a listing's description must abide by the rules
+applicable to this data (such as no JavaScript) as is the case when
+first listing the item.
+
+  RequiredInput: Yes
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getDescription()
+
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setItemID()
+
+Unique item ID that identifies the target item listing, the description
+of which is appended with the text specified in Description.
+
+MaxLength: 19 (Note: The eBay database specifies 38. Currently, Item IDs are usually 9 to 12 digits)
+
+  RequiredInput: Yes
+#    Argument: 'ns:ItemIDType'
+
+
+=cut
+
+=head2 getItemID()
+
+#    Returns: 'ns:ItemIDType'
+
+
+=cut
+

@@ -1,0 +1,93 @@
+=head1 eBay::API::XML::Call::SetStoreCategories
+
+eBay::API::XML::Call::SetStoreCategories
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setAction()
+
+Specifies the type of action (Add, Move, Delete, or Rename) to carry out
+for the specified categories.
+
+  RequiredInput: Yes
+#    Argument: 'ns:StoreCategoryUpdateActionCodeType'
+
+
+=cut
+
+=head2 setDestinationParentCategoryID()
+
+When adding or moving store categories, specifies the category under
+which the listed categories will be located. To add or move categories to
+the top level, set the value to -999.
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:long'
+
+
+=cut
+
+=head2 setItemDestinationCategoryID()
+
+Items can only be contained within child categories. A parent category
+cannot contain items. If adding, moving, or deleting categories displaces
+items, you must specify a destination child category under which the
+displaced items will be moved. The destination category must have no
+child categories.
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:long'
+
+
+=cut
+
+=head2 setStoreCategories()
+
+Contains information for specifying the store categories being acted on.
+
+  RequiredInput: Yes
+#    Argument: 'ns:StoreCustomCategoryArrayType'
+
+
+=cut
+
+=head2 getStatus()
+
+When a category structure change is processed synchronously, the status 
+is returned as Complete or Failed. For asynchronously processed changes, 
+the status is reported as Pending. Use GetStoreCategoryUpdateStatus to 
+monitor the status of asynchronously processed changes.
+
+  Returned: Always
+#    Returns: 'ns:TaskStatusCodeType'
+
+
+=cut
+
+=head2 getTaskID()
+
+The task ID associated with the category structure change request. If the 
+SetStoreCategories call is process synchronously, the task ID is 0. If the 
+category structure changes affect many listings, the changes will be 
+processed asynchronously and the task ID will be a positive number. Use 
+the task ID with GetStoreCategoryUpdateStatus to monitor the status of 
+asynchronously processed changes.
+
+  Returned: Always
+#    Returns: 'xs:long'
+
+
+=cut
+

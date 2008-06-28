@@ -1,0 +1,112 @@
+=head1 eBay::API::XML::Call::GetWantItNowSearchResults::GetWantItNowSearchResultsResponseType
+
+eBay::API::XML::Call::GetWantItNowSearchResults::GetWantItNowSearchResultsResponseType
+
+=head1 DESCRIPTION
+
+Response contains the Want It Now posts that have the specified keyword(s) in the
+title and (optionally) the description.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setHasMoreItems()
+
+Indicates whether there are additional Want It Now posts that meet the
+search criteria.
+
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isHasMoreItems()
+
+  Returned: Always
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setItemsPerPage()
+
+Indicates the maximum number of Want It Now posts that can be returned in
+a WantItNowPostArray for a request. This value can be specified in the
+request by  EntriesPerPage in Pagination in the request.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getItemsPerPage()
+
+  Returned: Always
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setPageNumber()
+
+Indicates the page of data returned by the current call.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getPageNumber()
+
+  Returned: Always
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setPaginationResult()
+
+Indicates the results of the pagination, including the total number of
+pages of data there are to be returned and the total number of posts there
+are to be returned.
+
+#    Argument: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 getPaginationResult()
+
+  Returned: Always
+#    Returns: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 setWantItNowPostArray()
+
+Contains the returned Want It Now posts, if any. The data for each post is
+returned in a WantItNowPostType object.
+
+#    Argument: 'ns:WantItNowPostArrayType'
+
+
+=cut
+
+=head2 getWantItNowPostArray()
+
+  Returned: Always
+#    Returns: 'ns:WantItNowPostArrayType'
+
+
+=cut
+

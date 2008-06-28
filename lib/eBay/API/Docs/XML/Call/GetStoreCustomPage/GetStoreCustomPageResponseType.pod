@@ -1,0 +1,37 @@
+=head1 eBay::API::XML::Call::GetStoreCustomPage::GetStoreCustomPageResponseType
+
+eBay::API::XML::Call::GetStoreCustomPage::GetStoreCustomPageResponseType
+
+=head1 DESCRIPTION
+
+Contains the custom page or pages for the user's Store.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setCustomPageArray()
+
+The custom page or custom pages.
+
+#    Argument: 'ns:StoreCustomPageArrayType'
+
+
+=cut
+
+=head2 getCustomPageArray()
+
+  Returned: Always
+#    Returns: 'ns:StoreCustomPageArrayType'
+
+
+=cut
+

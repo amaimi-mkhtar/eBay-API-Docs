@@ -1,0 +1,40 @@
+=head1 eBay::API::XML::Call::SetMessagePreferences::SetMessagePreferencesRequestType
+
+eBay::API::XML::Call::SetMessagePreferences::SetMessagePreferencesRequestType
+
+=head1 DESCRIPTION
+
+Enables a seller to add custom Ask Seller a Question (ASQ)
+subjects to display on the seller's Ask a Question page, or
+reset custom subjects to their default values.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setASQPreferences()
+
+Contains custom ASQ subjects or a flag to reset those
+subjects to their default values.
+
+  RequiredInput: No
+#    Argument: 'ns:ASQPreferencesType'
+
+
+=cut
+
+=head2 getASQPreferences()
+
+#    Returns: 'ns:ASQPreferencesType'
+
+
+=cut
+

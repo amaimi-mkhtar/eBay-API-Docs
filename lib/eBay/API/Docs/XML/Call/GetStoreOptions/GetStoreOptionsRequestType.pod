@@ -1,0 +1,20 @@
+=head1 eBay::API::XML::Call::GetStoreOptions::GetStoreOptionsRequestType
+
+eBay::API::XML::Call::GetStoreOptions::GetStoreOptionsRequestType
+
+=head1 DESCRIPTION
+
+Retrieves the current list of Store configuration options.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

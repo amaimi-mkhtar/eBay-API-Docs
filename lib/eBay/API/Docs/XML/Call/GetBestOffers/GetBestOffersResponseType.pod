@@ -1,0 +1,65 @@
+=head1 eBay::API::XML::Call::GetBestOffers::GetBestOffersResponseType
+
+eBay::API::XML::Call::GetBestOffers::GetBestOffersResponseType
+
+=head1 DESCRIPTION
+
+All best offers for the item according to the filter or best offer
+id (or both) used in the input.
+For the notification client usage, this response includes a
+single Best Offer.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setBestOfferArray()
+
+All best offers for the item according to the filter or
+best offer id (or both) used in the input. The buyer and
+seller messages are returned only if the detail level is
+defined. Includes the buyer and seller message only if
+detail level ReturnAll is used.
+Only returned if best offers have been made.
+
+#    Argument: 'ns:BestOfferArrayType'
+
+
+=cut
+
+=head2 getBestOfferArray()
+
+  Returned: Always
+  Details: DetailLevel: none, ReturnAll
+#    Returns: 'ns:BestOfferArrayType'
+
+
+=cut
+
+=head2 setItem()
+
+The item for which Best Offers are being returned.
+Only returned if best offers have been made.
+
+#    Argument: 'ns:ItemType'
+
+
+=cut
+
+=head2 getItem()
+
+  Returned: Always
+  Details: DetailLevel: none, ReturnAll
+#    Returns: 'ns:ItemType'
+
+
+=cut
+

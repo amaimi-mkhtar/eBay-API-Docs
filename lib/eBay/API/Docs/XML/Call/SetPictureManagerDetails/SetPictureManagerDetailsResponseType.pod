@@ -1,0 +1,20 @@
+=head1 eBay::API::XML::Call::SetPictureManagerDetails::SetPictureManagerDetailsResponseType
+
+eBay::API::XML::Call::SetPictureManagerDetails::SetPictureManagerDetailsResponseType
+
+=head1 DESCRIPTION
+
+Returns the status of an action on a setting, folder, or picture in a Picture Manager account.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

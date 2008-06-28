@@ -1,0 +1,106 @@
+=head1 eBay::API::XML::Call::GetStore::GetStoreRequestType
+
+eBay::API::XML::Call::GetStore::GetStoreRequestType
+
+=head1 DESCRIPTION
+
+Retrieves configuration information for the eBay store of the store owner 
+specified with UserID. If no UserID is specified, the store configuration 
+information is returned for the caller. 
+The return value from GetStoreResponse is a StoreType, which contains
+the store configuration, including the store name, URL, subscription level, and
+other data. You can set CategoryStructureOnly to true to retrieve only
+information about the category hierarchy of the store.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setCategoryStructureOnly()
+
+If this is set to True, only the category structure of the store is
+returned. If this is not specified or set to False, the complete store
+configuration is returned.
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isCategoryStructureOnly()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setLevelLimit()
+
+Specifies the limit for the number of levels of the category hierarchy
+to return, where the given root category is level 1 and its children are
+level 2. Only categories at or above the level specified are returned.
+This tag is optional. If LevelLimit is not set, the complete category
+hierarchy is returned. Stores support category hierarchies up to 3
+levels only.
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getLevelLimit()
+
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setRootCategoryID()
+
+Specifies the category ID for the topmost category to return (along with
+the subcategories under it, the value of the LevelLimit property
+determining how deep). This tag is optional. If RootCategoryID is not
+specified, then the category tree starting at that root Category is
+returned.
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:long'
+
+
+=cut
+
+=head2 getRootCategoryID()
+
+#    Returns: 'xs:long'
+
+
+=cut
+
+=head2 setUserID()
+
+Specifies the user whose store data is to be returned. If not specified,
+then the store returned is that for the requesting user.
+
+  RequiredInput: No
+#    Argument: 'ns:UserIDType'
+
+
+=cut
+
+=head2 getUserID()
+
+#    Returns: 'ns:UserIDType'
+
+
+=cut
+

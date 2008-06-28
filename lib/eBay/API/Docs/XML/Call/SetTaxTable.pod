@@ -1,0 +1,28 @@
+=head1 eBay::API::XML::Call::SetTaxTable
+
+eBay::API::XML::Call::SetTaxTable
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setTaxTable()
+
+A container of tax jurisdiction information unique to a user/site combination.
+
+  RequiredInput: Yes
+#    Argument: 'ns:TaxTableType'
+
+
+=cut
+

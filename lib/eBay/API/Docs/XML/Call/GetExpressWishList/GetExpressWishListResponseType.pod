@@ -1,0 +1,57 @@
+=head1 eBay::API::XML::Call::GetExpressWishList::GetExpressWishListResponseType
+
+eBay::API::XML::Call::GetExpressWishList::GetExpressWishListResponseType
+
+=head1 DESCRIPTION
+
+Returns a list of eBay Express wish lists for one or more users.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setPagination()
+
+Child elements control the display pagination of the items and products in retrieved
+wish lists.
+
+#    Argument: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 getPagination()
+
+  Returned: Always
+#    Returns: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 setWishList()
+
+Contains the contents and description of the requested wish list.
+
+#    Argument: reference to an array  
+                      of 'ns:WishListType'
+
+
+=cut
+
+=head2 getWishList()
+
+  Returned: Always
+#    Returns: reference to an array  
+                      of 'ns:WishListType'
+
+
+=cut
+

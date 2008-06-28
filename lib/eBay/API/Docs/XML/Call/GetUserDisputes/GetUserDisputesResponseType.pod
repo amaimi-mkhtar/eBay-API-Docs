@@ -1,0 +1,167 @@
+=head1 eBay::API::XML::Call::GetUserDisputes::GetUserDisputesResponseType
+
+eBay::API::XML::Call::GetUserDisputes::GetUserDisputesResponseType
+
+=head1 DESCRIPTION
+
+Returns a list of disputes that involve the calling user
+as buyer or seller, in response to a GetUserDisputesRequest.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setDisputeArray()
+
+The array of disputes returned.
+
+#    Argument: 'ns:DisputeArrayType'
+
+
+=cut
+
+=head2 getDisputeArray()
+
+  Returned: Always
+  Details: DetailLevel: ReturnSummary, ReturnAll, none
+#    Returns: 'ns:DisputeArrayType'
+
+
+=cut
+
+=head2 setDisputeFilterCount()
+
+The number of disputes that involve the requester as
+buyer or seller and match a given filter type.
+
+#    Argument: reference to an array  
+                      of 'ns:DisputeFilterCountType'
+
+
+=cut
+
+=head2 getDisputeFilterCount()
+
+  Returned: Always
+  Details: DetailLevel: ReturnSummary, ReturnAll, none
+#    Returns: reference to an array  
+                      of 'ns:DisputeFilterCountType'
+
+
+=cut
+
+=head2 setEndingDisputeID()
+
+The index of the last dispute in the current result set, relative
+to the total number of disputes available.
+Primarily useful for interpreting paginated results.
+For example, if 228 disputes are available and
+200 results are returned per page: The first page returns
+an EndingDisputeID value of 200 and the second page returns an
+EndingDisputeID value of 228.
+
+#    Argument: 'ns:DisputeIDType'
+
+
+=cut
+
+=head2 getEndingDisputeID()
+
+  Returned: Always
+  Details: DetailLevel: ReturnSummary, ReturnAll, none
+#    Returns: 'ns:DisputeIDType'
+
+
+=cut
+
+=head2 setItemsPerPage()
+
+The number of disputes on each virtual page in the result set.
+The virtual page returned is determined by PageNumber.
+Default is 200.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getItemsPerPage()
+
+  Returned: Always
+  Details: DetailLevel: ReturnSummary, ReturnAll, none
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setPageNumber()
+
+The page of the total result set returned in the call. The entire result set
+is virtual and the call returns only one page of it.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getPageNumber()
+
+  Returned: Always
+  Details: DetailLevel: ReturnSummary, ReturnAll, none
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setPaginationResult()
+
+The result of the pagination, including the total number
+of virtual pages in the result set and the total number of
+disputes returned.
+
+#    Argument: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 getPaginationResult()
+
+  Returned: Always
+  Details: DetailLevel: ReturnSummary, ReturnAll, none
+#    Returns: 'ns:PaginationResultType'
+
+
+=cut
+
+=head2 setStartingDisputeID()
+
+The index of the first dispute in the current result set, relative
+to the total number of disputes available.
+Primarily useful for interpreting paginated results.
+For example, if 228 disputes are available and
+200 results are returned per page: The first page returns
+a StartingDisputeID value of 1 and the second page returns a
+StartingDisputeID value of 201.
+
+#    Argument: 'ns:DisputeIDType'
+
+
+=cut
+
+=head2 getStartingDisputeID()
+
+  Returned: Always
+  Details: DetailLevel: ReturnSummary, ReturnAll, none
+#    Returns: 'ns:DisputeIDType'
+
+
+=cut
+

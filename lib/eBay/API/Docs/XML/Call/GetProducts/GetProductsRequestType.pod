@@ -1,0 +1,214 @@
+=head1 eBay::API::XML::Call::GetProducts::GetProductsRequestType
+
+eBay::API::XML::Call::GetProducts::GetProductsRequestType
+
+=head1 DESCRIPTION
+
+Searches for stock information and reviews for certain kinds of products,
+such as a particular digital camera model.
+<p>
+GetProducts is designed to be useful to applications that support
+shopping comparison, product reviews, or basic supply and
+demand data.
+</p>
+<p>
+GetProducts also supports tracking so that members of the
+eBay Affiliates Program can get commissions for driving traffic to eBay.
+</p>
+<p class="tablenote"><b>Note:</b>
+For selling use cases, use GetProductSearchResults and
+GetProductSellingPages instead.
+</p>
+<p>
+To use this call, you typically pass in keywords, and GetProducts finds
+products with matching words in the product title, description, and/or
+Item Specifics.
+<p>
+For each product of interest, you call GetProducts again to retrieve
+additional details that would be useful to buyers:
+</p>
+<ul>
+<li>Top reviews of the product by eBay members,
+including part of the review text, plus links to the full text on the
+eBay Web site.</li>
+<li>Relevant buying guides (shopping advice) written by
+eBay members and by eBay staff, including part of the guide text,
+plus links to the full text
+on the eBay Web site.</li>
+<li>Up to 200 matching items on eBay (if any). (To find more matching
+items, use GetSearchResults.)</li>
+</ul>
+<p>
+<span class="tablenote"><b>Note:</b>
+As catalog queries can take longer than item queries,
+GetProducts can be slower than GetSearchResults.
+Also, due to the way product data is cached, you may get a faster response
+when you run the same query a second time.</span>
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setAffiliateTrackingDetails()
+
+See the 
+<a href="https://www.ebaypartnernetwork.com/" target="_blank">eBay Partner Network</a>.
+eBay uses the specified details to build a View Item URL
+string in the response that includes your
+affiliate tracking information in the correct format.
+When a user clicks through the URL to eBay and performs
+certain tasks, you may get a commission (see the URL above).
+Only applicable when IncludeItemArray is specified
+(because the View Item URL is only returned in item information,
+not in product information).
+
+SeeLink: URL: http://developer.ebay.com/DevZone/XML/docs/WebHelp/index.htm?context=eBay_XML_API&topic=AffiliateTrackingConcepts
+Title: Affiliate Tracking Concepts
+
+  RequiredInput: No
+#    Argument: 'ns:AffiliateTrackingDetailsType'
+
+
+=cut
+
+=head2 getAffiliateTrackingDetails()
+
+#    Returns: 'ns:AffiliateTrackingDetailsType'
+
+
+=cut
+
+=head2 setIncludeBuyingGuideDetails()
+
+If true, the response includes up to 5 buying guides (if any)
+for the product specified in ExternalProductID or
+ProductReferenceID.
+Not applicable with QueryKeywords.
+
+  RequiredInput: No
+  Default: false
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isIncludeBuyingGuideDetails()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setIncludeHistogram()
+
+If true, the response includes a histogram that lists the
+number of matching products found and the domains in which
+they were found. (A domain is like a high-level category.)
+Including the histogram can affect the call's performance.
+You may see significantly slower response times when many
+matching products are found.
+
+  RequiredInput: No
+  Default: false
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isIncludeHistogram()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setIncludeItemArray()
+
+If true, the response includes items (if any) that match the
+product specified in ExternalProductID or ProductReferenceID.
+Not applicable with QueryKeywords.
+
+  RequiredInput: No
+  Default: false
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isIncludeItemArray()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setIncludeReviewDetails()
+
+If true, the response includes up to 20 reviews (if any)
+for the product specified in ExternalProductID or
+ProductReferenceID.
+The reviews are sorted by most helpful (most votes) first.
+When you include review details, please note that
+response times may be longer than 60 seconds.
+Not applicable with QueryKeywords.
+
+  RequiredInput: No
+  Default: false
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isIncludeReviewDetails()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setProductSearch()
+
+Contains the fields that form the search query. You can query
+against keywords, an eBay product reference ID (not to be confused
+with an eBay product ID), or external product ID (like an ISBN).
+
+  RequiredInput: Yes
+#    Argument: 'ns:ProductSearchType'
+
+
+=cut
+
+=head2 getProductSearch()
+
+#    Returns: 'ns:ProductSearchType'
+
+
+=cut
+
+=head2 setProductSort()
+
+Sorts the list of products returned. This is mostly only useful
+with QueryKeywords. (When you use ExternalProductID or
+ProductReferenceID, eBay usually only returns one product.)
+
+  RequiredInput: No
+#    Argument: 'ns:ProductSortCodeType'
+
+
+=cut
+
+=head2 getProductSort()
+
+#    Returns: 'ns:ProductSortCodeType'
+
+
+=cut
+

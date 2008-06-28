@@ -1,0 +1,42 @@
+=head1 eBay::API::XML::Call::GetStoreCategoryUpdateStatus::GetStoreCategoryUpdateStatusResponseType
+
+eBay::API::XML::Call::GetStoreCategoryUpdateStatus::GetStoreCategoryUpdateStatusResponseType
+
+=head1 DESCRIPTION
+
+Returns the store category structure update status, when a prior 
+SetStoreCategories call was processed asynchronously. If a SetStoreCategories 
+request affects many listings, then the category structure changes will be 
+processed asynchronously. If not many listings are affected by category structure 
+changes, the status is returned in the SetStoreCategories response.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setStatus()
+
+The status (Pending, InProgress, Complete, or Failed) of an update to the 
+store category structure.
+
+#    Argument: 'ns:TaskStatusCodeType'
+
+
+=cut
+
+=head2 getStatus()
+
+  Returned: Always
+#    Returns: 'ns:TaskStatusCodeType'
+
+
+=cut
+

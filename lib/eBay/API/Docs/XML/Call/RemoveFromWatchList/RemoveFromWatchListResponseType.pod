@@ -1,0 +1,56 @@
+=head1 eBay::API::XML::Call::RemoveFromWatchList::RemoveFromWatchListResponseType
+
+eBay::API::XML::Call::RemoveFromWatchList::RemoveFromWatchListResponseType
+
+=head1 DESCRIPTION
+
+Returns information about the user's My eBay watch list.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setWatchListCount()
+
+The current number of items in the user's watch list (after those
+specified in the call request have been removed)
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getWatchListCount()
+
+  Returned: Always
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setWatchListMaximum()
+
+The maximum number of items allowed in watch lists. Currently this value
+is 100, and is the same for all sites and all users.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getWatchListMaximum()
+
+  Returned: Always
+#    Returns: 'xs:int'
+
+
+=cut
+

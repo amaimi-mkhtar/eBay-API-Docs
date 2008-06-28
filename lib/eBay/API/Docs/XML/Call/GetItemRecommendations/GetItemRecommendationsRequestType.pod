@@ -1,0 +1,48 @@
+=head1 eBay::API::XML::Call::GetItemRecommendations::GetItemRecommendationsRequestType
+
+eBay::API::XML::Call::GetItemRecommendations::GetItemRecommendationsRequestType
+
+=head1 DESCRIPTION
+
+Examines potential item data that a seller
+has specified and returns recommended changes or opportunities for
+improvement. The types of recommendations returned for a given
+item can be configured by choosing one or more recommendation
+engines in the request. This call supports batch requests. That
+is, you can retrieve recommendations for multiple items at once.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setGetRecommendationsRequestContainer()
+
+Specifies the data for a single item and configures the recommendation engines to use
+when processing the item.
+To retrieve recommendations for multiple items, pass a separate
+GetRecommendationsRequestContainer for each item. In this case,
+pass a user-defined correlation ID for each item to identify the matching response.
+
+  RequiredInput: Yes
+#    Argument: reference to an array  
+                      of 'ns:GetRecommendationsRequestContainerType'
+
+
+=cut
+
+=head2 getGetRecommendationsRequestContainer()
+
+#    Returns: reference to an array  
+                      of 'ns:GetRecommendationsRequestContainerType'
+
+
+=cut
+

@@ -1,0 +1,29 @@
+=head1 eBay::API::XML::Call::SetMessagePreferences
+
+eBay::API::XML::Call::SetMessagePreferences
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setASQPreferences()
+
+Contains custom ASQ subjects or a flag to reset those
+subjects to their default values.
+
+  RequiredInput: No
+#    Argument: 'ns:ASQPreferencesType'
+
+
+=cut
+

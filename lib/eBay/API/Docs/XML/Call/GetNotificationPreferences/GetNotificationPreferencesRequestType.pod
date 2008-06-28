@@ -1,0 +1,42 @@
+=head1 eBay::API::XML::Call::GetNotificationPreferences::GetNotificationPreferencesRequestType
+
+eBay::API::XML::Call::GetNotificationPreferences::GetNotificationPreferencesRequestType
+
+=head1 DESCRIPTION
+
+Retrieves the requesting application's notification preferences.
+Details are only returned for events for which a preference was
+set at one point. For example, if you enabled notification for
+the EndOfAuction event and later disabled it, the GetNotificationPreferences
+response would cite the EndOfAuction event preference as
+Disabled. Otherwise, no details would be returned regarding EndOfAuction.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setPreferenceLevel()
+
+Specifies what type of Preference to retrieve.
+
+  RequiredInput: Yes
+#    Argument: 'ns:NotificationRoleCodeType'
+
+
+=cut
+
+=head2 getPreferenceLevel()
+
+#    Returns: 'ns:NotificationRoleCodeType'
+
+
+=cut
+

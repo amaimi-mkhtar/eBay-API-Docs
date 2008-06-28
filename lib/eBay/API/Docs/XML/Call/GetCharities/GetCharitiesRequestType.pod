@@ -1,0 +1,187 @@
+=head1 eBay::API::XML::Call::GetCharities::GetCharitiesRequestType
+
+eBay::API::XML::Call::GetCharities::GetCharitiesRequestType
+
+=head1 DESCRIPTION
+
+Searches for nonprofit charity organizations that meet the criteria specified in the request.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setCharityDomain()
+
+Domain (mission area) that a nonprofit charity organization
+belongs to. Nonprofit charity organizations may belong to multiple
+mission areas. Meaning of input values differs depending on the
+site. See GetCharities in the API Developer's Guide for the meaning
+of each input/output value. CharityDomain input value must be valid for
+that SiteID.
+
+  RequiredInput: No
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getCharityDomain()
+
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setCharityID()
+
+A unique identification number assigned by eBay to registered nonprofit
+charity organizations.
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getCharityID()
+
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setCharityName()
+
+A name assigned to a specified nonprofit
+organization. Accepts full charity nonprofit name
+or partial name as input. For example, enter a
+CharityName of "heart" (case-insensitive) to
+return all charity nonprofits that start with
+"heart." Use with a MatchType value of "Contains"
+to return all charity nonprofits that contain the
+string "heart."
+
+MaxLength: 150
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getCharityName()
+
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setCharityRegion()
+
+Region that the nonprofit charity organization is associated
+with. A specific nonprofit charity organization may be associated
+with only one region. Meaning of input values differs depending on
+the site. See GetCharities in the API Developer's Guide for the meaning
+of each input/output value. CharityRegion input value must be
+valid for that SiteID.
+
+  RequiredInput: No
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getCharityRegion()
+
+#    Returns: 'xs:int'
+
+
+=cut
+
+=head2 setFeatured()
+
+Used to decide if the search is only for featured charities.
+A value of true will search for only featured charities.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isFeatured()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setIncludeDescription()
+
+Used with Query to search for charity nonprofit
+organizations. A value of true will search the Mission field as
+well as the CharityName field for a string specified in Query.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isIncludeDescription()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setMatchType()
+
+Indicates the type of string matching to use when a value is submitted in
+CharityName. If no value is specified, default behavior is "StartsWith."
+Does not apply to Query.
+
+  RequiredInput: No
+#    Argument: 'ns:StringMatchCodeType'
+
+
+=cut
+
+=head2 getMatchType()
+
+#    Returns: 'ns:StringMatchCodeType'
+
+
+=cut
+
+=head2 setQuery()
+
+Accepts a case-insensitive string used to
+find a nonprofit charity organization. Default
+behavior is to search the CharityName field. Use
+with an IncludeDescription value of true to
+include the Mission field in the search.
+
+MaxLength: 350 (characters)
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getQuery()
+
+#    Returns: 'xs:string'
+
+
+=cut
+

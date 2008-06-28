@@ -1,0 +1,63 @@
+=head1 eBay::API::XML::Call::GetAdFormatLeads::GetAdFormatLeadsResponseType
+
+eBay::API::XML::Call::GetAdFormatLeads::GetAdFormatLeadsResponseType
+
+=head1 DESCRIPTION
+
+Returns number of leads and contact and other information for each lead. One
+AdFormatLead node is returned for each lead.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setAdFormatLead()
+
+Contains contact and other information for one lead. One node is
+returned for each lead. Only returned at a detail level of ReturnAll. At
+least one lead must be available for the specified item to return
+AdFormatLead.
+
+#    Argument: reference to an array  
+                      of 'ns:AdFormatLeadType'
+
+
+=cut
+
+=head2 getAdFormatLead()
+
+  Returned: Conditionally
+  Details: DetailLevel: ReturnAll
+#    Returns: reference to an array  
+                      of 'ns:AdFormatLeadType'
+
+
+=cut
+
+=head2 setAdFormatLeadCount()
+
+The total number of leads returned. Only returned if you do not
+specify a detail level.
+
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getAdFormatLeadCount()
+
+  Returned: Conditionally
+  Details: DetailLevel: none
+#    Returns: 'xs:int'
+
+
+=cut
+

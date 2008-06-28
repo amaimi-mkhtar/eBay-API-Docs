@@ -1,0 +1,54 @@
+=head1 eBay::API::XML::Call::GetMyeBayReminders::GetMyeBayRemindersRequestType
+
+eBay::API::XML::Call::GetMyeBayReminders::GetMyeBayRemindersRequestType
+
+=head1 DESCRIPTION
+
+Requests reminder type totals from the user's MyeBay account.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setBuyingReminders()
+
+Specifies the type of buying reminders for which you want information.
+
+  RequiredInput: No
+#    Argument: 'ns:ReminderCustomizationType'
+
+
+=cut
+
+=head2 getBuyingReminders()
+
+#    Returns: 'ns:ReminderCustomizationType'
+
+
+=cut
+
+=head2 setSellingReminders()
+
+Specifies the type of selling reminders for which you want information.
+
+  RequiredInput: No
+#    Argument: 'ns:ReminderCustomizationType'
+
+
+=cut
+
+=head2 getSellingReminders()
+
+#    Returns: 'ns:ReminderCustomizationType'
+
+
+=cut
+

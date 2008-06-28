@@ -1,0 +1,73 @@
+=head1 eBay::API::XML::Call::GetProductFamilyMembers::GetProductFamilyMembersResponseType
+
+eBay::API::XML::Call::GetProductFamilyMembers::GetProductFamilyMembersResponseType
+
+=head1 DESCRIPTION
+
+GetProductFamilyMembers performs a product search and returns results comprising
+all the children in the product family identified by a product ID that was
+specified in the request. Use this call when more matches are found than the
+max amount specified per family in a call to GetProductSearchResults.
+This call supports batch requests. This means you can retrieve products in
+multiple families by using a single request.
+The results are compatible with the results from GetProductSearchResults,
+so similar application logic can be used to handle both requests and responses.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setDataElementSets()
+
+Container for one or more DataElement fields containing supplemental helpful data.
+A DataElement field is an HTML snippet that specifies hints for the user, help links,
+help graphics, and other supplemental information that varies per characteristics set.
+Usage of this information is optional and may require developers to inspect the information
+to determine how it can be applied in an application.
+
+#    Argument: reference to an array  
+                      of 'ns:DataElementSetType'
+
+
+=cut
+
+=head2 getDataElementSets()
+
+  Returned: Always
+#    Returns: reference to an array  
+                      of 'ns:DataElementSetType'
+
+
+=cut
+
+=head2 setProductSearchResult()
+
+Contains the attributes and summary product details for all products that match
+the product ID (or IDs) passed in the request.
+
+SeeLink: URL: http://developer.ebay.com/DevZone/XML/docs/WebHelp/index.htm?context=eBay_XML_API&topic=AttrGPFM
+Title: Retrieving All Members of a Product Family
+
+#    Argument: reference to an array  
+                      of 'ns:ProductSearchResultType'
+
+
+=cut
+
+=head2 getProductSearchResult()
+
+  Returned: Always
+#    Returns: reference to an array  
+                      of 'ns:ProductSearchResultType'
+
+
+=cut
+

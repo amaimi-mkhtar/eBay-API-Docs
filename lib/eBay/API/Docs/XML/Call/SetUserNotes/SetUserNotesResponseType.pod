@@ -1,0 +1,20 @@
+=head1 eBay::API::XML::Call::SetUserNotes::SetUserNotesResponseType
+
+eBay::API::XML::Call::SetUserNotes::SetUserNotesResponseType
+
+=head1 DESCRIPTION
+
+Returns the status of the call.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

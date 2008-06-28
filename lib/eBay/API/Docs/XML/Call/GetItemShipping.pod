@@ -1,0 +1,85 @@
+=head1 eBay::API::XML::Call::GetItemShipping
+
+eBay::API::XML::Call::GetItemShipping
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setDestinationCountryCode()
+
+Destination country code. If DestinationCountryCode is US,
+postal code is required and represents US zip code.
+
+Default: US
+
+  RequiredInput: Conditionally
+#    Argument: 'ns:CountryCodeType'
+
+
+=cut
+
+=head2 setDestinationPostalCode()
+
+Destination country postal code (or zipcode, for US). Ignored if no
+country code is provided. Optional tag for some countries. More likely to
+be required for large countries.
+
+  RequiredInput: Conditionally
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 setItemID()
+
+The item ID that uniquely identifies the item listing for which
+to retrieve the data. Required input.
+
+MaxLength: 19 (Note: The eBay database specifies 38. Currently, Item IDs are usually 9 to 12 digits)
+
+  RequiredInput: Yes
+#    Argument: 'ns:ItemIDType'
+
+
+=cut
+
+=head2 setQuantitySold()
+
+Number of items sold to a single buyer and to be shipped together.
+
+  RequiredInput: No
+#    Argument: 'xs:int'
+
+
+=cut
+
+=head2 getShippingDetails()
+
+Shipping-related details for the specified item. Any error about shipping services
+(returned by a vendor of eBay's who calculates shipping costs) is returned in
+ShippingRateErrorMessage. Errors from a shipping service are likely to be related to
+issues with shipping specifications, such as package size and the selected shipping
+method not supported by a particular shipping service.<br>
+<br>It is possible for a seller to offer a shipping service which turns out
+to be a mismatch in some way with the item(s) being shipped. For example, if a
+buyer purchases more than one of an item, the weight might be too great for First
+Class mail. In such a case, GetItemShipping will omit that shipping service from
+the response.
+
+  Returned: Always
+#    Returns: 'ns:ShippingDetailsType'
+
+
+=cut
+

@@ -1,0 +1,20 @@
+=head1 eBay::API::XML::Call::AddMemberMessageRTQ::AddMemberMessageRTQResponseType
+
+eBay::API::XML::Call::AddMemberMessageRTQ::AddMemberMessageRTQResponseType
+
+=head1 DESCRIPTION
+
+Response to AddMemberMessageRTQ request.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+

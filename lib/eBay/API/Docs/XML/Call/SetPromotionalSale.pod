@@ -1,0 +1,58 @@
+=head1 eBay::API::XML::Call::SetPromotionalSale
+
+eBay::API::XML::Call::SetPromotionalSale
+
+=head1 DESCRIPTION
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setAction()
+
+Specifies adding, removing, or modifying promotional sales.
+
+  RequiredInput: Yes
+#    Argument: 'ns:ModifyActionCodeType'
+
+
+=cut
+
+=head2 setPromotionalSaleDetails()
+
+Specifies details about the promotional sale.
+
+  RequiredInput: Yes
+#    Argument: 'ns:PromotionalSaleType'
+
+
+=cut
+
+=head2 getPromotionalSaleID()
+
+Contains the ID of a promotional sale.
+
+  Returned: Always
+#    Returns: 'xs:long'
+
+
+=cut
+
+=head2 getStatus()
+
+Contains the status of a promotional sale.
+
+  Returned: Always
+#    Returns: 'ns:PromotionalSaleStatusCodeType'
+
+
+=cut
+

@@ -1,0 +1,138 @@
+=head1 eBay::API::XML::Call::GetWantItNowSearchResults::GetWantItNowSearchResultsRequestType
+
+eBay::API::XML::Call::GetWantItNowSearchResults::GetWantItNowSearchResultsRequestType
+
+=head1 DESCRIPTION
+
+Retrieves a list of active Want It Now posts that match specified keywords
+and/or a specific category ID. The response contains the following data:
+CategoryID, PostID, StartTime, ResponseCount, Site, and Title. To get the post
+description (Description), you must use GetWantItNowPost to retrieve individual
+posts.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
+=head2 setCategoryID()
+
+Limits the result set to just those Want It Now posts listed in the
+specified category. Defaults to all categories if no category ID is
+specified. If the specified category ID does not match an existing
+category for the site, an invalid-category error message is returned.
+Controls the set of listings to return (not the details to return for each
+listing).
+You must specify a Query and/or a CategoryID in the request.
+
+MaxLength: 10
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getCategoryID()
+
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setPagination()
+
+Controls the pagination of the result set. Child elements specify the
+maximum number of item listings to return per call and which page of data
+to return.
+
+  RequiredInput: No
+#    Argument: 'ns:PaginationType'
+
+
+=cut
+
+=head2 getPagination()
+
+#    Returns: 'ns:PaginationType'
+
+
+=cut
+
+=head2 setQuery()
+
+Specifies a search string. The search string consists of one or more
+keywords to search for in the listing title. Note that the post
+description will also be searched if SearchInDescription is enabled.
+By default, requests return a list of Want It Now posts that include all
+of the keywords specified in the Query. All words used in the query,
+including "and," "or," and "the,"  will be treated as keywords. You can,
+however, use modifiers and wildcards (e.g., +, -, and *) in the Query
+field to create more complex searches. Be careful when using spaces before
+or after modifiers and wildcards (+, -, or *), as the spaces can affect
+the query logic.
+See the eBay Web Services Guide for a list of valid search keyword query
+operators and examples.
+
+MaxLength: 350 (characters)
+
+  RequiredInput: No
+#    Argument: 'xs:string'
+
+
+=cut
+
+=head2 getQuery()
+
+#    Returns: 'xs:string'
+
+
+=cut
+
+=head2 setSearchInDescription()
+
+If true, include the description field of Want It Now posts in the keyword search. Want
+It Now posts returned are those where specified search keywords appear in
+either the description or the title. This is the default behavior if SearchInDescription
+is not specified. If false, only the title will be searched. SearchInDescription is an
+optional input.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isSearchInDescription()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+
+=head2 setSearchWorldwide()
+
+If true, the search applies to all eBay sites. If false, the search is
+limited to the site specified in the URL query string when the call is
+made.
+
+  RequiredInput: No
+#    Argument: 'xs:boolean'
+
+
+=cut
+
+=head2 isSearchWorldwide()
+
+#    Returns: 'xs:boolean'
+
+
+=cut
+

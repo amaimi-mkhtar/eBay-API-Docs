@@ -1,0 +1,21 @@
+=head1 eBay::API::XML::Call::GetShippingDiscountProfiles::GetShippingDiscountProfilesRequestType
+
+eBay::API::XML::Call::GetShippingDiscountProfiles::GetShippingDiscountProfilesRequestType
+
+=head1 DESCRIPTION
+
+Returns details of the shipping discount profiles defined by the user, along with other
+combined payment-related details such as packaging/handling cost and shipping insurance.
+
+
+
+=head1 SYNOPSIS
+
+
+=cut
+
+=head1 Subroutines:
+
+
+=cut
+
