@@ -3,10 +3,13 @@ use ExtUtils::MakeMaker;
 # the contents of the Makefile that is written.
 WriteMakefile(
     NAME              => 'eBay::API::Docs',
-    VERSION           => '0.02', # finds $VERSION
-    PREREQ_PM         => {}, # e.g., Module::Name => 1.1
+    VERSION           => '0.03', # finds $VERSION
+    PREREQ_PM         => {
+        'eBay::API' => 0,
+    }, # e.g., Module::Name => 1.1
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
-      ( AUTHOR         => 'Tim Keefer <tim@timkeefer.com>') : ()),
+      ( AUTHOR         => 'Tim Keefer <tim@timkeefer.com>',
+        ABSTRACT       => 'eBay::API Cookbook and Class Documention' ) : ()),
 );
 
 
