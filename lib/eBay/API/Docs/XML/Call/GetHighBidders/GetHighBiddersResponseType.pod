@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetHighBidders::GetHighBiddersResponseType
+=head1 NAME
 
 eBay::API::XML::Call::GetHighBidders::GetHighBiddersResponseType
 
@@ -14,7 +14,7 @@ ItemId property of the request.
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -58,6 +58,22 @@ be sure the winning bidder and other details are correct and complete.
   Returned: Always
 #    Returns: 'ns:ListingStatusCodeType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

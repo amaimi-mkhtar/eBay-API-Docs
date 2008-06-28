@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetSessionID::GetSessionIDResponseType
+=head1 NAME
 
 eBay::API::XML::Call::GetSessionID::GetSessionIDResponseType
 
@@ -13,7 +13,7 @@ Contains the generated SessionID, which is a unique identifier for authenticatin
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -36,6 +36,22 @@ Subsequently also used as input for the FetchToken API call.
   Returned: Always
 #    Returns: 'xs:string'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

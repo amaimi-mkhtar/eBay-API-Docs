@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::SetCart::SetCartRequestType
+=head1 NAME
 
 eBay::API::XML::Call::SetCart::SetCartRequestType
 
@@ -15,7 +15,7 @@ removing items or changing item quantity.
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -124,6 +124,22 @@ shipping applies. Of no value if there are no items in the cart with calculated 
 
 #    Returns: 'ns:AddressType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

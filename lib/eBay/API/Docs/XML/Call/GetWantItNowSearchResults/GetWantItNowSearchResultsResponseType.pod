@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetWantItNowSearchResults::GetWantItNowSearchResultsResponseType
+=head1 NAME
 
 eBay::API::XML::Call::GetWantItNowSearchResults::GetWantItNowSearchResultsResponseType
 
@@ -14,7 +14,7 @@ title and (optionally) the description.
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -107,6 +107,22 @@ returned in a WantItNowPostType object.
   Returned: Always
 #    Returns: 'ns:WantItNowPostArrayType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

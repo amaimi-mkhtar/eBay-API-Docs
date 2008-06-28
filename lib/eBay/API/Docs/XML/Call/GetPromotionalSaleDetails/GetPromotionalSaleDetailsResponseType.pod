@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetPromotionalSaleDetails::GetPromotionalSaleDetailsResponseType
+=head1 NAME
 
 eBay::API::XML::Call::GetPromotionalSaleDetails::GetPromotionalSaleDetailsResponseType
 
@@ -14,7 +14,7 @@ is part of the Promotional Price Display feature.
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -36,6 +36,22 @@ discounts and/or free shipping to items.
   Returned: Conditionally
 #    Returns: 'ns:PromotionalSaleArrayType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

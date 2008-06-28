@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetAttributesCS::GetAttributesCSResponseType
+=head1 NAME
 
 eBay::API::XML::Call::GetAttributesCS::GetAttributesCSResponseType
 
@@ -17,7 +17,7 @@ the eBay attribute model. Also returns the current version of the meta-data syst
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -82,6 +82,22 @@ compare whether the value has changed.
   Details: DetailLevel: none
 #    Returns: 'xs:string'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

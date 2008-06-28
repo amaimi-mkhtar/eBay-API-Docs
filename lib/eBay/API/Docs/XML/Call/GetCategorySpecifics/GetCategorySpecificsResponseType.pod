@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetCategorySpecifics::GetCategorySpecificsResponseType
+=head1 NAME
 
 eBay::API::XML::Call::GetCategorySpecifics::GetCategorySpecificsResponseType
 
@@ -13,7 +13,7 @@ Calls made form seller or buyer find out what the most relevant tags and values 
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -52,6 +52,22 @@ specify their own custom Item Specifics for listings in that category.
 #    Returns: reference to an array  
                       of 'ns:CategoryItemSpecificsType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

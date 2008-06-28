@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetPictureManagerDetails
+=head1 NAME
 
 eBay::API::XML::Call::GetPictureManagerDetails
 
@@ -11,7 +11,7 @@ eBay::API::XML::Call::GetPictureManagerDetails
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -62,6 +62,22 @@ pictures in the user's album, or both.
   Details: PictureManagerDetailLevel: none, ReturnSubscription, ReturnPicture, ReturnAll
 #    Returns: 'ns:PictureManagerDetailsType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

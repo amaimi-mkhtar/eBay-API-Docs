@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetVeROReasonCodeDetails::GetVeROReasonCodeDetailsRequestType
+=head1 NAME
 
 eBay::API::XML::Call::GetVeROReasonCodeDetails::GetVeROReasonCodeDetailsRequestType
 
@@ -17,7 +17,7 @@ You must be a member of the Verified Rights Owner (VeRO) Program to use this cal
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -61,6 +61,22 @@ Default: false
 
 #    Returns: 'xs:boolean'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

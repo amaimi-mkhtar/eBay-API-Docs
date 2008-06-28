@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetFeedback::GetFeedbackRequestType
+=head1 NAME
 
 eBay::API::XML::Call::GetFeedback::GetFeedbackRequestType
 
@@ -17,7 +17,7 @@ feedback record is returned.
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -146,6 +146,22 @@ Specifies the user whose feedback data is to be returned. If not specified, then
 
 #    Returns: 'ns:UserIDType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

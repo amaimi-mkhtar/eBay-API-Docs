@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::EndItem::EndItemResponseType
+=head1 NAME
 
 eBay::API::XML::Call::EndItem::EndItemResponseType
 
@@ -14,7 +14,7 @@ ended due to the call to EndItem.
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -35,6 +35,22 @@ Also applicable to Half.com.
   Returned: Always
 #    Returns: 'xs:dateTime'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::AddTransactionConfirmationItem::AddTransactionConfirmationItemResponseType
+=head1 NAME
 
 eBay::API::XML::Call::AddTransactionConfirmationItem::AddTransactionConfirmationItemResponseType
 
@@ -13,7 +13,7 @@ Returns an item ID for a new Transaction Confirmation Request (TCR).
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -69,6 +69,22 @@ becomes available for purchase.
   Returned: Always
 #    Returns: 'xs:dateTime'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

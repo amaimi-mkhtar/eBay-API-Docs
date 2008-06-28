@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::VeROReportItems
+=head1 NAME
 
 eBay::API::XML::Call::VeROReportItems
 
@@ -11,7 +11,7 @@ eBay::API::XML::Call::VeROReportItems
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -54,6 +54,22 @@ The processing status of the packet.
   Returned: Conditionally
 #    Returns: 'ns:VeROReportPacketStatusCodeType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

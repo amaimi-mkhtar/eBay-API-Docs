@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetPopularKeywords::GetPopularKeywordsResponseType
+=head1 NAME
 
 eBay::API::XML::Call::GetPopularKeywords::GetPopularKeywordsResponseType
 
@@ -13,7 +13,7 @@ Contains the keyword data for the requested categories. A category's data are co
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -72,6 +72,22 @@ including total number of pages and total number of entries.
   Returned: Conditionally
 #    Returns: 'ns:PaginationResultType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::RelistItem::RelistItemResponseType
+=head1 NAME
 
 eBay::API::XML::Call::RelistItem::RelistItemResponseType
 
@@ -13,7 +13,7 @@ Returns the item ID and the estimated fees for the re-listed listing.
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -134,6 +134,22 @@ Date and time the new listing became active on the eBay site.
   Returned: Always
 #    Returns: 'xs:dateTime'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

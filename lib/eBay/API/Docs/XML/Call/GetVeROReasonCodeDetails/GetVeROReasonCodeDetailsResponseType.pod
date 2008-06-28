@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetVeROReasonCodeDetails::GetVeROReasonCodeDetailsResponseType
+=head1 NAME
 
 eBay::API::XML::Call::GetVeROReasonCodeDetails::GetVeROReasonCodeDetailsResponseType
 
@@ -13,7 +13,7 @@ Contains the reason codes for all sites.
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -32,6 +32,22 @@ Contains the list of the status codes for a site.
   Returned: Always
 #    Returns: 'ns:VeROReasonCodeDetailsType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

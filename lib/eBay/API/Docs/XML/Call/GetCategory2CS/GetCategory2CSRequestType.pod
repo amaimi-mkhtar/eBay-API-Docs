@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetCategory2CS::GetCategory2CSRequestType
+=head1 NAME
 
 eBay::API::XML::Call::GetCategory2CS::GetCategory2CSRequestType
 
@@ -14,7 +14,7 @@ Retrieves all mappings or just those that match category IDs passed in the call.
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -66,6 +66,22 @@ MaxLength: 10
 
 #    Returns: 'xs:string'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

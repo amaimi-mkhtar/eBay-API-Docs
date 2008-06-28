@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetItemShipping::GetItemShippingRequestType
+=head1 NAME
 
 eBay::API::XML::Call::GetItemShipping::GetItemShippingRequestType
 
@@ -29,7 +29,7 @@ the response.
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -107,6 +107,22 @@ Number of items sold to a single buyer and to be shipped together.
 
 #    Returns: 'xs:int'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

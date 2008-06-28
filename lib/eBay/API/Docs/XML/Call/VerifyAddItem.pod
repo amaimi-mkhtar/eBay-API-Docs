@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::VerifyAddItem
+=head1 NAME
 
 eBay::API::XML::Call::VerifyAddItem
 
@@ -11,7 +11,7 @@ eBay::API::XML::Call::VerifyAddItem
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -151,6 +151,22 @@ actually list an item, so 0 is returned instead of a normal item ID.
   Returned: Always
 #    Returns: 'ns:ItemIDType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

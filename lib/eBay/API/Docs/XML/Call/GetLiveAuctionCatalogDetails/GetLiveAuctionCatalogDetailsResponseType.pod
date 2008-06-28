@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetLiveAuctionCatalogDetails::GetLiveAuctionCatalogDetailsResponseType
+=head1 NAME
 
 eBay::API::XML::Call::GetLiveAuctionCatalogDetails::GetLiveAuctionCatalogDetailsResponseType
 
@@ -13,7 +13,7 @@ Returns all the upcoming eBay Live Auctions catalogs and sale schedules that the
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -40,6 +40,22 @@ the catalog details are not returned.
 #    Returns: reference to an array  
                       of 'ns:LiveAuctionCatalogType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

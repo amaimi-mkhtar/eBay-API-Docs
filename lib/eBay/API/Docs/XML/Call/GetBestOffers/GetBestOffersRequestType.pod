@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetBestOffers::GetBestOffersRequestType
+=head1 NAME
 
 eBay::API::XML::Call::GetBestOffers::GetBestOffersRequestType
 
@@ -17,7 +17,7 @@ and the current state of the best offer (e.g., whether the seller has made a cou
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -78,6 +78,22 @@ MaxLength: 19 (Note: The eBay database specifies 38. Currently, Item IDs are usu
 
 #    Returns: 'ns:ItemIDType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

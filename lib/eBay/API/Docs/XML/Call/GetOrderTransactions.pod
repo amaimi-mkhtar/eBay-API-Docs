@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetOrderTransactions
+=head1 NAME
 
 eBay::API::XML::Call::GetOrderTransactions
 
@@ -11,7 +11,7 @@ eBay::API::XML::Call::GetOrderTransactions
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -76,6 +76,22 @@ An array of Orders.
   Details: DetailLevel: none, ItemReturnDescription, ReturnAll
 #    Returns: 'ns:OrderArrayType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

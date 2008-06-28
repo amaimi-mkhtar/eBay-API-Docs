@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetMyeBayBuying::GetMyeBayBuyingResponseType
+=head1 NAME
 
 eBay::API::XML::Call::GetMyeBayBuying::GetMyeBayBuyingResponseType
 
@@ -13,7 +13,7 @@ Returns items from All Buying or All Favorites in the user's My eBay account.
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -210,6 +210,22 @@ exist that meet the request criteria.
   Details: DetailLevel: none, ReturnSummary, ReturnAll
 #    Returns: 'ns:PaginatedOrderTransactionArrayType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetMyeBaySelling
+=head1 NAME
 
 eBay::API::XML::Call::GetMyeBaySelling
 
@@ -11,7 +11,7 @@ eBay::API::XML::Call::GetMyeBaySelling
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -129,6 +129,22 @@ Contains the items whose listings have ended but that have not sold.
   Details: DetailLevel: none, ReturnSummary, ReturnAll
 #    Returns: 'ns:PaginatedItemArrayType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

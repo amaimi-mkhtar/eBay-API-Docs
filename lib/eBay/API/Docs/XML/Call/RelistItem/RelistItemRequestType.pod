@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::RelistItem::RelistItemRequestType
+=head1 NAME
 
 eBay::API::XML::Call::RelistItem::RelistItemRequestType
 
@@ -21,7 +21,7 @@ execute RelistItem once for each ended listing.
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -113,6 +113,22 @@ listing.
 
 #    Returns: 'ns:ItemType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

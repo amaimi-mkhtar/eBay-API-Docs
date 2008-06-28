@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::RevokeToken::RevokeTokenRequestType
+=head1 NAME
 
 eBay::API::XML::Call::RevokeToken::RevokeTokenRequestType
 
@@ -14,7 +14,7 @@ call.
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -33,6 +33,22 @@ Cancels notification subscriptions for the user/application if set to true. Defa
 
 #    Returns: 'xs:boolean'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

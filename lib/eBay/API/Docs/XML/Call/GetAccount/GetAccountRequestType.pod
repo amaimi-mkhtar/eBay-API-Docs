@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetAccount::GetAccountRequestType
+=head1 NAME
 
 eBay::API::XML::Call::GetAccount::GetAccountRequestType
 
@@ -14,7 +14,7 @@ data in a report format the user selects. Also returns summary data for the acco
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -206,6 +206,22 @@ of Pagination.EntriesPerPage are 0 to 2000, with a default of 500.
 
 #    Returns: 'ns:PaginationType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

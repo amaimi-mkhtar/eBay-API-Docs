@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetProductFamilyMembers::GetProductFamilyMembersRequestType
+=head1 NAME
 
 eBay::API::XML::Call::GetProductFamilyMembers::GetProductFamilyMembersRequestType
 
@@ -42,7 +42,7 @@ in the seller's listing request (AddItem).
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -68,6 +68,22 @@ Title: Retrieving All Members of a Product Family
 #    Returns: reference to an array  
                       of 'ns:ProductSearchType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::SetPromotionalSaleListings::SetPromotionalSaleListingsRequestType
+=head1 NAME
 
 eBay::API::XML::Call::SetPromotionalSaleListings::SetPromotionalSaleListingsRequestType
 
@@ -22,7 +22,7 @@ Auction and auction/BIN format listings can be added free shipping sales only.
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -182,6 +182,22 @@ Requires that you specify Add in the Action field.
 
 #    Returns: 'xs:long'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

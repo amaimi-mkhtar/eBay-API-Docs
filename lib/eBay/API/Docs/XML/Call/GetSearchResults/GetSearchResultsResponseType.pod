@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetSearchResults::GetSearchResultsResponseType
+=head1 NAME
 
 eBay::API::XML::Call::GetSearchResults::GetSearchResultsResponseType
 
@@ -17,7 +17,7 @@ Not applicable to eBay Express or Half.com.
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -317,6 +317,22 @@ if the request specifies that ExpandSearch is true.
   Details: DetailLevel: ItemReturnCategories, ItemReturnAttributes, ReturnAll, none
 #    Returns: 'ns:ExpansionArrayType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

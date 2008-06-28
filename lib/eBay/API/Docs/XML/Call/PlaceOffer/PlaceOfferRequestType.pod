@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::PlaceOffer::PlaceOfferRequestType
+=head1 NAME
 
 eBay::API::XML::Call::PlaceOffer::PlaceOfferRequestType
 
@@ -78,7 +78,7 @@ then a subsequent PlaceOffer call on behalf of that user, on that item, will not
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -171,6 +171,22 @@ on its properties and their meanings.
 
 #    Returns: 'ns:OfferType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

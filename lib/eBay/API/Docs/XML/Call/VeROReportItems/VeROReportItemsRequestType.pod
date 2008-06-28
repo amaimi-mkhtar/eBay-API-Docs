@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::VeROReportItems::VeROReportItemsRequestType
+=head1 NAME
 
 eBay::API::XML::Call::VeROReportItems::VeROReportItemsRequestType
 
@@ -16,7 +16,7 @@ call.
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -53,6 +53,22 @@ User ID of the VeRO member reporting the items.
 
 #    Returns: 'ns:UserIDType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

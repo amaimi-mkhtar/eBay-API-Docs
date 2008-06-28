@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetExpressWishList
+=head1 NAME
 
 eBay::API::XML::Call::GetExpressWishList
 
@@ -11,7 +11,7 @@ eBay::API::XML::Call::GetExpressWishList
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -99,6 +99,22 @@ Contains the contents and description of the requested wish list.
 #    Returns: reference to an array  
                       of 'ns:WishListType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

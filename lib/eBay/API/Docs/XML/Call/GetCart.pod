@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetCart
+=head1 NAME
 
 eBay::API::XML::Call::GetCart
 
@@ -11,7 +11,7 @@ eBay::API::XML::Call::GetCart
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -70,6 +70,22 @@ Overall cart details.
   Returned: Always
 #    Returns: 'ns:CartType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

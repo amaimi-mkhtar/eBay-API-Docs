@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::SetReturnURL
+=head1 NAME
 
 eBay::API::XML::Call::SetReturnURL
 
@@ -11,7 +11,7 @@ eBay::API::XML::Call::SetReturnURL
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
@@ -55,6 +55,22 @@ Title: Authentication & Authorization
   RequiredInput: Yes
 #    Argument: 'ns:AuthenticationEntryType'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 

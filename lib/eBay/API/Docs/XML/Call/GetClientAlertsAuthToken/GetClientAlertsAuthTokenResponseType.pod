@@ -1,4 +1,4 @@
-=head1 eBay::API::XML::Call::GetClientAlertsAuthToken::GetClientAlertsAuthTokenResponseType
+=head1 NAME
 
 eBay::API::XML::Call::GetClientAlertsAuthToken::GetClientAlertsAuthTokenResponseType
 
@@ -13,15 +13,16 @@ Returns a Client Alerts token.
 
 =cut
 
-=head1 Subroutines:
+=head1 Methods
 
 
 =cut
 
 =head2 setClientAlertsAuthToken()
 
-This token string is required for three calls in the Client Alerts API: Login, Logout, and
-GetUserAlerts.
+This token string is required for the Login call in the Client Alerts API.
+The Client Alerts GetUserAlerts call, which returns alerts about events
+associated with a specific user, requires Login.
 
 #    Argument: 'xs:string'
 
@@ -50,6 +51,22 @@ A Client Alerts token expires after seven days.
   Returned: Always
 #    Returns: 'xs:dateTime'
 
+
+=cut
+
+=head1 SEE ALSO
+
+L<eBay::API>
+
+=head1 JOIN US
+
+Please visit http://developer.ebay.com for more eBay API information. 
+
+Web:
+L<http://developer.ebay.com>
+
+Community Forums:
+L<http://developer.ebay.com/community/forums/>
 
 =cut
 
