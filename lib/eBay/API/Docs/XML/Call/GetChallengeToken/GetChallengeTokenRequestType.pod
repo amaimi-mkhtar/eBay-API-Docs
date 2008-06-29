@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetChallengeToken::GetChallengeTokenRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetChallengeToken::GetChallengeTokenRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves a botblock token and URLs for an image or audio clip that the user is to
@@ -32,7 +36,7 @@ valid.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

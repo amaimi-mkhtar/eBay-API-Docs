@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetStorePreferences::GetStorePreferencesRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetStorePreferences::GetStorePreferencesRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves a user's Store preferences.
@@ -20,7 +24,7 @@ Retrieves a user's Store preferences.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetDispute::GetDisputeRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetDispute::GetDisputeRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Requests the details of a dispute corresponding to the given dispute ID, any time
@@ -39,7 +43,7 @@ The unique identifier of the dispute, returned when the dispute is created.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

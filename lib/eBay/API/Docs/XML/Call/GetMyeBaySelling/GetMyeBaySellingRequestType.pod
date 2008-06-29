@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetMyeBaySelling::GetMyeBaySellingRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetMyeBaySelling::GetMyeBaySellingRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returns a summary and details of items a user is selling from
@@ -115,7 +119,7 @@ Note that if a DetailLevel of ReturnAll is specified in the request, this elemen
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

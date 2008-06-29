@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetContextualKeywords::GetContextualKeywordsRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetContextualKeywords::GetContextualKeywordsRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 <b>The use of this call requires approval from the eBay Developers Program.
@@ -86,7 +90,7 @@ The URL of the web page from which eBay is to extract keywords.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

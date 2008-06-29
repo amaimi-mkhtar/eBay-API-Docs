@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetMyeBayReminders::GetMyeBayRemindersRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetMyeBayReminders::GetMyeBayRemindersRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Requests reminder type totals from the user's MyeBay account.
@@ -54,7 +58,7 @@ Specifies the type of selling reminders for which you want information.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

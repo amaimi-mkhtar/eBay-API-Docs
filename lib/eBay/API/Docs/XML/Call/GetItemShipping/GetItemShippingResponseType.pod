@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetItemShipping::GetItemShippingResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetItemShipping::GetItemShippingResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Contains the data returned by the call. The shipping details for the specified
@@ -47,7 +51,7 @@ the response.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

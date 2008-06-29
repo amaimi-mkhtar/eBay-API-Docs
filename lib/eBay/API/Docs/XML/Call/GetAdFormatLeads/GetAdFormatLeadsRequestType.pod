@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetAdFormatLeads::GetAdFormatLeadsRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetAdFormatLeads::GetAdFormatLeadsRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves sales lead information for a lead generation listing.
@@ -115,7 +119,7 @@ Filters the leads based on their status.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

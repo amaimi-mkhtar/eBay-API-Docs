@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::ReviseItem::ReviseItemRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::ReviseItem::ReviseItemRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Enables a seller to change the properties of a currently active listing. Inputs
@@ -109,7 +113,7 @@ The Item.ItemID property must always be set to the ID of the item listing being 
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

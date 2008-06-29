@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetMyeBayReminders::GetMyeBayRemindersResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetMyeBayReminders::GetMyeBayRemindersResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returns totals of various reminder types from the user's My eBay account.
@@ -56,7 +60,7 @@ the request criteria.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

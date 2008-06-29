@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetWantItNowSearchResults::GetWantItNowSearchResultsResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetWantItNowSearchResults::GetWantItNowSearchResultsResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Response contains the Want It Now posts that have the specified keyword(s) in the
@@ -112,7 +116,7 @@ returned in a WantItNowPostType object.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

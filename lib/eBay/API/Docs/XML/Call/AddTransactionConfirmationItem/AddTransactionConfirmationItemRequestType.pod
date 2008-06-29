@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::AddTransactionConfirmationItem::AddTransactionConfirmationItemRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::AddTransactionConfirmationItem::AddTransactionConfirmationItemRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Ends the listing specified by ItemID (if listed for at least 24 hours) and creates
@@ -181,7 +185,7 @@ Confirmation Request is actually made.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

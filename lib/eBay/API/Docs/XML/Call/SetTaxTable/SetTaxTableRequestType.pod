@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::SetTaxTable::SetTaxTableRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::SetTaxTable::SetTaxTableRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Sets the tax table for a seller on a given site.
@@ -37,7 +41,7 @@ A container of tax jurisdiction information unique to a user/site combination.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

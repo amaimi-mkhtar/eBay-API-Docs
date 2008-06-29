@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetItem::GetItemResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetItem::GetItemResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Contains the item data returned by the call. The data for the specified item
@@ -39,7 +43,7 @@ ItemType object that contains the data for the specified item.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

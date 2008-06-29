@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetFeedback::GetFeedbackRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetFeedback::GetFeedbackRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves summary feedback data if Transaction ID or Item ID are specified. Retrieves the accumulation of feedback left for the specified user by other users if a User ID is specified. Retrieves the accumulation of feedback left for the requesting user if no ID value
@@ -151,7 +155,7 @@ Specifies the user whose feedback data is to be returned. If not specified, then
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::FetchToken::FetchTokenRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::FetchToken::FetchTokenRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves user token.
@@ -83,7 +87,7 @@ if SecretID is present.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

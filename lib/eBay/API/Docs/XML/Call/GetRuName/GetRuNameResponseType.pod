@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetRuName::GetRuNameResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetRuName::GetRuNameResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Contains the generated runame (unique identifier for an authentication data entry).
@@ -37,7 +41,7 @@ The generated globally unique runame.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

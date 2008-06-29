@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::SetStorePreferences::SetStorePreferencesRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::SetStorePreferences::SetStorePreferencesRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Sets the preferences for a user's eBay Store. These preferences include various
@@ -38,7 +42,7 @@ Specifies the store preferences.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetStoreOptions::GetStoreOptionsResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetStoreOptions::GetStoreOptionsResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Contains the current list of options for Store configurations.
@@ -126,7 +130,7 @@ subscription prices.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

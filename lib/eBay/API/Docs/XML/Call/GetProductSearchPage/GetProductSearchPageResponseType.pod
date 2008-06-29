@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetProductSearchPage::GetProductSearchPageResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetProductSearchPage::GetProductSearchPageResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 For a category that is catalog-enabled, GetProductSearchPage retrieves the
@@ -69,7 +73,7 @@ Title: Retrieving Product Search Page Meta-Data
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

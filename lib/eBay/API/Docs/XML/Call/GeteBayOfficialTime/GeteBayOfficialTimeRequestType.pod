@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GeteBayOfficialTime::GeteBayOfficialTimeRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GeteBayOfficialTime::GeteBayOfficialTimeRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Gets the official eBay system time in GMT.
@@ -20,7 +24,7 @@ Gets the official eBay system time in GMT.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

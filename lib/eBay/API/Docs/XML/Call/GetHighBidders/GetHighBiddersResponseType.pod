@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetHighBidders::GetHighBiddersResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetHighBidders::GetHighBiddersResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returns a list of high bidders for the Dutch auction specified in the
@@ -63,7 +67,7 @@ be sure the winning bidder and other details are correct and complete.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

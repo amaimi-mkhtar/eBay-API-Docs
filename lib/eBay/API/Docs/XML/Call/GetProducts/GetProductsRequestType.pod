@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetProducts::GetProductsRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetProducts::GetProductsRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Searches for stock information and reviews for certain kinds of products,
@@ -214,7 +218,7 @@ ProductReferenceID, eBay usually only returns one product.)
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

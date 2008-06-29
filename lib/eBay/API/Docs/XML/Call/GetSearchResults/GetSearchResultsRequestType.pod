@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetSearchResults::GetSearchResultsRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetSearchResults::GetSearchResultsRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves item listings based on keywords you specify. The keywords can
@@ -1051,7 +1055,7 @@ sellers.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

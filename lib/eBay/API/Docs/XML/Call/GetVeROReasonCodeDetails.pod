@@ -2,12 +2,9 @@
 
 eBay::API::XML::Call::GetVeROReasonCodeDetails
 
-=head1 DESCRIPTION
+=head1 INTERITANCE
 
-
-
-=head1 SYNOPSIS
-
+eBay::API::XML::Call::GetVeROReasonCodeDetails inherits from the L<eBay::API::BaseCall> class
 
 =cut
 
@@ -56,7 +53,7 @@ Contains the list of the status codes for a site.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

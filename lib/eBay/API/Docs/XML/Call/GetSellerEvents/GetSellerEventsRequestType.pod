@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetSellerEvents::GetSellerEventsRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetSellerEvents::GetSellerEventsRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves price changes, item revisions, description revisions,
@@ -212,7 +216,7 @@ will be able to make this API call successfully. See <a href="http://developer.e
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetTaxTable::GetTaxTableResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetTaxTable::GetTaxTableResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Response to GetTaxTableRequest.
@@ -68,7 +72,7 @@ SalesTaxPercent are returned but are empty.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

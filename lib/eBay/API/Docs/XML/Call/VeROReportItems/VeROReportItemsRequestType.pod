@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::VeROReportItems::VeROReportItemsRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::VeROReportItems::VeROReportItemsRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Reports items that allegedly infringe your copyright, trademark, or other 
@@ -58,7 +62,7 @@ User ID of the VeRO member reporting the items.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

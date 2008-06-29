@@ -112,7 +112,7 @@ downloaded the latest xsd file from eBay and rebuild the classes,
 
   http://developer.ebay.com/webservices/latest/eBaySvc.xsd
 
-The easist way to regenerate is to:
+The easiest way to regenerate is to:
 
   cpan> look eBay::API
   % perl Makefile.PL

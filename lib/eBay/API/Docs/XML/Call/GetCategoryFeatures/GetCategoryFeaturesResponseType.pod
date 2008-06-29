@@ -2,12 +2,9 @@
 
 eBay::API::XML::Call::GetCategoryFeatures::GetCategoryFeaturesResponseType
 
-=head1 DESCRIPTION
+=head1 INTERITANCE
 
-
-
-=head1 SYNOPSIS
-
+eBay::API::XML::Call::GetCategoryFeatures::GetCategoryFeaturesResponseType inherits from the L<eBay::API::BaseCall> class
 
 =cut
 
@@ -133,7 +130,7 @@ category hierarchy were last updated.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetUser::GetUserResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetUser::GetUserResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Contains the data retrieved by the call. User data is returned in a User object.
@@ -38,7 +42,7 @@ Contains the returned user data for the specified eBay user.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

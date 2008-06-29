@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::SetShippingDiscountProfiles::SetShippingDiscountProfilesRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::SetShippingDiscountProfiles::SetShippingDiscountProfilesRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Enables a seller to define shipping cost discount profiles and a few additional
@@ -200,7 +204,7 @@ falls into.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

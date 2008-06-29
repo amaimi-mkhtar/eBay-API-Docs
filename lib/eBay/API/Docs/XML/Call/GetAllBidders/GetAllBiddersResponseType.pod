@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetAllBidders::GetAllBiddersResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetAllBidders::GetAllBiddersResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Includes the list of bidders for the requested item as part of the general item listing data. Some bidder information is anonymous, to protect bidders from fraud. If the seller makes this API call, the actual ids of all bidders on the seller's item will be returned. If a bidder makes this API call, the bidder's actual id will be returned. Information for all competing bidders or outside watchers will be returned as anonymized userIDs. See See <a href="http://developer.ebay.com/DevZone/XML/docs/WebHelp/index.htm?context=eBay_XML_API&topic=AnonymousUserInfo">Working with Anonymous User Information</a>in the eBay Web Services Guide for more information.
@@ -91,7 +95,7 @@ can take several minutes. If you retrieve a sold item, use this listing status i
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

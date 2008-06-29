@@ -2,12 +2,9 @@
 
 eBay::API::XML::Call::GetPictureManagerOptions
 
-=head1 DESCRIPTION
+=head1 INTERITANCE
 
-
-
-=head1 SYNOPSIS
-
+eBay::API::XML::Call::GetPictureManagerOptions inherits from the L<eBay::API::BaseCall> class
 
 =cut
 
@@ -41,7 +38,7 @@ and allowed storage size.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

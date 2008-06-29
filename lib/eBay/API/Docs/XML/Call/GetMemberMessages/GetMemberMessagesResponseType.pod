@@ -2,12 +2,9 @@
 
 eBay::API::XML::Call::GetMemberMessages::GetMemberMessagesResponseType
 
-=head1 DESCRIPTION
+=head1 INTERITANCE
 
-
-
-=head1 SYNOPSIS
-
+eBay::API::XML::Call::GetMemberMessages::GetMemberMessagesResponseType inherits from the L<eBay::API::BaseCall> class
 
 =cut
 
@@ -69,7 +66,7 @@ Shows the pagination of data returned by requests.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

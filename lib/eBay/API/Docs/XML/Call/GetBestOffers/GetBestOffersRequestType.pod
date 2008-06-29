@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetBestOffers::GetBestOffersRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetBestOffers::GetBestOffersRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves the best offers associated with an ItemID, according to the
@@ -83,7 +87,7 @@ MaxLength: 19 (Note: The eBay database specifies 38. Currently, Item IDs are usu
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

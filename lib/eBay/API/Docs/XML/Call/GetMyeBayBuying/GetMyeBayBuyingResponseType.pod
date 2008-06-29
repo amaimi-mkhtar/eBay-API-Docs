@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetMyeBayBuying::GetMyeBayBuyingResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetMyeBayBuying::GetMyeBayBuyingResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returns items from All Buying or All Favorites in the user's My eBay account.
@@ -215,7 +219,7 @@ exist that meet the request criteria.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

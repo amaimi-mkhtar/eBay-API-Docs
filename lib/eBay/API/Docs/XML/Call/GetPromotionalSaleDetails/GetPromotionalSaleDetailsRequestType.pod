@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetPromotionalSaleDetails::GetPromotionalSaleDetailsRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetPromotionalSaleDetails::GetPromotionalSaleDetailsRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Used to obtain information about promotional sales.
@@ -45,7 +49,7 @@ all promotional sales for the seller making the call.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

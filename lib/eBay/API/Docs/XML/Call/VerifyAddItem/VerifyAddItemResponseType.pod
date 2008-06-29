@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::VerifyAddItem::VerifyAddItemResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::VerifyAddItem::VerifyAddItemResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returns the estimated fees that would be applicable for a new listing
@@ -153,7 +157,7 @@ MaxLength: 19 (Note: The eBay database specifies 38. Currently, Item IDs are usu
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

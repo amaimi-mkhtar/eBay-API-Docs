@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::ReviseLiveAuctionItem::ReviseLiveAuctionItemResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::ReviseLiveAuctionItem::ReviseLiveAuctionItemResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returns the item ID and the estimated fees for the revised listing.
@@ -109,7 +113,7 @@ MaxLength: 19 (Note: The eBay database specifies 38. Currently, Item IDs are usu
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

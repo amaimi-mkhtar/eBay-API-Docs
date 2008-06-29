@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetCategory2CS::GetCategory2CSResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetCategory2CS::GetCategory2CSResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returns data that indicates the categories that are mapped to characteristics sets,
@@ -122,7 +126,7 @@ changes, the data appears in both the UnmappedCategoryArray object
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

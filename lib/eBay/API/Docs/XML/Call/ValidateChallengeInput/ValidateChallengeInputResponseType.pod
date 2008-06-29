@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::ValidateChallengeInput::ValidateChallengeInputResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::ValidateChallengeInput::ValidateChallengeInputResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Validate the user response to botblock challenge.
@@ -37,7 +41,7 @@ Indicates whether the token is valid.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

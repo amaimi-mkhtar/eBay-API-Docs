@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::AddToItemDescription::AddToItemDescriptionRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::AddToItemDescription::AddToItemDescriptionRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Appends a horizontal rule, then a message about what time the
@@ -61,7 +65,7 @@ MaxLength: 19 (Note: The eBay database specifies 38. Currently, Item IDs are usu
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::AddOrder::AddOrderRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::AddOrder::AddOrderRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Combines two or more transactions into a single order, enabling a buyer
@@ -42,7 +46,7 @@ The order that is being created.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetPictureManagerDetails::GetPictureManagerDetailsRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetPictureManagerDetails::GetPictureManagerDetailsRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Requests information about folders or pictures in a Picture Manager account
@@ -79,7 +83,7 @@ exist in the folder.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

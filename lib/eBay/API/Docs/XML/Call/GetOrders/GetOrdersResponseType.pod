@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetOrders::GetOrdersResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetOrders::GetOrdersResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returns the set of orders that match the order IDs or filter criteria specified.
@@ -141,7 +145,7 @@ Applies only to Half.com. Indicates the total number of orders returned.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

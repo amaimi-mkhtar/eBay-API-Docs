@@ -2,12 +2,9 @@
 
 eBay::API::XML::Call::GetCategories
 
-=head1 DESCRIPTION
+=head1 INTERITANCE
 
-
-
-=head1 SYNOPSIS
-
+eBay::API::XML::Call::GetCategories inherits from the L<eBay::API::BaseCall> class
 
 =cut
 
@@ -185,7 +182,7 @@ specified eBay site.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::SellerReverseDispute::SellerReverseDisputeRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::SellerReverseDispute::SellerReverseDisputeRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Enables a seller to "reverse" an Unpaid Item dispute that has been closed, for
@@ -66,7 +70,7 @@ The reason the dispute is being reversed.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

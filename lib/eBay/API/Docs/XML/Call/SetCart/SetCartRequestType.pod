@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::SetCart::SetCartRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::SetCart::SetCartRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Enables a third party developer to create a new shopping cart in the eBay Express
@@ -129,7 +133,7 @@ shipping applies. Of no value if there are no items in the cart with calculated 
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

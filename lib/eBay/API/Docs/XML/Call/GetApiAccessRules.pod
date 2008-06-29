@@ -2,12 +2,9 @@
 
 eBay::API::XML::Call::GetApiAccessRules
 
-=head1 DESCRIPTION
+=head1 INTERITANCE
 
-
-
-=head1 SYNOPSIS
-
+eBay::API::XML::Call::GetApiAccessRules inherits from the L<eBay::API::BaseCall> class
 
 =cut
 
@@ -31,7 +28,7 @@ and other values.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

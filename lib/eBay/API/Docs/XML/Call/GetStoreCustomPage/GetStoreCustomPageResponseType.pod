@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetStoreCustomPage::GetStoreCustomPageResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetStoreCustomPage::GetStoreCustomPageResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Contains the custom page or pages for the user's Store.
@@ -37,7 +41,7 @@ The custom page or custom pages.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

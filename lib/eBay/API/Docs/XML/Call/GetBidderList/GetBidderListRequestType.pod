@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetBidderList::GetBidderListRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetBidderList::GetBidderListRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves all items the user is currently bidding on, or
@@ -133,7 +137,7 @@ in header.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

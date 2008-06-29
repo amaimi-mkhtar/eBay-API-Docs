@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetSellerDashboard::GetSellerDashboardRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetSellerDashboard::GetSellerDashboardRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves a brief summary of the requester's status as an eBay seller. 
@@ -31,7 +35,7 @@ in production to get useful results.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

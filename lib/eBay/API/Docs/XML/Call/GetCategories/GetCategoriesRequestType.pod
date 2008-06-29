@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetCategories::GetCategoriesRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetCategories::GetCategoriesRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves the latest category hierarchy available on a given site.
@@ -140,7 +144,7 @@ on how you configure other fields in the request.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

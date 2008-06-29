@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetLiveAuctionBidders::GetLiveAuctionBiddersResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetLiveAuctionBidders::GetLiveAuctionBiddersResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Includes the list of bidders for the requested catalog.
@@ -125,7 +129,7 @@ Total number of bidders in Pending state.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

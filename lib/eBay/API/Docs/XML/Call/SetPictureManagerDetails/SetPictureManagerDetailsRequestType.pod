@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::SetPictureManagerDetails::SetPictureManagerDetailsRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::SetPictureManagerDetails::SetPictureManagerDetailsRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Creates, updates, or deletes Picture Manager account settings, folders, or pictures.
@@ -57,7 +61,7 @@ SetPictureManagerDetails; you must use the eBay site.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::ReviseMyMessagesFolders::ReviseMyMessagesFoldersRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::ReviseMyMessagesFolders::ReviseMyMessagesFoldersRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Renames, removes, or restores specified My Messages folders for
@@ -89,7 +93,7 @@ cannot be performed on the Inbox and Sent folders.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

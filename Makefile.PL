@@ -3,7 +3,7 @@ use ExtUtils::MakeMaker;
 # the contents of the Makefile that is written.
 WriteMakefile(
     NAME              => 'eBay::API::Docs',
-    VERSION           => '0.03', # finds $VERSION
+    VERSION           => '0.04', # finds $VERSION
     PREREQ_PM         => {
         'eBay::API' => 0,
     }, # e.g., Module::Name => 1.1

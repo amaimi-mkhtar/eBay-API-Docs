@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetMyeBayBuying::GetMyeBayBuyingRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetMyeBayBuying::GetMyeBayBuyingRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returns items from the All Buying section of the user's My eBay
@@ -204,7 +208,7 @@ container at a DetailLevel of ReturnSummary.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

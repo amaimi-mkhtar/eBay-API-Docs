@@ -2,12 +2,9 @@
 
 eBay::API::XML::Call::GetBidderList
 
-=head1 DESCRIPTION
+=head1 INTERITANCE
 
-
-
-=head1 SYNOPSIS
-
+eBay::API::XML::Call::GetBidderList inherits from the L<eBay::API::BaseCall> class
 
 =cut
 
@@ -110,7 +107,7 @@ Data for one eBay bidder.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

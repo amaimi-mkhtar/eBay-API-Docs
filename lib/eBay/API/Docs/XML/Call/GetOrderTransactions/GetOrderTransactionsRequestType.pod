@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetOrderTransactions::GetOrderTransactionsRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetOrderTransactions::GetOrderTransactionsRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves information about one or more orders or one or more transactions
@@ -114,7 +118,7 @@ This will serve as a filter for the transactions to get emitted in the response.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

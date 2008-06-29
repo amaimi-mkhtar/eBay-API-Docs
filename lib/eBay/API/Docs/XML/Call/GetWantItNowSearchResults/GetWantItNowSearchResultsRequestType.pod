@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetWantItNowSearchResults::GetWantItNowSearchResultsRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetWantItNowSearchResults::GetWantItNowSearchResultsRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves a list of active Want It Now posts that match specified keywords
@@ -138,7 +142,7 @@ made.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

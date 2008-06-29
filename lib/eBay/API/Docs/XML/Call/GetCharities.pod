@@ -2,12 +2,9 @@
 
 eBay::API::XML::Call::GetCharities
 
-=head1 DESCRIPTION
+=head1 INTERITANCE
 
-
-
-=head1 SYNOPSIS
-
+eBay::API::XML::Call::GetCharities inherits from the L<eBay::API::BaseCall> class
 
 =cut
 
@@ -145,7 +142,7 @@ returned.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::SetPromotionalSale::SetPromotionalSaleResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::SetPromotionalSale::SetPromotionalSaleResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Contains the ID and status of a promotional sale.
@@ -56,7 +60,7 @@ Contains the status of a promotional sale.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

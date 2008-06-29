@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::VerifyAddSecondChanceItem::VerifyAddSecondChanceItemResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::VerifyAddSecondChanceItem::VerifyAddSecondChanceItemResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 VerifyAddSecondChanceItem request to emulate creation of a new Second Chance Offer for an item to one of
@@ -60,7 +64,7 @@ the recipient user could purchase the item.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

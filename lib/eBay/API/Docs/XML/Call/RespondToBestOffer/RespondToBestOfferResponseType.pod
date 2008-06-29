@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::RespondToBestOffer::RespondToBestOfferResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::RespondToBestOffer::RespondToBestOfferResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Contains a list of BestOffers that were either accepted or declined.
@@ -37,7 +41,7 @@ A list of BestOffers that were either accepted or declined.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

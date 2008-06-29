@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetNotificationsUsage::GetNotificationsUsageRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetNotificationsUsage::GetNotificationsUsageRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves usage information about platform notifications for a given application.
@@ -92,7 +96,7 @@ used.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

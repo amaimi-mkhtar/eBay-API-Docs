@@ -2,12 +2,9 @@
 
 eBay::API::XML::Call::GetOrders
 
-=head1 DESCRIPTION
+=head1 INTERITANCE
 
-
-
-=head1 SYNOPSIS
-
+eBay::API::XML::Call::GetOrders inherits from the L<eBay::API::BaseCall> class
 
 =cut
 
@@ -195,7 +192,7 @@ Applies only to Half.com. Indicates the total number of orders returned.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

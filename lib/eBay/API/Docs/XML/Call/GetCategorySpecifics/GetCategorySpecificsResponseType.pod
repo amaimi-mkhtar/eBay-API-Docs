@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetCategorySpecifics::GetCategorySpecificsResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetCategorySpecifics::GetCategorySpecificsResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Calls made form seller or buyer find out what the most relevant tags and values are for a given category
@@ -57,7 +61,7 @@ specify their own custom Item Specifics for listings in that category.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

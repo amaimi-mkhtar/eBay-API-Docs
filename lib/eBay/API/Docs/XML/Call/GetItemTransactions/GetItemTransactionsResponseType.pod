@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetItemTransactions::GetItemTransactionsResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetItemTransactions::GetItemTransactionsResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returns an array of transaction data for the item specified in the request.
@@ -191,7 +195,7 @@ and more than one page of data exists.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

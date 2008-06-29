@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetFeedback::GetFeedbackResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetFeedback::GetFeedbackResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 The GetFeedback response contains the feedback summary if a 
@@ -165,7 +169,7 @@ is only applicable when a User ID or no ID (requester option) is specified.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

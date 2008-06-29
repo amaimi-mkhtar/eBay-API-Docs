@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::CompleteSale::CompleteSaleRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::CompleteSale::CompleteSaleRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Enables a seller to do various tasks after a transaction has been created.
@@ -166,7 +170,7 @@ MaxLength: 19 (Note: The eBay database specifies 38. Currently, transaction IDs 
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

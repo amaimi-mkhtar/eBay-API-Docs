@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GeteBayOfficialTime::GeteBayOfficialTimeResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GeteBayOfficialTime::GeteBayOfficialTimeResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 The Timestamp field indicates the official eBay system time in GMT.
@@ -22,7 +26,7 @@ see "Time Values" in the Data Types appendix in the eBay Web Services guide.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

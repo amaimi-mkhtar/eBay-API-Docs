@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::DeleteMyMessages::DeleteMyMessagesRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::DeleteMyMessages::DeleteMyMessagesRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Removes selected alerts and messages for a given user. Alerts that
@@ -56,7 +60,7 @@ Contains a list of up to 10 MessageID values.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

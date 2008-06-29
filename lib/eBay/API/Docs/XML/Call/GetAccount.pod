@@ -2,12 +2,9 @@
 
 eBay::API::XML::Call::GetAccount
 
-=head1 DESCRIPTION
+=head1 INTERITANCE
 
-
-
-=head1 SYNOPSIS
-
+eBay::API::XML::Call::GetAccount inherits from the L<eBay::API::BaseCall> class
 
 =cut
 
@@ -229,7 +226,7 @@ on repeated calls with the same format and report criteria.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

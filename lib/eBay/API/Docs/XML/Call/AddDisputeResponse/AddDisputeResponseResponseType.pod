@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::AddDisputeResponse::AddDisputeResponseResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::AddDisputeResponse::AddDisputeResponseResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returned after taking an action on a dispute with AddDisputeResponseRequest.
@@ -21,7 +25,7 @@ Includes the status of the request.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

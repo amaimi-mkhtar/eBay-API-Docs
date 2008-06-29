@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetApiAccessRules::GetApiAccessRulesResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetApiAccessRules::GetApiAccessRulesResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Responds to a call to GetApiAccessRules.
@@ -41,7 +45,7 @@ and other values.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

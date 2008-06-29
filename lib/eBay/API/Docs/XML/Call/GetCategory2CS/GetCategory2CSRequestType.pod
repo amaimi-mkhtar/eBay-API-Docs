@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetCategory2CS::GetCategory2CSRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetCategory2CS::GetCategory2CSRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves mappings between categories and characteristics sets that are available for an eBay site.
@@ -71,7 +75,7 @@ MaxLength: 10
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

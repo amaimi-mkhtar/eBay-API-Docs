@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetVeROReportStatus::GetVeROReportStatusRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetVeROReportStatus::GetVeROReportStatusRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves status information about VeRO reported items you have submitted. You 
@@ -157,7 +161,7 @@ Max: Default: Min:
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

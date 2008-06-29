@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::VerifyAddSecondChanceItem::VerifyAddSecondChanceItemRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::VerifyAddSecondChanceItem::VerifyAddSecondChanceItemRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Simulates the creation of a new Second Chance Offer
@@ -125,7 +129,7 @@ MaxLength: 1000
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

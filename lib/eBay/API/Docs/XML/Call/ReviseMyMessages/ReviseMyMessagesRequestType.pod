@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::ReviseMyMessages::ReviseMyMessagesRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::ReviseMyMessages::ReviseMyMessagesRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Sets the read state for messages and alerts, the flagged state of messages, and moves
@@ -137,7 +141,7 @@ and must be marked Read with this call.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

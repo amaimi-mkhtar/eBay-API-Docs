@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::AddItem::AddItemRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::AddItem::AddItemRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Defines a single new item and lists it on a specified eBay site.
@@ -41,7 +45,7 @@ Also applicable to Half.com.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

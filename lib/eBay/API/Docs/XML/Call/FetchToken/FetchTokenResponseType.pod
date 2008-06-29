@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::FetchToken::FetchTokenResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::FetchToken::FetchTokenResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Includes the authentication token for the user and the date it expires.
@@ -75,7 +79,7 @@ Title: Authentication & Authorization
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetProductFinderXSL::GetProductFinderXSLRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetProductFinderXSL::GetProductFinderXSLRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves the Product Finder XSL stylesheet. Apply the stylesheet
@@ -66,7 +70,7 @@ This is not a filter for retrieving changes to the XSL file.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

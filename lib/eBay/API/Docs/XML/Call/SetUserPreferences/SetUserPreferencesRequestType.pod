@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::SetUserPreferences::SetUserPreferencesRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::SetUserPreferences::SetUserPreferencesRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Sets the user's preferences to those specified in the request. As
@@ -189,7 +193,7 @@ The user's seller payment preferences to be set.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

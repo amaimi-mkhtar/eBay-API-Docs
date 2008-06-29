@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::ReviseItem::ReviseItemResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::ReviseItem::ReviseItemResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returns the item ID and the estimated fees for the revised listing.
@@ -152,7 +156,7 @@ always the time the item was listed).
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

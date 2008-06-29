@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::SetStoreCustomPage::SetStoreCustomPageResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::SetStoreCustomPage::SetStoreCustomPageResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returned after calling SetStoreCustomPageRequest. This serves as
@@ -38,7 +42,7 @@ The custom page that was submitted.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetWantItNowPost::GetWantItNowPostRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetWantItNowPost::GetWantItNowPostRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves data for a specific, active Want It Now post identified by a post ID.
@@ -43,7 +47,7 @@ across all eBay sites.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

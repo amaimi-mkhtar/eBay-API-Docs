@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::AddItem::AddItemResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::AddItem::AddItemResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returns the item ID and the estimated fees for the new listing, as well as
@@ -155,7 +159,7 @@ Also returned for Half.com (for Half.com, the start time is always the time the 
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

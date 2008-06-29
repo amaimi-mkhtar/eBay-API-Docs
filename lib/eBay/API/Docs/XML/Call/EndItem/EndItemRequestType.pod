@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::EndItem::EndItemRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::EndItem::EndItemRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Ends the specified item listing before the date and time at which
@@ -104,7 +108,7 @@ Only applicable to Half.com.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

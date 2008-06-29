@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetOrders::GetOrdersRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetOrders::GetOrdersRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves all of the orders for which the user is a participant (as
@@ -181,7 +185,7 @@ retrieve per page (i.e., per call), the page number to retrieve, and other data.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

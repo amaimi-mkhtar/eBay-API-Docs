@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetSellerDashboard::GetSellerDashboardResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetSellerDashboard::GetSellerDashboardResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returns a brief summary of the requester's status as an eBay seller. 
@@ -186,7 +190,7 @@ Title: Zum Thema Verkäufer-Cockpit: PowerSeller-Rabatt
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

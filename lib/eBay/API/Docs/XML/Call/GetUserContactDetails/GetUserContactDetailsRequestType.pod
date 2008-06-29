@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetUserContactDetails::GetUserContactDetailsRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetUserContactDetails::GetUserContactDetailsRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returns contact information for a specified user if a
@@ -99,7 +103,7 @@ the item via Best Offer.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

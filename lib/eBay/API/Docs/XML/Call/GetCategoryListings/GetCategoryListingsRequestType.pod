@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetCategoryListings::GetCategoryListingsRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetCategoryListings::GetCategoryListingsRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returns items in a specified category. A number of inputs are provided
@@ -401,7 +405,7 @@ category featured or super featured or all items.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

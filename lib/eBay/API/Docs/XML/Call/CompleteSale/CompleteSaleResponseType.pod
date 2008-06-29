@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::CompleteSale::CompleteSaleResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::CompleteSale::CompleteSaleResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Indicates the success or failure of the attempt to leave feedback for the buyer,
@@ -23,7 +27,7 @@ Applies to Half.com.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

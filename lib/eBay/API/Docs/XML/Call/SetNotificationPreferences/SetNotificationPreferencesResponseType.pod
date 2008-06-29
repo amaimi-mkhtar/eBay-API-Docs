@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::SetNotificationPreferences::SetNotificationPreferencesResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::SetNotificationPreferences::SetNotificationPreferencesResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 (out) Returned after a call to SetNotificationPreferences to indicate that the call succeeded.
@@ -20,7 +24,7 @@ eBay::API::XML::Call::SetNotificationPreferences::SetNotificationPreferencesResp
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

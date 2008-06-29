@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::ValidateTestUserRegistration::ValidateTestUserRegistrationRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::ValidateTestUserRegistration::ValidateTestUserRegistrationRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Requests to enable a test user to sell items in the Sandbox environment.
@@ -132,7 +136,7 @@ Selling Manager Pro. You cannot request to unsubscribe a user.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

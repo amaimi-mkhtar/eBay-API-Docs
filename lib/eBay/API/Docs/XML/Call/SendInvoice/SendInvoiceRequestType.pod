@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::SendInvoice::SendInvoiceRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::SendInvoice::SendInvoiceRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Enables a seller to send an invoice to a buyer involved in the transaction.
@@ -305,7 +309,7 @@ MaxLength: 19 (Note: The eBay database specifies 38. Currently, transaction IDs 
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

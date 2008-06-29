@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetPopularKeywords::GetPopularKeywordsResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetPopularKeywords::GetPopularKeywordsResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Contains the keyword data for the requested categories. A category's data are contained in a CategoryArrayType object if there is no error (one or more CategoryType objects). Each CategoryType contains its ID, parent ID and keyword list.
@@ -77,7 +81,7 @@ including total number of pages and total number of entries.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

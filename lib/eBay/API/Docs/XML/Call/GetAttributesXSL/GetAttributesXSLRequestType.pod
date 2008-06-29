@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetAttributesXSL::GetAttributesXSLRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetAttributesXSL::GetAttributesXSLRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves the Item Specifics SYI XSL stylesheet. Apply the stylesheet to the
@@ -64,7 +68,7 @@ If not specified, the call returns the latest version of the file.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

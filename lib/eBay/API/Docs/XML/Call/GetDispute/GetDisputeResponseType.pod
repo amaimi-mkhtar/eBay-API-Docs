@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetDispute::GetDisputeResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetDispute::GetDisputeResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returned after calling GetDisputeRequest. Returns the record of
@@ -40,7 +44,7 @@ comments added to the dispute, or resolutions.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::AddTransactionConfirmationItem::AddTransactionConfirmationItemResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::AddTransactionConfirmationItem::AddTransactionConfirmationItemResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returns an item ID for a new Transaction Confirmation Request (TCR).
@@ -74,7 +78,7 @@ becomes available for purchase.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

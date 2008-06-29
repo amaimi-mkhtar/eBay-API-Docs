@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetCategories::GetCategoriesResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetCategories::GetCategoriesResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Contains the category data for the eBay site specified as input. The category
@@ -173,7 +177,7 @@ specified eBay site.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

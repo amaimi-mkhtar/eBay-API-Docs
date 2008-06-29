@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::IssueRefund::IssueRefundRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::IssueRefund::IssueRefundRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Issues a refund for a single Half.com transaction. This can only be
@@ -149,7 +153,7 @@ MaxLength: 19 (Note: The eBay database specifies 38. Currently, transaction IDs 
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

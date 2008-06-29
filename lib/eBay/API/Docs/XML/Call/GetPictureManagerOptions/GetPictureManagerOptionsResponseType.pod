@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetPictureManagerOptions::GetPictureManagerOptionsResponseType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetPictureManagerOptions::GetPictureManagerOptionsResponseType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Returns a list of Picture Manager options and allowed values.
@@ -59,7 +63,7 @@ and allowed storage size.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

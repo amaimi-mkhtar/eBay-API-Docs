@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetCrossPromotions::GetCrossPromotionsRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetCrossPromotions::GetCrossPromotionsRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Retrieves a list of upsell or cross-sell items associated with the specifeid
@@ -78,7 +82,7 @@ items, either seller or buyer. Default is buyer.
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 

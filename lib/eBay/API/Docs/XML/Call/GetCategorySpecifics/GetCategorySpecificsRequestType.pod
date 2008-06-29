@@ -2,6 +2,10 @@
 
 eBay::API::XML::Call::GetCategorySpecifics::GetCategorySpecificsRequestType
 
+=head1 INTERITANCE
+
+eBay::API::XML::Call::GetCategorySpecifics::GetCategorySpecificsRequestType inherits from the L<eBay::API::BaseCall> class
+
 =head1 DESCRIPTION
 
 Item Specifics are typical aspects of items in the same category.
@@ -178,7 +182,7 @@ MaxLength: 30 (see GeteBayDetails)
 
 =head1 SEE ALSO
 
-L<eBay::API>
+L<eBay::API>, L<eBay::API::BaseCall>
 
 =head1 JOIN US
 
