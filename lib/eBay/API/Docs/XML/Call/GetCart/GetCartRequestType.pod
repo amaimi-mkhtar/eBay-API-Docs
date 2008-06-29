@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetCart::GetCartRequestType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetCart::GetCartRequestType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetCart::GetCartRequestType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -92,7 +92,7 @@ shipping applies. Of no value if there are no items in the cart with calculated 
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

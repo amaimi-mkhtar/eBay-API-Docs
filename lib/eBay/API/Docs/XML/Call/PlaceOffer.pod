@@ -4,7 +4,7 @@ eBay::API::XML::Call::PlaceOffer
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::PlaceOffer inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::PlaceOffer inherits from the L<eBay::API::XML::BaseCall> class
 
 =cut
 
@@ -117,7 +117,7 @@ if you specified Purchase on input.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

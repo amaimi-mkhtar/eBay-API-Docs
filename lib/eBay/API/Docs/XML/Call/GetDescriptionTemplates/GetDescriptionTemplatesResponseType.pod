@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetDescriptionTemplates::GetDescriptionTemplatesResponseTy
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetDescriptionTemplates::GetDescriptionTemplatesResponseType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetDescriptionTemplates::GetDescriptionTemplatesResponseType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -138,7 +138,7 @@ of DescriptionTemplates for which Type is "Theme").
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

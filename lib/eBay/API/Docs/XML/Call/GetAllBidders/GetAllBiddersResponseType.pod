@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetAllBidders::GetAllBiddersResponseType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetAllBidders::GetAllBiddersResponseType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetAllBidders::GetAllBiddersResponseType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -95,7 +95,7 @@ can take several minutes. If you retrieve a sold item, use this listing status i
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

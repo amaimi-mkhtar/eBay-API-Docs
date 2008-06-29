@@ -4,7 +4,7 @@ eBay::API::XML::Call::VerifyAddSecondChanceItem
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::VerifyAddSecondChanceItem inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::VerifyAddSecondChanceItem inherits from the L<eBay::API::XML::BaseCall> class
 
 =cut
 
@@ -109,7 +109,7 @@ the recipient user could purchase the item.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

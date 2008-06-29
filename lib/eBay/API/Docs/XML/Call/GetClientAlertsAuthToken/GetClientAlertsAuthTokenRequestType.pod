@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetClientAlertsAuthToken::GetClientAlertsAuthTokenRequestT
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetClientAlertsAuthToken::GetClientAlertsAuthTokenRequestType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetClientAlertsAuthToken::GetClientAlertsAuthTokenRequestType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -27,7 +27,7 @@ required for Client Alerts API calls Login and Logout.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

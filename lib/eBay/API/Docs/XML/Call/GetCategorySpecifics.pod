@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetCategorySpecifics
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetCategorySpecifics inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetCategorySpecifics inherits from the L<eBay::API::XML::BaseCall> class
 
 =cut
 
@@ -139,7 +139,7 @@ specify their own custom Item Specifics for listings in that category.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

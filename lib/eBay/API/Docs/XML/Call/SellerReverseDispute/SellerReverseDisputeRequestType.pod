@@ -4,7 +4,7 @@ eBay::API::XML::Call::SellerReverseDispute::SellerReverseDisputeRequestType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::SellerReverseDispute::SellerReverseDisputeRequestType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::SellerReverseDispute::SellerReverseDisputeRequestType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -70,7 +70,7 @@ The reason the dispute is being reversed.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

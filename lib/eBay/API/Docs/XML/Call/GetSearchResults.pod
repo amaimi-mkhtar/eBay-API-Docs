@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetSearchResults
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetSearchResults inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetSearchResults inherits from the L<eBay::API::XML::BaseCall> class
 
 =cut
 
@@ -906,7 +906,7 @@ if the request specifies that ExpandSearch is true.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

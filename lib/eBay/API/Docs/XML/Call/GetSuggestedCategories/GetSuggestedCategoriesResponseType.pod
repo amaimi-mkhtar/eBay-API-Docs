@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetSuggestedCategories::GetSuggestedCategoriesResponseType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetSuggestedCategories::GetSuggestedCategoriesResponseType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetSuggestedCategories::GetSuggestedCategoriesResponseType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -63,7 +63,7 @@ the query in the request.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

@@ -4,7 +4,7 @@ eBay::API::XML::Call::VeROReportItems::VeROReportItemsRequestType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::VeROReportItems::VeROReportItemsRequestType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::VeROReportItems::VeROReportItemsRequestType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -62,7 +62,7 @@ User ID of the VeRO member reporting the items.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

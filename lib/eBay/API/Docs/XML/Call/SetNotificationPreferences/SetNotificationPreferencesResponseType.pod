@@ -4,7 +4,7 @@ eBay::API::XML::Call::SetNotificationPreferences::SetNotificationPreferencesResp
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::SetNotificationPreferences::SetNotificationPreferencesResponseType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::SetNotificationPreferences::SetNotificationPreferencesResponseType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -24,7 +24,7 @@ eBay::API::XML::Call::SetNotificationPreferences::SetNotificationPreferencesResp
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

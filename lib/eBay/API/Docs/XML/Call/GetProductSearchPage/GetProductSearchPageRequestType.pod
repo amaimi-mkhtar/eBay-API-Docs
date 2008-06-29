@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetProductSearchPage::GetProductSearchPageRequestType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetProductSearchPage::GetProductSearchPageRequestType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetProductSearchPage::GetProductSearchPageRequestType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -91,7 +91,7 @@ versions, only compare whether the value has changed.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

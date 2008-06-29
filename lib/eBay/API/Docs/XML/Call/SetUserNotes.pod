@@ -4,7 +4,7 @@ eBay::API::XML::Call::SetUserNotes
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::SetUserNotes inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::SetUserNotes inherits from the L<eBay::API::XML::BaseCall> class
 
 =cut
 
@@ -68,7 +68,7 @@ You can see it from Sold list of GetMyeBaySelling if you are the seller.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

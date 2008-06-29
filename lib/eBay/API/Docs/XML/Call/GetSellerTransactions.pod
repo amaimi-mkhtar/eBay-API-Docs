@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetSellerTransactions
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetSellerTransactions inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetSellerTransactions inherits from the L<eBay::API::XML::BaseCall> class
 
 =cut
 
@@ -244,7 +244,7 @@ and more than one page of data exists.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

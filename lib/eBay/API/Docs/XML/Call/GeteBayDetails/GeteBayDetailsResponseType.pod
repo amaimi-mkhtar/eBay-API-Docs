@@ -4,7 +4,7 @@ eBay::API::XML::Call::GeteBayDetails::GeteBayDetailsResponseType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GeteBayDetails::GeteBayDetailsResponseType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GeteBayDetails::GeteBayDetailsResponseType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -354,7 +354,7 @@ Suggested text to use when specifying units of measure in custom Item Specifics.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

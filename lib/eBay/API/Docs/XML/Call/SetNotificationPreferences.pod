@@ -4,7 +4,7 @@ eBay::API::XML::Call::SetNotificationPreferences
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::SetNotificationPreferences inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::SetNotificationPreferences inherits from the L<eBay::API::XML::BaseCall> class
 
 =cut
 
@@ -78,7 +78,7 @@ contains an EventSetting and an EventType.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

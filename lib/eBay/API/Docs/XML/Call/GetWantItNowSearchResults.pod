@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetWantItNowSearchResults
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetWantItNowSearchResults inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetWantItNowSearchResults inherits from the L<eBay::API::XML::BaseCall> class
 
 =cut
 
@@ -150,7 +150,7 @@ returned in a WantItNowPostType object.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

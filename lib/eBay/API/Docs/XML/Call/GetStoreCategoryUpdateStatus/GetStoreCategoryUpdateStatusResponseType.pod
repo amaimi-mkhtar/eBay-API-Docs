@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetStoreCategoryUpdateStatus::GetStoreCategoryUpdateStatus
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetStoreCategoryUpdateStatus::GetStoreCategoryUpdateStatusResponseType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetStoreCategoryUpdateStatus::GetStoreCategoryUpdateStatusResponseType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -46,7 +46,7 @@ store category structure.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetFeedback::GetFeedbackRequestType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetFeedback::GetFeedbackRequestType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetFeedback::GetFeedbackRequestType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -155,7 +155,7 @@ Specifies the user whose feedback data is to be returned. If not specified, then
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

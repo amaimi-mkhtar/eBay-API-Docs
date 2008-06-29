@@ -4,7 +4,7 @@ eBay::API::XML::Call::AddItem
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::AddItem inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::AddItem inherits from the L<eBay::API::XML::BaseCall> class
 
 =cut
 
@@ -105,7 +105,7 @@ Also returned for Half.com (for Half.com, the start time is always the time the 
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

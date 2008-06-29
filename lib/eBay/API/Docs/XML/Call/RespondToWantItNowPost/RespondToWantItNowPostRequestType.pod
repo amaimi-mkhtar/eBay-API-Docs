@@ -4,7 +4,7 @@ eBay::API::XML::Call::RespondToWantItNowPost::RespondToWantItNowPostRequestType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::RespondToWantItNowPost::RespondToWantItNowPostRequestType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::RespondToWantItNowPost::RespondToWantItNowPostRequestType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -64,7 +64,7 @@ The unique identifier of a Want It Now post on the eBay site.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

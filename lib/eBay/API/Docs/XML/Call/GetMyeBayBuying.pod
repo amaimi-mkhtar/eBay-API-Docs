@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetMyeBayBuying
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetMyeBayBuying inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetMyeBayBuying inherits from the L<eBay::API::XML::BaseCall> class
 
 =cut
 
@@ -249,7 +249,7 @@ exist that meet the request criteria.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

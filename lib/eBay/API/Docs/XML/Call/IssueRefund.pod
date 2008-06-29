@@ -4,7 +4,7 @@ eBay::API::XML::Call::IssueRefund
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::IssueRefund inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::IssueRefund inherits from the L<eBay::API::XML::BaseCall> class
 
 =cut
 
@@ -121,7 +121,7 @@ from the seller plus a refund amount from Half.com).
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

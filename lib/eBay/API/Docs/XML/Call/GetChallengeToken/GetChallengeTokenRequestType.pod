@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetChallengeToken::GetChallengeTokenRequestType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetChallengeToken::GetChallengeTokenRequestType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetChallengeToken::GetChallengeTokenRequestType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -36,7 +36,7 @@ valid.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

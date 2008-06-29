@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetCategoryListings::GetCategoryListingsResponseType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetCategoryListings::GetCategoryListingsResponseType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetCategoryListings::GetCategoryListingsResponseType inherits from the L<eBay::API::XML::BaseCall> class
 
 =cut
 
@@ -183,7 +183,7 @@ object.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetStoreCustomPage::GetStoreCustomPageRequestType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetStoreCustomPage::GetStoreCustomPageRequestType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetStoreCustomPage::GetStoreCustomPageRequestType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -44,7 +44,7 @@ the page Content.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

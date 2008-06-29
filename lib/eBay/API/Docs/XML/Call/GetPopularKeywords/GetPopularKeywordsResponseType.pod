@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetPopularKeywords::GetPopularKeywordsResponseType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetPopularKeywords::GetPopularKeywordsResponseType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetPopularKeywords::GetPopularKeywordsResponseType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -81,7 +81,7 @@ including total number of pages and total number of entries.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

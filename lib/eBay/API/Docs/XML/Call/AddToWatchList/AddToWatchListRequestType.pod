@@ -4,7 +4,7 @@ eBay::API::XML::Call::AddToWatchList::AddToWatchListRequestType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::AddToWatchList::AddToWatchListRequestType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::AddToWatchList::AddToWatchListRequestType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -50,7 +50,7 @@ MaxLength: 19 (Note: The eBay database specifies 38. Currently, Item IDs are usu
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetMyMessages::GetMyMessagesRequestType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetMyMessages::GetMyMessagesRequestType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetMyMessages::GetMyMessagesRequestType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -124,7 +124,7 @@ Used as beginning of date range filter.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

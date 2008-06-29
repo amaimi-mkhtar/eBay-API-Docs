@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetProductSellingPages::GetProductSellingPagesRequestType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetProductSellingPages::GetProductSellingPagesRequestType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetProductSellingPages::GetProductSellingPagesRequestType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -96,7 +96,7 @@ and the corresponding characteristic meta-data. (Same as SYI).
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

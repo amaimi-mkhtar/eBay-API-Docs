@@ -4,7 +4,7 @@ eBay::API::XML::Call::AddTransactionConfirmationItem
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::AddTransactionConfirmationItem inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::AddTransactionConfirmationItem inherits from the L<eBay::API::XML::BaseCall> class
 
 =cut
 
@@ -147,7 +147,7 @@ becomes available for purchase.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

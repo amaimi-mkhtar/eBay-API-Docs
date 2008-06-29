@@ -4,7 +4,7 @@ eBay::API::XML::Call::GeteBayDetails::GeteBayDetailsRequestType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GeteBayDetails::GeteBayDetailsRequestType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GeteBayDetails::GeteBayDetailsRequestType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -61,7 +61,7 @@ options.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

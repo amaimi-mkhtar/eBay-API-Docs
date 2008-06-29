@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetSellerDashboard::GetSellerDashboardRequestType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetSellerDashboard::GetSellerDashboardRequestType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetSellerDashboard::GetSellerDashboardRequestType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -35,7 +35,7 @@ in production to get useful results.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 

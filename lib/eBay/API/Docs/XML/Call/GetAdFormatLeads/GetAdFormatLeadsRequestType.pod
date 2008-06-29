@@ -4,7 +4,7 @@ eBay::API::XML::Call::GetAdFormatLeads::GetAdFormatLeadsRequestType
 
 =head1 INTERITANCE
 
-eBay::API::XML::Call::GetAdFormatLeads::GetAdFormatLeadsRequestType inherits from the L<eBay::API::BaseCall> class
+eBay::API::XML::Call::GetAdFormatLeads::GetAdFormatLeadsRequestType inherits from the L<eBay::API::XML::BaseCall> class
 
 =head1 DESCRIPTION
 
@@ -119,7 +119,7 @@ Filters the leads based on their status.
 
 =head1 SEE ALSO
 
-L<eBay::API>, L<eBay::API::BaseCall>
+L<eBay::API>, L<eBay::API::XML::BaseCall>
 
 =head1 JOIN US
 
